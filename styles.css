@@ -129,3 +129,5 @@ h1,h2,h3,.wordmark{font-family:Outfit,Inter,Studio,sans-serif}.wrap{width:min(10
 @media(max-width:600px){.assistant-widget{bottom:82px}.assistant-panel{height:min(560px,calc(100dvh - 160px))}}
 
 .project-card-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px 24px}
+
+.project-gallery[hidden]{display:none}.project-gallery{margin-top:28px}.project-gallery figure{margin:14px 0 22px}.project-gallery img{display:block;width:100%;height:auto;border:1px solid #3a493b;border-radius:8px}.project-gallery figcaption{color:#aebbaa;font-size:13px;margin-top:8px}

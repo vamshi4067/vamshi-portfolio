@@ -260,6 +260,7 @@ function openProject(card) {
   const heading = card.querySelector('h3 a');
   const title = heading.childNodes[0].textContent.trim();
   const details = projectDetails[title] || {};
+  projectDialog.querySelector('.project-gallery').hidden = title !== 'Salesforce Job Search Agent';
   const image = card.querySelector('.work-screenshot');
   projectDialogTitle.textContent = title;
   projectDialog.querySelector('.project-dialog-category').textContent = card.dataset.category.toUpperCase();
