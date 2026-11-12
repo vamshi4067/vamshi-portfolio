@@ -7181,62 +7181,63 @@ seal(LightningElement.prototype);
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
-  return [((useActualHostSelector ? ":host{" : hostSelector + "{")), "display:block;font-family:Studio,system-ui,sans-serif;color:#1d2c43;font-size:15px;line-height:1.5}*", shadowSelector, "{box-sizing:border-box}h1", shadowSelector, ",h2", shadowSelector, ",h3", shadowSelector, ",p", shadowSelector, "{margin:0}button", shadowSelector, ",input", shadowSelector, ",select", shadowSelector, ",textarea", shadowSelector, "{font:inherit}button", shadowSelector, "{cursor:pointer}button:focus-visible", shadowSelector, ",input:focus-visible", shadowSelector, ",select:focus-visible", shadowSelector, ",textarea:focus-visible", shadowSelector, ",a:focus-visible", shadowSelector, "{outline:3px solid #5276d2;outline-offset:3px}.shell", shadowSelector, "{min-height:100vh;background:#edf1f8}.rail", shadowSelector, "{display:flex;align-items:center;gap:40px;background:#fff;border-bottom:1px solid #d9e1ef;padding:0 max(32px,calc((100vw - 1440px)/2));min-height:72px}.logo", shadowSelector, "{display:flex;align-items:center;gap:11px;color:#1b2d4d;font-weight:600;font-size:15px;line-height:1.05;text-decoration:none;white-space:nowrap}.logo", shadowSelector, " strong", shadowSelector, "{color:#5673ac;font-weight:500}.logo-mark", shadowSelector, "{display:grid;place-items:center;width:37px;height:37px;border-radius:10px;background:#304f90;color:#fff;font-size:20px}.rail-nav", shadowSelector, "{display:flex;align-items:center;gap:8px}.rail-link", shadowSelector, "{border:0;background:transparent;color:#52647f;padding:11px 14px;border-radius:7px;font-size:14px;font-weight:500;white-space:nowrap}.rail-link", shadowSelector, " span", shadowSelector, "{display:none}.rail-link.active", shadowSelector, ",.rail-link:hover", shadowSelector, "{background:#eaf0fc;color:#294f98}.rail-bottom", shadowSelector, "{margin-left:auto;color:#556c7a;font-size:12px;white-space:nowrap}.rail-bottom", shadowSelector, " small", shadowSelector, "{display:none}.online", shadowSelector, "{display:inline-block;width:8px;height:8px;background:#55a98c;border-radius:50%;margin-right:5px}.main", shadowSelector, "{max-width:1504px;margin:auto;padding:0 32px}.top", shadowSelector, "{height:56px;display:flex;align-items:center;justify-content:space-between;color:#677a94;font-size:13px}.slash", shadowSelector, "{padding:0 8px;color:#9ba9ba}.reset", shadowSelector, "{background:transparent;border:1px solid #cbd6e6;color:#3f587c;border-radius:7px;padding:9px 13px;font-size:13px}.reset:hover", shadowSelector, "{background:#fff}.page-title", shadowSelector, "{display:flex;justify-content:space-between;align-items:center;padding:17px 0 25px;gap:20px}.page-title", shadowSelector, " h1", shadowSelector, ",.info", shadowSelector, " h1", shadowSelector, "{font-size:34px;line-height:1.15;letter-spacing:-.035em;font-weight:600;color:#1b2d4d}.page-title", shadowSelector, " p", shadowSelector, ",.info", shadowSelector, ">p", shadowSelector, "{color:#61748b;margin-top:9px;font-size:15px}.primary", shadowSelector, "{background:#365cb4;color:#fff;border:0;border-radius:7px;padding:12px 18px;font-weight:600;font-size:14px}.primary:hover", shadowSelector, "{background:#294997}.new-button", shadowSelector, "{white-space:nowrap}.case-counts", shadowSelector, "{display:flex;gap:10px;margin-bottom:18px;flex-wrap:wrap}.case-counts", shadowSelector, " span", shadowSelector, "{background:#e1e9f8;border-radius:6px;padding:8px 13px;color:#536883;font-size:13px}.case-counts", shadowSelector, " strong", shadowSelector, "{color:#284984;font-size:15px;margin-right:5px}.workspace", shadowSelector, "{display:grid;grid-template-columns:minmax(270px,340px) minmax(0,1fr);gap:18px;align-items:start}.queue", shadowSelector, ",.detail", shadowSelector, "{background:#fff;border:1px solid #dce4f0;border-radius:10px;overflow:hidden}.queue-heading", shadowSelector, "{padding:22px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #e7edf4}.queue-heading", shadowSelector, " h2", shadowSelector, "{font-size:16px}.queue-heading", shadowSelector, " p", shadowSelector, "{color:#708198;font-size:13px;margin-top:2px}.queue-heading", shadowSelector, " select", shadowSelector, ",.queue-filters", shadowSelector, " select", shadowSelector, ",.queue-filters", shadowSelector, " input", shadowSelector, ",.fields", shadowSelector, " select", shadowSelector, ",.date-input", shadowSelector, ",.note-label", shadowSelector, " textarea", shadowSelector, ",.escalation", shadowSelector, " input", shadowSelector, ",.new-fields", shadowSelector, " input", shadowSelector, ",.new-fields", shadowSelector, " select", shadowSelector, ",.new-fields", shadowSelector, " textarea", shadowSelector, "{border:1px solid #cdd9e7;background:#fff;color:#263c59;border-radius:6px;padding:10px 11px;min-width:0;font-size:14px}.queue-filters", shadowSelector, "{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px;padding:14px 14px 8px}.queue-filters", shadowSelector, " input", shadowSelector, "{width:100%}.queue-filters", shadowSelector, " select", shadowSelector, "{max-width:120px}.queue-filters", shadowSelector, " input", shadowSelector, "::placeholder,.note-label", shadowSelector, " textarea", shadowSelector, "::placeholder,.escalation", shadowSelector, " input", shadowSelector, "::placeholder{color:#77889b}.case-row", shadowSelector, "{width:calc(100% - 20px);display:block;text-align:left;border:1px solid transparent;border-radius:8px;background:#fff;color:#253957;padding:16px 15px;margin:5px 10px}.case-row:hover", shadowSelector, "{background:#f4f7fc}.case-row.selected", shadowSelector, "{background:#edf3ff;border-color:#c9d9f6}.row-top", shadowSelector, ",.row-bottom", shadowSelector, "{display:flex;justify-content:space-between;gap:10px;align-items:center;color:#687e96;font-size:12px}.case-row", shadowSelector, " strong", shadowSelector, "{display:block;font-size:14px;line-height:1.45;font-weight:600;margin:8px 0}.priority", shadowSelector, ",.status", shadowSelector, "{font-size:12px;border-radius:5px;padding:5px 8px;white-space:nowrap}.priority.high", shadowSelector, "{background:#fbece7;color:#914d3a}.priority.medium", shadowSelector, "{background:#f9f0d9;color:#765c20}.priority.low", shadowSelector, "{background:#e6f2ec;color:#346851}.status", shadowSelector, "{background:#e8f2ec;color:#31654b}.detail-head", shadowSelector, "{padding:28px 32px 23px;display:flex;justify-content:space-between;align-items:flex-start;gap:16px}.case-id", shadowSelector, "{font-size:12px;color:#5e79a2;font-weight:600;letter-spacing:.04em}.detail-head", shadowSelector, " h2", shadowSelector, "{font-size:24px;line-height:1.25;letter-spacing:-.025em;margin-top:8px}.detail-head", shadowSelector, " p", shadowSelector, "{font-size:14px;color:#697d91;margin-top:10px}.detail-head", shadowSelector, " p", shadowSelector, " span", shadowSelector, "{padding:0 4px}.case-meta", shadowSelector, "{display:flex;gap:8px;flex-wrap:wrap;padding:0 32px 24px}.case-meta", shadowSelector, " span", shadowSelector, "{background:#f0f4fa;color:#4a617d;padding:7px 10px;border-radius:6px;font-size:12px}.conversation", shadowSelector, ",.work-area", shadowSelector, ",.escalation", shadowSelector, ",.history", shadowSelector, "{padding:24px 32px;border-top:1px solid #e7edf4}.section-title", shadowSelector, "{display:flex;justify-content:space-between;align-items:center;gap:10px}.section-title", shadowSelector, " h3", shadowSelector, ",.history", shadowSelector, " h3", shadowSelector, ",.escalation", shadowSelector, " h3", shadowSelector, "{font-size:15px;font-weight:600}.section-title", shadowSelector, ">span", shadowSelector, "{font-size:12px;color:#71849a}.customer", shadowSelector, "{display:flex;gap:11px;align-items:center;margin-top:18px}.avatar", shadowSelector, "{display:grid;place-items:center;width:37px;height:37px;border-radius:50%;background:#e0e9fa;color:#37588b;font-size:12px;font-weight:600}.customer", shadowSelector, " strong", shadowSelector, ",.customer", shadowSelector, " small", shadowSelector, "{display:block;font-size:13px}.customer", shadowSelector, " small", shadowSelector, "{color:#72859b;margin-top:2px}.request", shadowSelector, "{color:#425872;font-size:15px;line-height:1.7;margin:15px 0 0 48px;max-width:70ch}.fields", shadowSelector, "{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}.fields", shadowSelector, " label", shadowSelector, ",.note-label", shadowSelector, ",.new-fields", shadowSelector, " label", shadowSelector, "{font-size:13px;font-weight:600;color:#465b75}.fields", shadowSelector, " select", shadowSelector, ",.fields", shadowSelector, " input", shadowSelector, ",.note-label", shadowSelector, " textarea", shadowSelector, "{width:100%;display:block;margin-top:7px}.note-label", shadowSelector, "{display:block;margin-top:18px}.note-label", shadowSelector, " span", shadowSelector, ",.new-fields", shadowSelector, " label", shadowSelector, " span", shadowSelector, "{font-weight:400;color:#75869a}.note-label", shadowSelector, " textarea", shadowSelector, ",.new-fields", shadowSelector, " textarea", shadowSelector, "{resize:vertical;min-height:90px}.save-row", shadowSelector, "{display:flex;align-items:center;gap:10px;margin-top:16px;color:#2c7452;font-size:13px}.save-row", shadowSelector, " .primary", shadowSelector, "{margin-left:auto}.error", shadowSelector, ",.new-form", shadowSelector, " .error", shadowSelector, "{color:#a13f3a}.escalation", shadowSelector, " p", shadowSelector, "{font-size:13px;color:#667b90;margin:8px 0 12px}.escalation", shadowSelector, " input", shadowSelector, "{width:min(100%,480px)}.escalation", shadowSelector, " button", shadowSelector, "{display:block;margin-top:10px;border:1px solid #d9b7a7;background:#fff8f4;color:#8c4c35;border-radius:7px;padding:9px 14px;font-size:13px}.history", shadowSelector, " p", shadowSelector, "{font-size:14px;color:#5b7088;margin-top:11px}.activity", shadowSelector, "{display:grid;grid-template-columns:110px 1fr;gap:12px;border-bottom:1px solid #edf1f5;padding:12px 0}.activity", shadowSelector, " span", shadowSelector, "{font-size:12px;color:#7a8da1}.activity", shadowSelector, " p", shadowSelector, "{margin:0;color:#425b72}.empty", shadowSelector, "{padding:22px;color:#627991}.info", shadowSelector, "{max-width:1000px;padding:58px 0}.info", shadowSelector, ">p", shadowSelector, "{max-width:70ch;line-height:1.7}.info-grid", shadowSelector, "{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:35px 0}.info-grid", shadowSelector, " article", shadowSelector, "{padding:25px;background:#fff;border:1px solid #dce4f0;border-radius:10px}.info-grid", shadowSelector, " h2", shadowSelector, "{font-size:20px}.info-grid", shadowSelector, " p", shadowSelector, "{color:#526983;line-height:1.7;margin-top:10px}.info", shadowSelector, " .disclosure", shadowSelector, "{padding:18px;background:#e2eaf9;border-radius:8px;font-size:13px;margin-bottom:22px}.download", shadowSelector, "{display:inline-block;background:#365cb4;color:#fff;text-decoration:none;padding:12px 16px;border-radius:7px}.new-fields", shadowSelector, "{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:800px;margin-top:28px}.new-fields", shadowSelector, " input", shadowSelector, ",.new-fields", shadowSelector, " select", shadowSelector, ",.new-fields", shadowSelector, " textarea", shadowSelector, "{display:block;width:100%;margin-top:7px}.new-fields", shadowSelector, " .wide", shadowSelector, "{grid-column:1/-1}.new-actions", shadowSelector, "{display:flex;gap:10px;margin-top:20px}footer", shadowSelector, "{display:flex;justify-content:space-between;gap:20px;padding:30px 0;font-size:11px;color:#72859b;letter-spacing:.04em}footer", shadowSelector, " span", shadowSelector, "{letter-spacing:0}.sr-only", shadowSelector, "{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(max-width:900px){.rail", shadowSelector, "{padding:12px 22px;gap:20px}.rail-bottom", shadowSelector, "{display:none}.main", shadowSelector, "{padding:0 22px}.workspace", shadowSelector, "{grid-template-columns:270px minmax(0,1fr)}.detail-head", shadowSelector, ",.conversation", shadowSelector, ",.work-area", shadowSelector, ",.escalation", shadowSelector, ",.history", shadowSelector, "{padding-left:22px;padding-right:22px}.case-meta", shadowSelector, "{padding-left:22px;padding-right:22px}}@media(max-width:700px){.rail", shadowSelector, "{flex-wrap:wrap;gap:8px;padding:14px 16px}.rail-nav", shadowSelector, "{width:100%;overflow-x:auto;gap:2px}.rail-link", shadowSelector, "{padding:9px 11px;font-size:13px}.main", shadowSelector, "{padding:0 16px}.top", shadowSelector, "{height:52px}.page-title", shadowSelector, " h1", shadowSelector, ",.info", shadowSelector, " h1", shadowSelector, "{font-size:29px}.workspace", shadowSelector, "{grid-template-columns:1fr;gap:12px}.queue-list", shadowSelector, "{max-height:250px;overflow:auto}.detail-head", shadowSelector, " h2", shadowSelector, "{font-size:21px}.detail-head", shadowSelector, ",.conversation", shadowSelector, ",.work-area", shadowSelector, ",.escalation", shadowSelector, ",.history", shadowSelector, "{padding:21px 18px}.case-meta", shadowSelector, "{padding:0 18px 20px}.fields", shadowSelector, ",.new-fields", shadowSelector, ",.info-grid", shadowSelector, "{grid-template-columns:1fr}.new-fields", shadowSelector, " .wide", shadowSelector, "{grid-column:auto}.activity", shadowSelector, "{grid-template-columns:1fr;gap:4px}footer", shadowSelector, "{display:block}footer", shadowSelector, " span", shadowSelector, "{display:block;margin-top:5px}}", ((useActualHostSelector ? ":host{" : hostSelector + "{")), "font-family:'Plus Jakarta Sans',Studio,system-ui,sans-serif;color:#342b2a}.shell", shadowSelector, "{background:#f6f0e8}.rail", shadowSelector, "{background:#3c3040;border-color:#5b4b59}.logo", shadowSelector, ",.logo", shadowSelector, " strong", shadowSelector, "{color:#fff}.logo-mark", shadowSelector, "{background:#f2ba91;color:#493342}.rail-link", shadowSelector, "{color:#eee4e9}.rail-link.active", shadowSelector, ",.rail-link:hover", shadowSelector, "{background:#59475a;color:#fff}.rail-bottom", shadowSelector, "{color:#e8dde4}.online", shadowSelector, "{background:#e7b79c}.top", shadowSelector, "{color:#796761}.slash", shadowSelector, "{color:#ab9992}.reset", shadowSelector, "{color:#694f4c;border-color:#d4c5ba}.page-title", shadowSelector, " h1", shadowSelector, ",.info", shadowSelector, " h1", shadowSelector, "{color:#3b2d35;letter-spacing:-.035em}.page-title", shadowSelector, " p", shadowSelector, ",.info", shadowSelector, ">p", shadowSelector, "{color:#77635f}.primary", shadowSelector, ",.download", shadowSelector, "{background:#9e513e;color:#fff}.primary:hover", shadowSelector, "{background:#813e30}.case-counts", shadowSelector, " span", shadowSelector, "{background:#eee1d5;color:#6a5754}.case-counts", shadowSelector, " strong", shadowSelector, "{color:#814a3b}.queue", shadowSelector, ",.detail", shadowSelector, ",.info-grid", shadowSelector, " article", shadowSelector, "{background:#fffdf9;border-color:#eaded4}.queue-heading", shadowSelector, ",.conversation", shadowSelector, ",.work-area", shadowSelector, ",.escalation", shadowSelector, ",.history", shadowSelector, "{border-color:#eee5dc}.queue-heading", shadowSelector, " p", shadowSelector, ",.row-top", shadowSelector, ",.row-bottom", shadowSelector, ",.case-id", shadowSelector, ",.detail-head", shadowSelector, " p", shadowSelector, ",.section-title", shadowSelector, ">span", shadowSelector, ",.customer", shadowSelector, " small", shadowSelector, ",.activity", shadowSelector, " span", shadowSelector, "{color:#826f69}.case-row", shadowSelector, "{color:#47383c}.case-row:hover", shadowSelector, "{background:#fcf3ec}.case-row.selected", shadowSelector, "{background:#f8e9dc;border-color:#e8c8b2}.case-meta", shadowSelector, " span", shadowSelector, "{background:#f4ece5;color:#695754}.avatar", shadowSelector, "{background:#f2e0d5;color:#895744}.request", shadowSelector, ",.activity", shadowSelector, " p", shadowSelector, ",.info-grid", shadowSelector, " p", shadowSelector, "{color:#695653}.queue-heading", shadowSelector, " select", shadowSelector, ",.queue-filters", shadowSelector, " select", shadowSelector, ",.queue-filters", shadowSelector, " input", shadowSelector, ",.fields", shadowSelector, " select", shadowSelector, ",.date-input", shadowSelector, ",.note-label", shadowSelector, " textarea", shadowSelector, ",.escalation", shadowSelector, " input", shadowSelector, ",.new-fields", shadowSelector, " input", shadowSelector, ",.new-fields", shadowSelector, " select", shadowSelector, ",.new-fields", shadowSelector, " textarea", shadowSelector, "{border-color:#ddcfc5;color:#47383c;background:#fffdfb}.fields", shadowSelector, " label", shadowSelector, ",.note-label", shadowSelector, ",.new-fields", shadowSelector, " label", shadowSelector, "{color:#695653}.status", shadowSelector, ",.priority.low", shadowSelector, "{background:#e3eee4;color:#416750}.priority.high", shadowSelector, "{background:#fae6df;color:#9a4935}.priority.medium", shadowSelector, "{background:#f5ecd4;color:#765920}.info", shadowSelector, " .disclosure", shadowSelector, "{background:#f2e5d8;color:#68544b}footer", shadowSelector, "{color:#806e68}button:focus-visible", shadowSelector, ",input:focus-visible", shadowSelector, ",select:focus-visible", shadowSelector, ",textarea:focus-visible", shadowSelector, ",a:focus-visible", shadowSelector, "{outline-color:#ae6750}", ((useActualHostSelector ? ":host{" : hostSelector + "{")), "font-family:Arial,Helvetica,sans-serif;color:#181818;font-size:14px}.shell", shadowSelector, "{background:#f3f3f3}.rail", shadowSelector, "{background:#fff;border-bottom:3px solid #0176d3;box-shadow:0 2px 5px #00000012}.logo", shadowSelector, ",.logo", shadowSelector, " strong", shadowSelector, "{color:#032d60}.logo-mark", shadowSelector, "{background:#0176d3;color:#fff;border-radius:8px}.rail-link", shadowSelector, "{color:#444}.rail-link.active", shadowSelector, ",.rail-link:hover", shadowSelector, "{background:#eef4ff;color:#014486}.rail-bottom", shadowSelector, "{color:#444}.online", shadowSelector, "{background:#2e844a}.top", shadowSelector, "{color:#586779}.slash", shadowSelector, "{color:#939ba3}.reset", shadowSelector, "{background:#fff;border-color:#c9c9c9;color:#0176d3}.reset:hover", shadowSelector, "{background:#eef4ff}.page-title", shadowSelector, " h1", shadowSelector, ",.info", shadowSelector, " h1", shadowSelector, "{color:#032d60;letter-spacing:-.02em}.page-title", shadowSelector, " p", shadowSelector, ",.info", shadowSelector, ">p", shadowSelector, "{color:#444}.primary", shadowSelector, ",.download", shadowSelector, "{background:#0176d3;color:#fff;border-radius:4px}.primary:hover", shadowSelector, ",.download:hover", shadowSelector, "{background:#014486}.case-counts", shadowSelector, " span", shadowSelector, "{background:#fff;border:1px solid #dddbda;color:#444}.case-counts", shadowSelector, " strong", shadowSelector, "{color:#0176d3}.queue", shadowSelector, ",.detail", shadowSelector, ",.info-grid", shadowSelector, " article", shadowSelector, "{background:#fff;border-color:#dddbda;border-radius:6px;box-shadow:0 2px 3px #0000000d}.queue-heading", shadowSelector, ",.conversation", shadowSelector, ",.work-area", shadowSelector, ",.escalation", shadowSelector, ",.history", shadowSelector, "{border-color:#e5e5e5}.queue-heading", shadowSelector, " h2", shadowSelector, ",.detail-head", shadowSelector, " h2", shadowSelector, ",.section-title", shadowSelector, " h3", shadowSelector, ",.history", shadowSelector, " h3", shadowSelector, ",.escalation", shadowSelector, " h3", shadowSelector, "{color:#181818}.queue-heading", shadowSelector, " p", shadowSelector, ",.row-top", shadowSelector, ",.row-bottom", shadowSelector, ",.case-id", shadowSelector, ",.detail-head", shadowSelector, " p", shadowSelector, ",.section-title", shadowSelector, ">span", shadowSelector, ",.customer", shadowSelector, " small", shadowSelector, ",.activity", shadowSelector, " span", shadowSelector, "{color:#586779}.case-id", shadowSelector, "{color:#0176d3}.case-row", shadowSelector, "{color:#181818;border-radius:4px}.case-row:hover", shadowSelector, "{background:#f3f8ff}.case-row.selected", shadowSelector, "{background:#eef4ff;border-color:#aacbff;box-shadow:inset 3px 0 #0176d3}.case-meta", shadowSelector, " span", shadowSelector, "{background:#f3f3f3;color:#444}.avatar", shadowSelector, "{background:#0176d3;color:#fff}.request", shadowSelector, ",.activity", shadowSelector, " p", shadowSelector, ",.info-grid", shadowSelector, " p", shadowSelector, "{color:#3e3e3c}.queue-heading", shadowSelector, " select", shadowSelector, ",.queue-filters", shadowSelector, " select", shadowSelector, ",.queue-filters", shadowSelector, " input", shadowSelector, ",.fields", shadowSelector, " select", shadowSelector, ",.date-input", shadowSelector, ",.note-label", shadowSelector, " textarea", shadowSelector, ",.escalation", shadowSelector, " input", shadowSelector, ",.new-fields", shadowSelector, " input", shadowSelector, ",.new-fields", shadowSelector, " select", shadowSelector, ",.new-fields", shadowSelector, " textarea", shadowSelector, "{border-color:#c9c9c9;color:#181818;background:#fff;border-radius:4px}.fields", shadowSelector, " label", shadowSelector, ",.note-label", shadowSelector, ",.new-fields", shadowSelector, " label", shadowSelector, "{color:#444}.status", shadowSelector, ",.priority.low", shadowSelector, "{background:#e3f3e3;color:#194e31}.priority.high", shadowSelector, "{background:#fef1ee;color:#ba0517}.priority.medium", shadowSelector, "{background:#fff3d6;color:#745500}.info", shadowSelector, " .disclosure", shadowSelector, "{background:#eef4ff;color:#032d60}footer", shadowSelector, "{color:#586779}button:focus-visible", shadowSelector, ",input:focus-visible", shadowSelector, ",select:focus-visible", shadowSelector, ",textarea:focus-visible", shadowSelector, ",a:focus-visible", shadowSelector, "{outline-color:#0176d3}.rail", shadowSelector, "{min-height:54px;padding:0 24px;gap:24px;border-bottom:1px solid #d8dde6;box-shadow:0 2px 4px #00000012}.logo", shadowSelector, "{font-size:16px;font-weight:700;gap:9px}.logo-mark", shadowSelector, "{width:32px;height:32px;background:#0176d3;border-radius:5px}.logo-mark", shadowSelector, " svg", shadowSelector, "{width:20px;height:20px}.rail-nav", shadowSelector, "{align-self:stretch;gap:0}.rail-link", shadowSelector, "{border-radius:0;padding:0 19px;color:#444;border-bottom:3px solid transparent;font-weight:600}.rail-link.active", shadowSelector, "{color:#0176d3;background:#f3f8ff;border-bottom-color:#0176d3}.rail-link:hover", shadowSelector, "{background:#eef4ff}.rail-bottom", shadowSelector, "{font-size:12px;color:#5c6773}.main", shadowSelector, "{max-width:none;padding:0 24px}.top", shadowSelector, "{height:46px;color:#52606d;font-size:12px}.reset", shadowSelector, "{padding:7px 12px}.page-title", shadowSelector, "{background:#f8f9fa;border:1px solid #dddbda;border-bottom:0;border-radius:5px 5px 0 0;padding:15px 20px 11px;align-items:center}.page-title", shadowSelector, ">div", shadowSelector, "{position:relative;padding-left:48px}.page-title", shadowSelector, ">div", shadowSelector, ":before{content:'▤';display:grid;place-items:center;position:absolute;left:0;top:0;width:36px;height:36px;border-radius:4px;background:#f28b00;color:#fff;font-size:22px}.object-label", shadowSelector, "{font-size:12px;color:#5c6773}.page-title", shadowSelector, " h1", shadowSelector, "{font-size:20px;font-weight:700;line-height:1.2;letter-spacing:0;color:#181818}.page-title", shadowSelector, " p", shadowSelector, "{font-size:12px;margin-top:4px;color:#5c6773}.primary", shadowSelector, ",.download", shadowSelector, "{padding:9px 16px;font-size:13px}.case-counts", shadowSelector, "{margin:0 0 14px;padding:7px 20px 12px;background:#f8f9fa;border:1px solid #dddbda;border-top:0;border-radius:0 0 5px 5px;gap:8px}.case-counts", shadowSelector, " span", shadowSelector, "{font-size:12px;padding:4px 9px;border-radius:3px}.case-counts", shadowSelector, " strong", shadowSelector, "{font-size:13px}.workspace", shadowSelector, "{gap:12px;grid-template-columns:minmax(275px,330px) minmax(0,1fr)}.queue", shadowSelector, ",.detail", shadowSelector, "{border-radius:5px}.queue-heading", shadowSelector, "{padding:14px 16px;background:#fafaf9}.queue-heading", shadowSelector, " h2", shadowSelector, "{font-size:16px}.queue-filters", shadowSelector, "{padding:10px 12px}.case-row", shadowSelector, "{margin:0;width:100%;border:0;border-bottom:1px solid #e5e5e5;border-radius:0;padding:12px 16px}.case-row.selected", shadowSelector, "{border-color:#e5e5e5;box-shadow:inset 4px 0 #0176d3}.case-row", shadowSelector, " strong", shadowSelector, "{color:#0176d3;margin:6px 0;font-size:13px}.detail-head", shadowSelector, "{padding:20px 24px 14px;background:#f8f9fa}.detail-head", shadowSelector, " h2", shadowSelector, "{font-size:20px;letter-spacing:0;margin-top:4px}.detail-head", shadowSelector, " p", shadowSelector, "{margin-top:6px;font-size:13px}.case-id", shadowSelector, "{font-weight:400;letter-spacing:0;color:#52606d}.case-meta", shadowSelector, "{padding:0 24px 16px;background:#f8f9fa;border-bottom:1px solid #dddbda}.case-meta", shadowSelector, " span", shadowSelector, "{background:transparent;border-right:1px solid #dddbda;border-radius:0;padding:3px 14px 3px 0;margin-right:6px}.case-meta", shadowSelector, " span:last-child", shadowSelector, "{border:0}.conversation", shadowSelector, ",.work-area", shadowSelector, ",.escalation", shadowSelector, ",.history", shadowSelector, "{padding:20px 24px}.section-title", shadowSelector, " h3", shadowSelector, ",.history", shadowSelector, " h3", shadowSelector, ",.escalation", shadowSelector, " h3", shadowSelector, "{font-size:14px;font-weight:700}.work-area", shadowSelector, ">.section-title", shadowSelector, "{padding-bottom:10px;border-bottom:1px solid #e5e5e5}.fields", shadowSelector, "{gap:12px;margin-top:14px}.fields", shadowSelector, " label", shadowSelector, ",.note-label", shadowSelector, ",.new-fields", shadowSelector, " label", shadowSelector, "{font-weight:400;font-size:12px}.fields", shadowSelector, " select", shadowSelector, ",.date-input", shadowSelector, ",.note-label", shadowSelector, " textarea", shadowSelector, "{font-size:13px}.avatar", shadowSelector, "{background:#7f8de1;border-radius:4px}.status", shadowSelector, ",.priority", shadowSelector, "{border-radius:3px}@media(max-width:700px){.rail", shadowSelector, "{padding:10px 16px;gap:8px}.rail-nav", shadowSelector, "{min-height:40px}.rail-link", shadowSelector, "{padding:10px 12px}.main", shadowSelector, "{padding:0 12px}.page-title", shadowSelector, "{padding:14px}.page-title", shadowSelector, ">div", shadowSelector, "{padding-left:42px}.case-counts", shadowSelector, "{padding:8px 14px 12px}.workspace", shadowSelector, "{grid-template-columns:1fr}.detail-head", shadowSelector, ",.conversation", shadowSelector, ",.work-area", shadowSelector, ",.escalation", shadowSelector, ",.history", shadowSelector, "{padding:18px}.case-meta", shadowSelector, "{padding:0 18px 14px}}.case-path", shadowSelector, "{padding:16px 24px 14px;background:#fff;border-bottom:1px solid #dddbda}.case-path", shadowSelector, " ol", shadowSelector, "{display:flex;list-style:none;margin:0;padding:0;gap:4px}.case-path", shadowSelector, " .path-step", shadowSelector, "{flex:1;min-width:0;padding:10px 12px 10px 22px;text-align:center;font-size:13px;font-weight:700;line-height:1.3;color:#444;background:#e5e5e5;clip-path:polygon(0 0,calc(100% - 13px) 0,100% 50%,calc(100% - 13px) 100%,0 100%,13px 50%)}.case-path", shadowSelector, " .path-step:first-child", shadowSelector, "{border-radius:24px 0 0 24px;clip-path:polygon(0 0,calc(100% - 13px) 0,100% 50%,calc(100% - 13px) 100%,0 100%)}.case-path", shadowSelector, " .path-step:last-child", shadowSelector, "{border-radius:0 24px 24px 0;clip-path:polygon(0 0,100% 0,100% 100%,0 100%,13px 50%)}.case-path", shadowSelector, " .path-step.complete", shadowSelector, "{background:#2e844a;color:#fff}.case-path", shadowSelector, " .path-step.current", shadowSelector, "{background:#014486;color:#fff}.case-path", shadowSelector, " p", shadowSelector, "{font-size:12px;color:#59656f;margin:8px 0 0}@media(max-width:700px){.case-path", shadowSelector, "{padding:14px 18px}.case-path", shadowSelector, " ol", shadowSelector, "{gap:2px}.case-path", shadowSelector, " .path-step", shadowSelector, "{font-size:11px;padding:10px 5px 10px 14px}}.case-counts", shadowSelector, "{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.case-counts", shadowSelector, " .summary-tile", shadowSelector, "{text-align:left;border:1px solid #dddbda;border-radius:4px;background:#f8f8f8;color:#444;padding:12px 14px;min-width:0;cursor:pointer}.case-counts", shadowSelector, " .summary-tile:hover", shadowSelector, "{background:#f0f7ff;border-color:#90b9eb}.case-counts", shadowSelector, " .summary-tile.selected", shadowSelector, "{background:#eef4ff;border:2px solid #0176d3;padding:11px 13px}.case-counts", shadowSelector, " .summary-tile", shadowSelector, " span", shadowSelector, "{display:block;border:0;background:none;padding:0;color:#444;font-size:12px;text-transform:uppercase}.case-counts", shadowSelector, " .summary-tile", shadowSelector, " strong", shadowSelector, "{display:block;color:#181818;font-size:23px;line-height:1.2;margin:5px 0 0}@media(max-width:700px){.case-counts", shadowSelector, "{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.case-counts", shadowSelector, " .summary-tile", shadowSelector, "{padding:9px}.case-counts", shadowSelector, " .summary-tile.selected", shadowSelector, "{padding:8px}.case-counts", shadowSelector, " .summary-tile", shadowSelector, " strong", shadowSelector, "{font-size:19px}}"].join('');
+  return [((useActualHostSelector ? ":host{" : hostSelector + "{")), "display:block;font-family:Studio,system-ui,sans-serif;color:#1d2c43;font-size:15px;line-height:1.5}*", shadowSelector, "{box-sizing:border-box}h1", shadowSelector, ",h2", shadowSelector, ",h3", shadowSelector, ",p", shadowSelector, "{margin:0}button", shadowSelector, ",input", shadowSelector, ",select", shadowSelector, ",textarea", shadowSelector, "{font:inherit}button", shadowSelector, "{cursor:pointer}button:focus-visible", shadowSelector, ",input:focus-visible", shadowSelector, ",select:focus-visible", shadowSelector, ",textarea:focus-visible", shadowSelector, ",a:focus-visible", shadowSelector, "{outline:3px solid #5276d2;outline-offset:3px}.shell", shadowSelector, "{min-height:100vh;background:#edf1f8}.rail", shadowSelector, "{display:flex;align-items:center;gap:40px;background:#fff;border-bottom:1px solid #d9e1ef;padding:0 max(32px,calc((100vw - 1440px)/2));min-height:72px}.logo", shadowSelector, "{display:flex;align-items:center;gap:11px;color:#1b2d4d;font-weight:600;font-size:15px;line-height:1.05;text-decoration:none;white-space:nowrap}.logo", shadowSelector, " strong", shadowSelector, "{color:#5673ac;font-weight:500}.logo-mark", shadowSelector, "{display:grid;place-items:center;width:37px;height:37px;border-radius:10px;background:#304f90;color:#fff;font-size:20px}.rail-nav", shadowSelector, "{display:flex;align-items:center;gap:8px}.rail-link", shadowSelector, "{border:0;background:transparent;color:#52647f;padding:11px 14px;border-radius:7px;font-size:14px;font-weight:500;white-space:nowrap}.rail-link", shadowSelector, " span", shadowSelector, "{display:none}.rail-link.active", shadowSelector, ",.rail-link:hover", shadowSelector, "{background:#eaf0fc;color:#294f98}.rail-bottom", shadowSelector, "{margin-left:auto;color:#556c7a;font-size:12px;white-space:nowrap}.rail-bottom", shadowSelector, " small", shadowSelector, "{display:none}.online", shadowSelector, "{display:inline-block;width:8px;height:8px;background:#55a98c;border-radius:50%;margin-right:5px}.main", shadowSelector, "{max-width:1504px;margin:auto;padding:0 32px}.top", shadowSelector, "{height:56px;display:flex;align-items:center;justify-content:space-between;color:#677a94;font-size:13px}.slash", shadowSelector, "{padding:0 8px;color:#9ba9ba}.reset", shadowSelector, "{background:transparent;border:1px solid #cbd6e6;color:#3f587c;border-radius:7px;padding:9px 13px;font-size:13px}.reset:hover", shadowSelector, "{background:#fff}.page-title", shadowSelector, "{display:flex;justify-content:space-between;align-items:center;padding:17px 0 25px;gap:20px}.page-title", shadowSelector, " h1", shadowSelector, ",.info", shadowSelector, " h1", shadowSelector, "{font-size:34px;line-height:1.15;letter-spacing:-.035em;font-weight:600;color:#1b2d4d}.page-title", shadowSelector, " p", shadowSelector, ",.info", shadowSelector, ">p", shadowSelector, "{color:#61748b;margin-top:9px;font-size:15px}.primary", shadowSelector, "{background:#365cb4;color:#fff;border:0;border-radius:7px;padding:12px 18px;font-weight:600;font-size:14px}.primary:hover", shadowSelector, "{background:#294997}.new-button", shadowSelector, "{white-space:nowrap}.case-counts", shadowSelector, "{display:flex;gap:10px;margin-bottom:18px;flex-wrap:wrap}.case-counts", shadowSelector, " span", shadowSelector, "{background:#e1e9f8;border-radius:6px;padding:8px 13px;color:#536883;font-size:13px}.case-counts", shadowSelector, " strong", shadowSelector, "{color:#284984;font-size:15px;margin-right:5px}.workspace", shadowSelector, "{display:grid;grid-template-columns:minmax(270px,340px) minmax(0,1fr);gap:18px;align-items:start}.queue", shadowSelector, ",.detail", shadowSelector, "{background:#fff;border:1px solid #dce4f0;border-radius:10px;overflow:hidden}.queue-heading", shadowSelector, "{padding:22px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #e7edf4}.queue-heading", shadowSelector, " h2", shadowSelector, "{font-size:16px}.queue-heading", shadowSelector, " p", shadowSelector, "{color:#708198;font-size:13px;margin-top:2px}.queue-heading", shadowSelector, " select", shadowSelector, ",.queue-filters", shadowSelector, " select", shadowSelector, ",.queue-filters", shadowSelector, " input", shadowSelector, ",.fields", shadowSelector, " select", shadowSelector, ",.date-input", shadowSelector, ",.note-label", shadowSelector, " textarea", shadowSelector, ",.escalation", shadowSelector, " input", shadowSelector, ",.new-fields", shadowSelector, " input", shadowSelector, ",.new-fields", shadowSelector, " select", shadowSelector, ",.new-fields", shadowSelector, " textarea", shadowSelector, "{border:1px solid #cdd9e7;background:#fff;color:#263c59;border-radius:6px;padding:10px 11px;min-width:0;font-size:14px}.queue-filters", shadowSelector, "{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px;padding:14px 14px 8px}.queue-filters", shadowSelector, " input", shadowSelector, "{width:100%}.queue-filters", shadowSelector, " select", shadowSelector, "{max-width:120px}.queue-filters", shadowSelector, " input", shadowSelector, "::placeholder,.note-label", shadowSelector, " textarea", shadowSelector, "::placeholder,.escalation", shadowSelector, " input", shadowSelector, "::placeholder{color:#77889b}.case-row", shadowSelector, "{width:calc(100% - 20px);display:block;text-align:left;border:1px solid transparent;border-radius:8px;background:#fff;color:#253957;padding:16px 15px;margin:5px 10px}.case-row:hover", shadowSelector, "{background:#f4f7fc}.case-row.selected", shadowSelector, "{background:#edf3ff;border-color:#c9d9f6}.row-top", shadowSelector, ",.row-bottom", shadowSelector, "{display:flex;justify-content:space-between;gap:10px;align-items:center;color:#687e96;font-size:12px}.case-row", shadowSelector, " strong", shadowSelector, "{display:block;font-size:14px;line-height:1.45;font-weight:600;margin:8px 0}.priority", shadowSelector, ",.status", shadowSelector, "{font-size:12px;border-radius:5px;padding:5px 8px;white-space:nowrap}.priority.high", shadowSelector, "{background:#fbece7;color:#914d3a}.priority.medium", shadowSelector, "{background:#f9f0d9;color:#765c20}.priority.low", shadowSelector, "{background:#e6f2ec;color:#346851}.status", shadowSelector, "{background:#e8f2ec;color:#31654b}.detail-head", shadowSelector, "{padding:28px 32px 23px;display:flex;justify-content:space-between;align-items:flex-start;gap:16px}.case-id", shadowSelector, "{font-size:12px;color:#5e79a2;font-weight:600;letter-spacing:.04em}.detail-head", shadowSelector, " h2", shadowSelector, "{font-size:24px;line-height:1.25;letter-spacing:-.025em;margin-top:8px}.detail-head", shadowSelector, " p", shadowSelector, "{font-size:14px;color:#697d91;margin-top:10px}.detail-head", shadowSelector, " p", shadowSelector, " span", shadowSelector, "{padding:0 4px}.case-meta", shadowSelector, "{display:flex;gap:8px;flex-wrap:wrap;padding:0 32px 24px}.case-meta", shadowSelector, " span", shadowSelector, "{background:#f0f4fa;color:#4a617d;padding:7px 10px;border-radius:6px;font-size:12px}.conversation", shadowSelector, ",.work-area", shadowSelector, ",.escalation", shadowSelector, ",.history", shadowSelector, "{padding:24px 32px;border-top:1px solid #e7edf4}.section-title", shadowSelector, "{display:flex;justify-content:space-between;align-items:center;gap:10px}.section-title", shadowSelector, " h3", shadowSelector, ",.history", shadowSelector, " h3", shadowSelector, ",.escalation", shadowSelector, " h3", shadowSelector, "{font-size:15px;font-weight:600}.section-title", shadowSelector, ">span", shadowSelector, "{font-size:12px;color:#71849a}.customer", shadowSelector, "{display:flex;gap:11px;align-items:center;margin-top:18px}.avatar", shadowSelector, "{display:grid;place-items:center;width:37px;height:37px;border-radius:50%;background:#e0e9fa;color:#37588b;font-size:12px;font-weight:600}.customer", shadowSelector, " strong", shadowSelector, ",.customer", shadowSelector, " small", shadowSelector, "{display:block;font-size:13px}.customer", shadowSelector, " small", shadowSelector, "{color:#72859b;margin-top:2px}.request", shadowSelector, "{color:#425872;font-size:15px;line-height:1.7;margin:15px 0 0 48px;max-width:70ch}.fields", shadowSelector, "{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}.fields", shadowSelector, " label", shadowSelector, ",.note-label", shadowSelector, ",.new-fields", shadowSelector, " label", shadowSelector, "{font-size:13px;font-weight:600;color:#465b75}.fields", shadowSelector, " select", shadowSelector, ",.fields", shadowSelector, " input", shadowSelector, ",.note-label", shadowSelector, " textarea", shadowSelector, "{width:100%;display:block;margin-top:7px}.note-label", shadowSelector, "{display:block;margin-top:18px}.note-label", shadowSelector, " span", shadowSelector, ",.new-fields", shadowSelector, " label", shadowSelector, " span", shadowSelector, "{font-weight:400;color:#75869a}.note-label", shadowSelector, " textarea", shadowSelector, ",.new-fields", shadowSelector, " textarea", shadowSelector, "{resize:vertical;min-height:90px}.save-row", shadowSelector, "{display:flex;align-items:center;gap:10px;margin-top:16px;color:#2c7452;font-size:13px}.save-row", shadowSelector, " .primary", shadowSelector, "{margin-left:auto}.error", shadowSelector, ",.new-form", shadowSelector, " .error", shadowSelector, "{color:#a13f3a}.escalation", shadowSelector, " p", shadowSelector, "{font-size:13px;color:#667b90;margin:8px 0 12px}.escalation", shadowSelector, " input", shadowSelector, "{width:min(100%,480px)}.escalation", shadowSelector, " button", shadowSelector, "{display:block;margin-top:10px;border:1px solid #d9b7a7;background:#fff8f4;color:#8c4c35;border-radius:7px;padding:9px 14px;font-size:13px}.history", shadowSelector, " p", shadowSelector, "{font-size:14px;color:#5b7088;margin-top:11px}.activity", shadowSelector, "{display:grid;grid-template-columns:110px 1fr;gap:12px;border-bottom:1px solid #edf1f5;padding:12px 0}.activity", shadowSelector, " span", shadowSelector, "{font-size:12px;color:#7a8da1}.activity", shadowSelector, " p", shadowSelector, "{margin:0;color:#425b72}.empty", shadowSelector, "{padding:22px;color:#627991}.info", shadowSelector, "{max-width:1000px;padding:58px 0}.info", shadowSelector, ">p", shadowSelector, "{max-width:70ch;line-height:1.7}.info-grid", shadowSelector, "{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:35px 0}.info-grid", shadowSelector, " article", shadowSelector, "{padding:25px;background:#fff;border:1px solid #dce4f0;border-radius:10px}.info-grid", shadowSelector, " h2", shadowSelector, "{font-size:20px}.info-grid", shadowSelector, " p", shadowSelector, "{color:#526983;line-height:1.7;margin-top:10px}.info", shadowSelector, " .disclosure", shadowSelector, "{padding:18px;background:#e2eaf9;border-radius:8px;font-size:13px;margin-bottom:22px}.download", shadowSelector, "{display:inline-block;background:#365cb4;color:#fff;text-decoration:none;padding:12px 16px;border-radius:7px}.new-fields", shadowSelector, "{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:800px;margin-top:28px}.new-fields", shadowSelector, " input", shadowSelector, ",.new-fields", shadowSelector, " select", shadowSelector, ",.new-fields", shadowSelector, " textarea", shadowSelector, "{display:block;width:100%;margin-top:7px}.new-fields", shadowSelector, " .wide", shadowSelector, "{grid-column:1/-1}.new-actions", shadowSelector, "{display:flex;gap:10px;margin-top:20px}footer", shadowSelector, "{display:flex;justify-content:space-between;gap:20px;padding:30px 0;font-size:11px;color:#72859b;letter-spacing:.04em}footer", shadowSelector, " span", shadowSelector, "{letter-spacing:0}.sr-only", shadowSelector, "{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(max-width:900px){.rail", shadowSelector, "{padding:12px 22px;gap:20px}.rail-bottom", shadowSelector, "{display:none}.main", shadowSelector, "{padding:0 22px}.workspace", shadowSelector, "{grid-template-columns:270px minmax(0,1fr)}.detail-head", shadowSelector, ",.conversation", shadowSelector, ",.work-area", shadowSelector, ",.escalation", shadowSelector, ",.history", shadowSelector, "{padding-left:22px;padding-right:22px}.case-meta", shadowSelector, "{padding-left:22px;padding-right:22px}}@media(max-width:700px){.rail", shadowSelector, "{flex-wrap:wrap;gap:8px;padding:14px 16px}.rail-nav", shadowSelector, "{width:100%;overflow-x:auto;gap:2px}.rail-link", shadowSelector, "{padding:9px 11px;font-size:13px}.main", shadowSelector, "{padding:0 16px}.top", shadowSelector, "{height:52px}.page-title", shadowSelector, " h1", shadowSelector, ",.info", shadowSelector, " h1", shadowSelector, "{font-size:29px}.workspace", shadowSelector, "{grid-template-columns:1fr;gap:12px}.queue-list", shadowSelector, "{max-height:250px;overflow:auto}.detail-head", shadowSelector, " h2", shadowSelector, "{font-size:21px}.detail-head", shadowSelector, ",.conversation", shadowSelector, ",.work-area", shadowSelector, ",.escalation", shadowSelector, ",.history", shadowSelector, "{padding:21px 18px}.case-meta", shadowSelector, "{padding:0 18px 20px}.fields", shadowSelector, ",.new-fields", shadowSelector, ",.info-grid", shadowSelector, "{grid-template-columns:1fr}.new-fields", shadowSelector, " .wide", shadowSelector, "{grid-column:auto}.activity", shadowSelector, "{grid-template-columns:1fr;gap:4px}footer", shadowSelector, "{display:block}footer", shadowSelector, " span", shadowSelector, "{display:block;margin-top:5px}}", ((useActualHostSelector ? ":host{" : hostSelector + "{")), "font-family:'Plus Jakarta Sans',Studio,system-ui,sans-serif;color:#342b2a}.shell", shadowSelector, "{background:#f6f0e8}.rail", shadowSelector, "{background:#3c3040;border-color:#5b4b59}.logo", shadowSelector, ",.logo", shadowSelector, " strong", shadowSelector, "{color:#fff}.logo-mark", shadowSelector, "{background:#f2ba91;color:#493342}.rail-link", shadowSelector, "{color:#eee4e9}.rail-link.active", shadowSelector, ",.rail-link:hover", shadowSelector, "{background:#59475a;color:#fff}.rail-bottom", shadowSelector, "{color:#e8dde4}.online", shadowSelector, "{background:#e7b79c}.top", shadowSelector, "{color:#796761}.slash", shadowSelector, "{color:#ab9992}.reset", shadowSelector, "{color:#694f4c;border-color:#d4c5ba}.page-title", shadowSelector, " h1", shadowSelector, ",.info", shadowSelector, " h1", shadowSelector, "{color:#3b2d35;letter-spacing:-.035em}.page-title", shadowSelector, " p", shadowSelector, ",.info", shadowSelector, ">p", shadowSelector, "{color:#77635f}.primary", shadowSelector, ",.download", shadowSelector, "{background:#9e513e;color:#fff}.primary:hover", shadowSelector, "{background:#813e30}.case-counts", shadowSelector, " span", shadowSelector, "{background:#eee1d5;color:#6a5754}.case-counts", shadowSelector, " strong", shadowSelector, "{color:#814a3b}.queue", shadowSelector, ",.detail", shadowSelector, ",.info-grid", shadowSelector, " article", shadowSelector, "{background:#fffdf9;border-color:#eaded4}.queue-heading", shadowSelector, ",.conversation", shadowSelector, ",.work-area", shadowSelector, ",.escalation", shadowSelector, ",.history", shadowSelector, "{border-color:#eee5dc}.queue-heading", shadowSelector, " p", shadowSelector, ",.row-top", shadowSelector, ",.row-bottom", shadowSelector, ",.case-id", shadowSelector, ",.detail-head", shadowSelector, " p", shadowSelector, ",.section-title", shadowSelector, ">span", shadowSelector, ",.customer", shadowSelector, " small", shadowSelector, ",.activity", shadowSelector, " span", shadowSelector, "{color:#826f69}.case-row", shadowSelector, "{color:#47383c}.case-row:hover", shadowSelector, "{background:#fcf3ec}.case-row.selected", shadowSelector, "{background:#f8e9dc;border-color:#e8c8b2}.case-meta", shadowSelector, " span", shadowSelector, "{background:#f4ece5;color:#695754}.avatar", shadowSelector, "{background:#f2e0d5;color:#895744}.request", shadowSelector, ",.activity", shadowSelector, " p", shadowSelector, ",.info-grid", shadowSelector, " p", shadowSelector, "{color:#695653}.queue-heading", shadowSelector, " select", shadowSelector, ",.queue-filters", shadowSelector, " select", shadowSelector, ",.queue-filters", shadowSelector, " input", shadowSelector, ",.fields", shadowSelector, " select", shadowSelector, ",.date-input", shadowSelector, ",.note-label", shadowSelector, " textarea", shadowSelector, ",.escalation", shadowSelector, " input", shadowSelector, ",.new-fields", shadowSelector, " input", shadowSelector, ",.new-fields", shadowSelector, " select", shadowSelector, ",.new-fields", shadowSelector, " textarea", shadowSelector, "{border-color:#ddcfc5;color:#47383c;background:#fffdfb}.fields", shadowSelector, " label", shadowSelector, ",.note-label", shadowSelector, ",.new-fields", shadowSelector, " label", shadowSelector, "{color:#695653}.status", shadowSelector, ",.priority.low", shadowSelector, "{background:#e3eee4;color:#416750}.priority.high", shadowSelector, "{background:#fae6df;color:#9a4935}.priority.medium", shadowSelector, "{background:#f5ecd4;color:#765920}.info", shadowSelector, " .disclosure", shadowSelector, "{background:#f2e5d8;color:#68544b}footer", shadowSelector, "{color:#806e68}button:focus-visible", shadowSelector, ",input:focus-visible", shadowSelector, ",select:focus-visible", shadowSelector, ",textarea:focus-visible", shadowSelector, ",a:focus-visible", shadowSelector, "{outline-color:#ae6750}", ((useActualHostSelector ? ":host{" : hostSelector + "{")), "font-family:Arial,Helvetica,sans-serif;color:#181818;font-size:14px}.shell", shadowSelector, "{background:#f3f3f3}.rail", shadowSelector, "{background:#fff;border-bottom:3px solid #0176d3;box-shadow:0 2px 5px #00000012}.logo", shadowSelector, ",.logo", shadowSelector, " strong", shadowSelector, "{color:#032d60}.logo-mark", shadowSelector, "{background:#0176d3;color:#fff;border-radius:8px}.rail-link", shadowSelector, "{color:#444}.rail-link.active", shadowSelector, ",.rail-link:hover", shadowSelector, "{background:#eef4ff;color:#014486}.rail-bottom", shadowSelector, "{color:#444}.online", shadowSelector, "{background:#2e844a}.top", shadowSelector, "{color:#586779}.slash", shadowSelector, "{color:#939ba3}.reset", shadowSelector, "{background:#fff;border-color:#c9c9c9;color:#0176d3}.reset:hover", shadowSelector, "{background:#eef4ff}.page-title", shadowSelector, " h1", shadowSelector, ",.info", shadowSelector, " h1", shadowSelector, "{color:#032d60;letter-spacing:-.02em}.page-title", shadowSelector, " p", shadowSelector, ",.info", shadowSelector, ">p", shadowSelector, "{color:#444}.primary", shadowSelector, ",.download", shadowSelector, "{background:#0176d3;color:#fff;border-radius:4px}.primary:hover", shadowSelector, ",.download:hover", shadowSelector, "{background:#014486}.case-counts", shadowSelector, " span", shadowSelector, "{background:#fff;border:1px solid #dddbda;color:#444}.case-counts", shadowSelector, " strong", shadowSelector, "{color:#0176d3}.queue", shadowSelector, ",.detail", shadowSelector, ",.info-grid", shadowSelector, " article", shadowSelector, "{background:#fff;border-color:#dddbda;border-radius:6px;box-shadow:0 2px 3px #0000000d}.queue-heading", shadowSelector, ",.conversation", shadowSelector, ",.work-area", shadowSelector, ",.escalation", shadowSelector, ",.history", shadowSelector, "{border-color:#e5e5e5}.queue-heading", shadowSelector, " h2", shadowSelector, ",.detail-head", shadowSelector, " h2", shadowSelector, ",.section-title", shadowSelector, " h3", shadowSelector, ",.history", shadowSelector, " h3", shadowSelector, ",.escalation", shadowSelector, " h3", shadowSelector, "{color:#181818}.queue-heading", shadowSelector, " p", shadowSelector, ",.row-top", shadowSelector, ",.row-bottom", shadowSelector, ",.case-id", shadowSelector, ",.detail-head", shadowSelector, " p", shadowSelector, ",.section-title", shadowSelector, ">span", shadowSelector, ",.customer", shadowSelector, " small", shadowSelector, ",.activity", shadowSelector, " span", shadowSelector, "{color:#586779}.case-id", shadowSelector, "{color:#0176d3}.case-row", shadowSelector, "{color:#181818;border-radius:4px}.case-row:hover", shadowSelector, "{background:#f3f8ff}.case-row.selected", shadowSelector, "{background:#eef4ff;border-color:#aacbff;box-shadow:inset 3px 0 #0176d3}.case-meta", shadowSelector, " span", shadowSelector, "{background:#f3f3f3;color:#444}.avatar", shadowSelector, "{background:#0176d3;color:#fff}.request", shadowSelector, ",.activity", shadowSelector, " p", shadowSelector, ",.info-grid", shadowSelector, " p", shadowSelector, "{color:#3e3e3c}.queue-heading", shadowSelector, " select", shadowSelector, ",.queue-filters", shadowSelector, " select", shadowSelector, ",.queue-filters", shadowSelector, " input", shadowSelector, ",.fields", shadowSelector, " select", shadowSelector, ",.date-input", shadowSelector, ",.note-label", shadowSelector, " textarea", shadowSelector, ",.escalation", shadowSelector, " input", shadowSelector, ",.new-fields", shadowSelector, " input", shadowSelector, ",.new-fields", shadowSelector, " select", shadowSelector, ",.new-fields", shadowSelector, " textarea", shadowSelector, "{border-color:#c9c9c9;color:#181818;background:#fff;border-radius:4px}.fields", shadowSelector, " label", shadowSelector, ",.note-label", shadowSelector, ",.new-fields", shadowSelector, " label", shadowSelector, "{color:#444}.status", shadowSelector, ",.priority.low", shadowSelector, "{background:#e3f3e3;color:#194e31}.priority.high", shadowSelector, "{background:#fef1ee;color:#ba0517}.priority.medium", shadowSelector, "{background:#fff3d6;color:#745500}.info", shadowSelector, " .disclosure", shadowSelector, "{background:#eef4ff;color:#032d60}footer", shadowSelector, "{color:#586779}button:focus-visible", shadowSelector, ",input:focus-visible", shadowSelector, ",select:focus-visible", shadowSelector, ",textarea:focus-visible", shadowSelector, ",a:focus-visible", shadowSelector, "{outline-color:#0176d3}.rail", shadowSelector, "{min-height:54px;padding:0 24px;gap:24px;border-bottom:1px solid #d8dde6;box-shadow:0 2px 4px #00000012}.logo", shadowSelector, "{font-size:16px;font-weight:700;gap:9px}.logo-mark", shadowSelector, "{width:32px;height:32px;background:#0176d3;border-radius:5px}.logo-mark", shadowSelector, " svg", shadowSelector, "{width:20px;height:20px}.rail-nav", shadowSelector, "{align-self:stretch;gap:0}.rail-link", shadowSelector, "{border-radius:0;padding:0 19px;color:#444;border-bottom:3px solid transparent;font-weight:600}.rail-link.active", shadowSelector, "{color:#0176d3;background:#f3f8ff;border-bottom-color:#0176d3}.rail-link:hover", shadowSelector, "{background:#eef4ff}.rail-bottom", shadowSelector, "{font-size:12px;color:#5c6773}.main", shadowSelector, "{max-width:none;padding:0 24px}.top", shadowSelector, "{height:46px;color:#52606d;font-size:12px}.reset", shadowSelector, "{padding:7px 12px}.page-title", shadowSelector, "{background:#f8f9fa;border:1px solid #dddbda;border-bottom:0;border-radius:5px 5px 0 0;padding:15px 20px 11px;align-items:center}.page-title", shadowSelector, ">div", shadowSelector, "{position:relative;padding-left:48px}.page-title", shadowSelector, ">div", shadowSelector, ":before{content:'▤';display:grid;place-items:center;position:absolute;left:0;top:0;width:36px;height:36px;border-radius:4px;background:#f28b00;color:#fff;font-size:22px}.object-label", shadowSelector, "{font-size:12px;color:#5c6773}.page-title", shadowSelector, " h1", shadowSelector, "{font-size:20px;font-weight:700;line-height:1.2;letter-spacing:0;color:#181818}.page-title", shadowSelector, " p", shadowSelector, "{font-size:12px;margin-top:4px;color:#5c6773}.primary", shadowSelector, ",.download", shadowSelector, "{padding:9px 16px;font-size:13px}.case-counts", shadowSelector, "{margin:0 0 14px;padding:7px 20px 12px;background:#f8f9fa;border:1px solid #dddbda;border-top:0;border-radius:0 0 5px 5px;gap:8px}.case-counts", shadowSelector, " span", shadowSelector, "{font-size:12px;padding:4px 9px;border-radius:3px}.case-counts", shadowSelector, " strong", shadowSelector, "{font-size:13px}.workspace", shadowSelector, "{gap:12px;grid-template-columns:minmax(275px,330px) minmax(0,1fr)}.queue", shadowSelector, ",.detail", shadowSelector, "{border-radius:5px}.queue-heading", shadowSelector, "{padding:14px 16px;background:#fafaf9}.queue-heading", shadowSelector, " h2", shadowSelector, "{font-size:16px}.queue-filters", shadowSelector, "{padding:10px 12px}.case-row", shadowSelector, "{margin:0;width:100%;border:0;border-bottom:1px solid #e5e5e5;border-radius:0;padding:12px 16px}.case-row.selected", shadowSelector, "{border-color:#e5e5e5;box-shadow:inset 4px 0 #0176d3}.case-row", shadowSelector, " strong", shadowSelector, "{color:#0176d3;margin:6px 0;font-size:13px}.detail-head", shadowSelector, "{padding:20px 24px 14px;background:#f8f9fa}.detail-head", shadowSelector, " h2", shadowSelector, "{font-size:20px;letter-spacing:0;margin-top:4px}.detail-head", shadowSelector, " p", shadowSelector, "{margin-top:6px;font-size:13px}.case-id", shadowSelector, "{font-weight:400;letter-spacing:0;color:#52606d}.case-meta", shadowSelector, "{padding:0 24px 16px;background:#f8f9fa;border-bottom:1px solid #dddbda}.case-meta", shadowSelector, " span", shadowSelector, "{background:transparent;border-right:1px solid #dddbda;border-radius:0;padding:3px 14px 3px 0;margin-right:6px}.case-meta", shadowSelector, " span:last-child", shadowSelector, "{border:0}.conversation", shadowSelector, ",.work-area", shadowSelector, ",.escalation", shadowSelector, ",.history", shadowSelector, "{padding:20px 24px}.section-title", shadowSelector, " h3", shadowSelector, ",.history", shadowSelector, " h3", shadowSelector, ",.escalation", shadowSelector, " h3", shadowSelector, "{font-size:14px;font-weight:700}.work-area", shadowSelector, ">.section-title", shadowSelector, "{padding-bottom:10px;border-bottom:1px solid #e5e5e5}.fields", shadowSelector, "{gap:12px;margin-top:14px}.fields", shadowSelector, " label", shadowSelector, ",.note-label", shadowSelector, ",.new-fields", shadowSelector, " label", shadowSelector, "{font-weight:400;font-size:12px}.fields", shadowSelector, " select", shadowSelector, ",.date-input", shadowSelector, ",.note-label", shadowSelector, " textarea", shadowSelector, "{font-size:13px}.avatar", shadowSelector, "{background:#7f8de1;border-radius:4px}.status", shadowSelector, ",.priority", shadowSelector, "{border-radius:3px}@media(max-width:700px){.rail", shadowSelector, "{padding:10px 16px;gap:8px}.rail-nav", shadowSelector, "{min-height:40px}.rail-link", shadowSelector, "{padding:10px 12px}.main", shadowSelector, "{padding:0 12px}.page-title", shadowSelector, "{padding:14px}.page-title", shadowSelector, ">div", shadowSelector, "{padding-left:42px}.case-counts", shadowSelector, "{padding:8px 14px 12px}.workspace", shadowSelector, "{grid-template-columns:1fr}.detail-head", shadowSelector, ",.conversation", shadowSelector, ",.work-area", shadowSelector, ",.escalation", shadowSelector, ",.history", shadowSelector, "{padding:18px}.case-meta", shadowSelector, "{padding:0 18px 14px}}.case-path", shadowSelector, "{padding:16px 24px 14px;background:#fff;border-bottom:1px solid #dddbda}.case-path", shadowSelector, " ol", shadowSelector, "{display:flex;list-style:none;margin:0;padding:0;gap:4px}.case-path", shadowSelector, " .path-step", shadowSelector, "{flex:1;min-width:0;padding:10px 12px 10px 22px;text-align:center;font-size:13px;font-weight:700;line-height:1.3;color:#444;background:#e5e5e5;clip-path:polygon(0 0,calc(100% - 13px) 0,100% 50%,calc(100% - 13px) 100%,0 100%,13px 50%)}.case-path", shadowSelector, " .path-step:first-child", shadowSelector, "{border-radius:24px 0 0 24px;clip-path:polygon(0 0,calc(100% - 13px) 0,100% 50%,calc(100% - 13px) 100%,0 100%)}.case-path", shadowSelector, " .path-step:last-child", shadowSelector, "{border-radius:0 24px 24px 0;clip-path:polygon(0 0,100% 0,100% 100%,0 100%,13px 50%)}.case-path", shadowSelector, " .path-step.complete", shadowSelector, "{background:#2e844a;color:#fff}.case-path", shadowSelector, " .path-step.current", shadowSelector, "{background:#014486;color:#fff}.case-path", shadowSelector, " p", shadowSelector, "{font-size:12px;color:#59656f;margin:8px 0 0}@media(max-width:700px){.case-path", shadowSelector, "{padding:14px 18px}.case-path", shadowSelector, " ol", shadowSelector, "{gap:2px}.case-path", shadowSelector, " .path-step", shadowSelector, "{font-size:11px;padding:10px 5px 10px 14px}}.case-counts", shadowSelector, "{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.case-counts", shadowSelector, " .summary-tile", shadowSelector, "{text-align:left;border:1px solid #dddbda;border-radius:4px;background:#f8f8f8;color:#444;padding:12px 14px;min-width:0;cursor:pointer}.case-counts", shadowSelector, " .summary-tile:hover", shadowSelector, "{background:#f0f7ff;border-color:#90b9eb}.case-counts", shadowSelector, " .summary-tile.selected", shadowSelector, "{background:#eef4ff;border:2px solid #0176d3;padding:11px 13px}.case-counts", shadowSelector, " .summary-tile", shadowSelector, " span", shadowSelector, "{display:block;border:0;background:none;padding:0;color:#444;font-size:12px;text-transform:uppercase}.case-counts", shadowSelector, " .summary-tile", shadowSelector, " strong", shadowSelector, "{display:block;color:#181818;font-size:23px;line-height:1.2;margin:5px 0 0}@media(max-width:700px){.case-counts", shadowSelector, "{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.case-counts", shadowSelector, " .summary-tile", shadowSelector, "{padding:9px}.case-counts", shadowSelector, " .summary-tile.selected", shadowSelector, "{padding:8px}.case-counts", shadowSelector, " .summary-tile", shadowSelector, " strong", shadowSelector, "{font-size:19px}}.success-toast", shadowSelector, "{position:fixed;z-index:1000;top:16px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:12px;width:max-content;max-width:calc(100vw - 32px);padding:12px 14px;background:#2e844a;color:#fff;border-radius:4px;box-shadow:0 4px 14px #0003;font:600 14px/1.4 Arial,Helvetica,sans-serif}.toast-icon", shadowSelector, "{display:grid;place-items:center;flex:0 0 22px;width:22px;height:22px;border:2px solid #fff;border-radius:50%;font-size:14px}.toast-close", shadowSelector, "{margin-left:auto;padding:2px 6px;background:transparent;border:0;color:#fff;font-size:22px;line-height:1;cursor:pointer}.toast-close:focus-visible", shadowSelector, "{outline:2px solid #fff;outline-offset:2px}@media(max-width:600px){.success-toast", shadowSelector, "{top:10px;width:calc(100vw - 24px)}}"].join('');
   /*LWC compiler v9.5.3*/
 }
 var _implicitStylesheets = [stylesheet];
 
-const $fragment1 = parseFragment`<aside class="rail${0}"${2}><a href="/" class="logo${0}"${2}><span class="logo-mark${0}" aria-hidden="true"${2}><svg viewBox="0 0 24 24" fill="none"${3}><path d="M5 5h14v14H5zM8 9h8M8 12h8M8 15h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"${3}/></svg></span><span${3}>Service Console</span></a><div class="rail-nav${0}"${2}><button class="rail-link active${0}" data-tab="workspace"${2}><span${3}>▤</span> Cases</button><button class="rail-link${0}" data-tab="guide"${2}><span${3}>◎</span> How it works</button><button class="rail-link${0}" data-tab="source"${2}><span${3}>⌘</span> Explore the code</button></div><div class="rail-bottom${0}"${2}><span class="online${0}"${2}></span> Sample data<br${3}><small${3}>A Salesforce demo</small></div></aside>`;
-const $fragment2 = parseFragment`<header class="top${0}"${2}><span${3}>Service Console <span class="slash${0}"${2}>/</span> Cases</span><button class="reset${0}"${2}>Reset demo</button></header>`;
-const $fragment3 = parseFragment`<div class="page-title${0}"${2}><div${3}><span class="object-label${0}"${2}>Cases</span><h1${3}>Case Management</h1><p${3}>Review and manage customer requests.</p></div><button class="primary new-button${0}"${2}>+ New case</button></div>`;
-const $fragment4 = parseFragment`<button type="button"${"c0"}${"a0:data-value"}${"a0:aria-pressed"}${2}><span${3}>${"t2"}</span><strong${3}>${"t4"}</strong></button>`;
-const $fragment5 = parseFragment`<div class="queue-heading${0}"${2}><div${3}><h2${3}>All Cases</h2><p${3}>${"t5"}</p></div><label${3}><span class="sr-only${0}"${2}>Filter by priority</span><select class="filter${0}"${2}><option${3}>All</option><option${3}>High</option><option${3}>Medium</option><option${3}>Low</option></select></label></div>`;
-const $fragment6 = parseFragment`<div class="queue-filters${0}"${2}><label${3}><span class="sr-only${0}"${2}>Search cases</span><input class="search${0}" type="search" placeholder="Search cases or customers"${2}></label><label${3}><span class="sr-only${0}"${2}>Filter by status</span><select class="status-filter${0}"${2}><option value="All"${3}>All statuses</option><option${3}>New</option><option${3}>Working</option><option${3}>Closed</option></select></label></div>`;
-const $fragment7 = parseFragment`<button${"a0:data-id"}${"c0"}${2}><div class="row-top${0}"${2}><span${3}>${"t3"}</span><span${"c4"}${2}>${"t5"}</span></div><strong${3}>${"t7"}</strong><div class="row-bottom${0}"${2}><span${3}>${"t10"}</span><span${3}>${"t12"}</span></div></button>`;
-const $fragment8 = parseFragment`<p class="empty${0}"${2}>No cases match this filter.</p>`;
-const $fragment9 = parseFragment`<div class="detail-head${0}"${2}><div${3}><span class="case-id${0}"${2}>${"t3"}</span><h2${3}>${"t5"}</h2><p${3}>${"t7"}<span${3}>·</span>${"t10"}</p></div><span class="status${0}"${2}>${"t12"}</span></div>`;
-const $fragment10 = parseFragment`<div class="case-meta${0}"${2}><span${3}>Owner: <strong${3}>${"t4"}</strong></span><span${3}>${"t6"}</span><span${3}>${"t8"}</span></div>`;
-const $fragment11 = parseFragment`<li${"c0"}${"a0:aria-current"}${2}>${"t1"}</li>`;
-const $fragment12 = parseFragment`<p${3}>Escalation is optional. Change the case status below.</p>`;
-const $fragment13 = parseFragment`<div class="conversation${0}"${2}><div class="section-title${0}"${2}><h3${3}>Customer request</h3><span${3}>${"t5"}</span></div><div class="customer${0}"${2}><span class="avatar${0}"${2}>${"t8"}</span><div${3}><strong${3}>${"t11"}</strong><small${3}>${"t13"}</small></div></div><p class="request${0}"${2}>${"t15"}</p></div>`;
-const $fragment14 = parseFragment`<div class="section-title${0}"${2}><h3${3}>Update case</h3><span${3}>Changes stay in this session</span></div>`;
-const $fragment15 = parseFragment`<option${"a0:value"}${"a0:selected"}${3}>${"t1"}</option>`;
+const $fragment1 = parseFragment`<div class="success-toast${0}" role="status" aria-live="polite"${2}><span class="toast-icon${0}" aria-hidden="true"${2}>✓</span><span${3}>${"t4"}</span><button type="button" class="toast-close${0}" aria-label="Dismiss notification"${2}>×</button></div>`;
+const $fragment2 = parseFragment`<aside class="rail${0}"${2}><a href="/" class="logo${0}"${2}><span class="logo-mark${0}" aria-hidden="true"${2}><svg viewBox="0 0 24 24" fill="none"${3}><path d="M5 5h14v14H5zM8 9h8M8 12h8M8 15h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"${3}/></svg></span><span${3}>Service Console</span></a><div class="rail-nav${0}"${2}><button class="rail-link active${0}" data-tab="workspace"${2}><span${3}>▤</span> Cases</button><button class="rail-link${0}" data-tab="guide"${2}><span${3}>◎</span> How it works</button><button class="rail-link${0}" data-tab="source"${2}><span${3}>⌘</span> Explore the code</button></div><div class="rail-bottom${0}"${2}><span class="online${0}"${2}></span> Sample data<br${3}><small${3}>A Salesforce demo</small></div></aside>`;
+const $fragment3 = parseFragment`<header class="top${0}"${2}><span${3}>Service Console <span class="slash${0}"${2}>/</span> Cases</span><button class="reset${0}"${2}>Reset demo</button></header>`;
+const $fragment4 = parseFragment`<div class="page-title${0}"${2}><div${3}><span class="object-label${0}"${2}>Cases</span><h1${3}>Case Management</h1><p${3}>Review and manage customer requests.</p></div><button class="primary new-button${0}"${2}>+ New case</button></div>`;
+const $fragment5 = parseFragment`<button type="button"${"c0"}${"a0:data-value"}${"a0:aria-pressed"}${2}><span${3}>${"t2"}</span><strong${3}>${"t4"}</strong></button>`;
+const $fragment6 = parseFragment`<div class="queue-heading${0}"${2}><div${3}><h2${3}>All Cases</h2><p${3}>${"t5"}</p></div><label${3}><span class="sr-only${0}"${2}>Filter by priority</span><select class="filter${0}"${2}><option${3}>All</option><option${3}>High</option><option${3}>Medium</option><option${3}>Low</option></select></label></div>`;
+const $fragment7 = parseFragment`<div class="queue-filters${0}"${2}><label${3}><span class="sr-only${0}"${2}>Search cases</span><input class="search${0}" type="search" placeholder="Search cases or customers"${2}></label><label${3}><span class="sr-only${0}"${2}>Filter by status</span><select class="status-filter${0}"${2}><option value="All"${3}>All statuses</option><option${3}>New</option><option${3}>Working</option><option${3}>Closed</option></select></label></div>`;
+const $fragment8 = parseFragment`<button${"a0:data-id"}${"c0"}${2}><div class="row-top${0}"${2}><span${3}>${"t3"}</span><span${"c4"}${2}>${"t5"}</span></div><strong${3}>${"t7"}</strong><div class="row-bottom${0}"${2}><span${3}>${"t10"}</span><span${3}>${"t12"}</span></div></button>`;
+const $fragment9 = parseFragment`<p class="empty${0}"${2}>No cases match this filter.</p>`;
+const $fragment10 = parseFragment`<div class="detail-head${0}"${2}><div${3}><span class="case-id${0}"${2}>${"t3"}</span><h2${3}>${"t5"}</h2><p${3}>${"t7"}<span${3}>·</span>${"t10"}</p></div><span class="status${0}"${2}>${"t12"}</span></div>`;
+const $fragment11 = parseFragment`<div class="case-meta${0}"${2}><span${3}>Owner: <strong${3}>${"t4"}</strong></span><span${3}>${"t6"}</span><span${3}>${"t8"}</span></div>`;
+const $fragment12 = parseFragment`<li${"c0"}${"a0:aria-current"}${2}>${"t1"}</li>`;
+const $fragment13 = parseFragment`<p${3}>Escalation is optional. Change the case status below.</p>`;
+const $fragment14 = parseFragment`<div class="conversation${0}"${2}><div class="section-title${0}"${2}><h3${3}>Customer request</h3><span${3}>${"t5"}</span></div><div class="customer${0}"${2}><span class="avatar${0}"${2}>${"t8"}</span><div${3}><strong${3}>${"t11"}</strong><small${3}>${"t13"}</small></div></div><p class="request${0}"${2}>${"t15"}</p></div>`;
+const $fragment15 = parseFragment`<div class="section-title${0}"${2}><h3${3}>Update case</h3><span${3}>Changes stay in this session</span></div>`;
 const $fragment16 = parseFragment`<option${"a0:value"}${"a0:selected"}${3}>${"t1"}</option>`;
 const $fragment17 = parseFragment`<option${"a0:value"}${"a0:selected"}${3}>${"t1"}</option>`;
-const $fragment18 = parseFragment`<label class="note-label${0}"${2}>Internal note <span${3}>required to close a case</span><textarea class="case-note${0}" maxlength="500" placeholder="Add a note for the next agent"${2}></textarea></label>`;
-const $fragment19 = parseFragment`<div class="save-row${0}"${2}><span role="status"${3}>${"t2"}</span><span class="error${0}" role="alert"${2}>${"t4"}</span><button class="primary${0}"${2}>Save</button></div>`;
-const $fragment20 = parseFragment`<h3${3}>Escalate this case</h3>`;
-const $fragment21 = parseFragment`<p${3}>Flag a case for a supervisor and record why it needs attention.</p>`;
-const $fragment22 = parseFragment`<span class="sr-only${0}"${2}>Reason for escalation</span>`;
-const $fragment23 = parseFragment`<button${3}>Escalate case</button>`;
-const $fragment24 = parseFragment`<h3${3}>Activity timeline</h3>`;
-const $fragment25 = parseFragment`<div class="activity${0}"${2}><span${3}>${"t2"}</span><p${3}>${"t4"}</p></div>`;
-const $fragment26 = parseFragment`<h3${3}>Internal notes</h3>`;
-const $fragment27 = parseFragment`<p${3}>${"t1"}</p>`;
-const $fragment28 = parseFragment`<p${3}>No notes yet.</p>`;
-const $fragment29 = parseFragment`<h1${3}>Create a case.</h1>`;
-const $fragment30 = parseFragment`<p${3}>Record a customer issue and route it to the right person.</p>`;
-const $fragment31 = parseFragment`<span${3}>optional</span>`;
-const $fragment32 = parseFragment`<label class="wide${0}"${2}>Description<textarea name="description" maxlength="2000" required${3}></textarea></label>`;
-const $fragment33 = parseFragment`<label${3}>Priority<select name="priority"${3}><option${3}>Medium</option><option${3}>High</option><option${3}>Low</option></select></label>`;
-const $fragment34 = parseFragment`<label${3}>Assign to<select name="owner"${3}><option${3}>Support queue</option><option${3}>Jordan Lee</option><option${3}>Sam Rivera</option><option${3}>Alex Morgan</option></select></label>`;
-const $fragment35 = parseFragment`<label${3}>Follow-up date <span${3}>optional</span><input type="date" name="followUp"${3}></label>`;
-const $fragment36 = parseFragment`<p class="error${0}" role="alert"${2}>${"t1"}</p>`;
-const $fragment37 = parseFragment`<div class="new-actions${0}"${2}><button class="reset${0}" data-tab="workspace"${2}>Cancel</button><button class="primary${0}"${2}>Create case</button></div>`;
-const $fragment38 = parseFragment`<section class="info${0}"${2}><h1 class="guide-title${0}"${2}>From customer request to resolution.</h1><p${3}>This demo follows a support agent as they review a case, set its priority, update its status and add an internal note. Closing a case requires a resolution note; closed cases can be reopened.</p><div class="info-grid${0}"${2}><article${3}><h2${3}>In this browser</h2><p${3}>A Lightning Web Component renders the case queue, search and filters and responds to your selections. A JavaScript data service holds fictional cases in memory and validates changes. Refreshing or resetting restores the sample data.</p></article><article${3}><h2${3}>In Salesforce</h2><p${3}>The included Salesforce LWC calls an Apex controller to read and update standard Case records. Apex validates the changes, requires a resolution note when closing a case, and uses user-mode access. The org version stores internal notes as non-public Case Comments. The Salesforce component also calls Apex for case creation, assignment, follow-up and escalation; the public timeline uses sample session data.</p></article></div><p class="disclosure${0}"${2}>This public demo does not connect to a Salesforce org or execute Apex. Salesforce deployment and tests must be verified in your own sandbox.</p><button class="primary${0}" data-tab="workspace"${2}>Try the workspace →</button></section>`;
-const $fragment39 = parseFragment`<section class="info${0}"${2}><h1${3}>Built to be explored.</h1><p${3}>Download the project to inspect both the public LWC and the Salesforce implementation.</p><div class="info-grid${0}"${2}><article${3}><h2${3}>Lightning Web Components</h2><p${3}>The public component manages the queue and case editor. The Salesforce component invokes Apex and refreshes the records after an update.</p></article><article${3}><h2${3}>Apex controller</h2><p${3}>The controller queries standard Case records, validates status, priority and note length, and saves changes with the current user’s permissions.</p></article></div><a class="download${0}" href="case-management-source.zip" download${2}>Download source code ↓</a></section>`;
-const $fragment40 = parseFragment`<footer${3}>CASE MANAGEMENT DEMO <span${3}>Built with Lightning Web Components · Apex source included</span></footer>`;
+const $fragment18 = parseFragment`<option${"a0:value"}${"a0:selected"}${3}>${"t1"}</option>`;
+const $fragment19 = parseFragment`<label class="note-label${0}"${2}>Internal note <span${3}>required to close a case</span><textarea class="case-note${0}" maxlength="500" placeholder="Add a note for the next agent"${2}></textarea></label>`;
+const $fragment20 = parseFragment`<div class="save-row${0}"${2}><span class="error${0}" role="alert"${2}>${"t2"}</span><button class="primary${0}"${2}>Save</button></div>`;
+const $fragment21 = parseFragment`<h3${3}>Escalate this case</h3>`;
+const $fragment22 = parseFragment`<p${3}>Flag a case for a supervisor and record why it needs attention.</p>`;
+const $fragment23 = parseFragment`<span class="sr-only${0}"${2}>Reason for escalation</span>`;
+const $fragment24 = parseFragment`<button${3}>Escalate case</button>`;
+const $fragment25 = parseFragment`<h3${3}>Activity timeline</h3>`;
+const $fragment26 = parseFragment`<div class="activity${0}"${2}><span${3}>${"t2"}</span><p${3}>${"t4"}</p></div>`;
+const $fragment27 = parseFragment`<h3${3}>Internal notes</h3>`;
+const $fragment28 = parseFragment`<p${3}>${"t1"}</p>`;
+const $fragment29 = parseFragment`<p${3}>No notes yet.</p>`;
+const $fragment30 = parseFragment`<h1${3}>Create a case.</h1>`;
+const $fragment31 = parseFragment`<p${3}>Record a customer issue and route it to the right person.</p>`;
+const $fragment32 = parseFragment`<span${3}>optional</span>`;
+const $fragment33 = parseFragment`<label class="wide${0}"${2}>Description<textarea name="description" maxlength="2000" required${3}></textarea></label>`;
+const $fragment34 = parseFragment`<label${3}>Priority<select name="priority"${3}><option${3}>Medium</option><option${3}>High</option><option${3}>Low</option></select></label>`;
+const $fragment35 = parseFragment`<label${3}>Assign to<select name="owner"${3}><option${3}>Support queue</option><option${3}>Jordan Lee</option><option${3}>Sam Rivera</option><option${3}>Alex Morgan</option></select></label>`;
+const $fragment36 = parseFragment`<label${3}>Follow-up date <span${3}>optional</span><input type="date" name="followUp"${3}></label>`;
+const $fragment37 = parseFragment`<p class="error${0}" role="alert"${2}>${"t1"}</p>`;
+const $fragment38 = parseFragment`<div class="new-actions${0}"${2}><button class="reset${0}" data-tab="workspace"${2}>Cancel</button><button class="primary${0}"${2}>Create case</button></div>`;
+const $fragment39 = parseFragment`<section class="info${0}"${2}><h1 class="guide-title${0}"${2}>From customer request to resolution.</h1><p${3}>This demo follows a support agent as they review a case, set its priority, update its status and add an internal note. Closing a case requires a resolution note; closed cases can be reopened.</p><div class="info-grid${0}"${2}><article${3}><h2${3}>In this browser</h2><p${3}>A Lightning Web Component renders the case queue, search and filters and responds to your selections. A JavaScript data service holds fictional cases in memory and validates changes. Refreshing or resetting restores the sample data.</p></article><article${3}><h2${3}>In Salesforce</h2><p${3}>The included Salesforce LWC calls an Apex controller to read and update standard Case records. Apex validates the changes, requires a resolution note when closing a case, and uses user-mode access. The org version stores internal notes as non-public Case Comments. The Salesforce component also calls Apex for case creation, assignment, follow-up and escalation; the public timeline uses sample session data.</p></article></div><p class="disclosure${0}"${2}>This public demo does not connect to a Salesforce org or execute Apex. Salesforce deployment and tests must be verified in your own sandbox.</p><button class="primary${0}" data-tab="workspace"${2}>Try the workspace →</button></section>`;
+const $fragment40 = parseFragment`<section class="info${0}"${2}><h1${3}>Built to be explored.</h1><p${3}>Download the project to inspect both the public LWC and the Salesforce implementation.</p><div class="info-grid${0}"${2}><article${3}><h2${3}>Lightning Web Components</h2><p${3}>The public component manages the queue and case editor. The Salesforce component invokes Apex and refreshes the records after an update.</p></article><article${3}><h2${3}>Apex controller</h2><p${3}>The controller queries standard Case records, validates status, priority and note length, and saves changes with the current user’s permissions.</p></article></div><a class="download${0}" href="case-management-source.zip" download${2}>Download source code ↓</a></section>`;
+const $fragment41 = parseFragment`<footer${3}>CASE MANAGEMENT DEMO <span${3}>Built with Lightning Web Components · Apex source included</span></footer>`;
 const stc0 = {
   classMap: {
     "shell": true
   },
-  key: 0
+  key: 3
 };
 const stc1 = {
   classMap: {
     "main": true
   },
-  key: 3
+  key: 6
 };
 const stc2 = {
   classMap: {
@@ -7246,13 +7247,13 @@ const stc2 = {
     "role": "group",
     "aria-label": "Filter cases by status"
   },
-  key: 9
+  key: 12
 };
 const stc3 = {
   classMap: {
     "workspace": true
   },
-  key: 12
+  key: 15
 };
 const stc4 = {
   classMap: {
@@ -7261,13 +7262,13 @@ const stc4 = {
   attrs: {
     "aria-label": "Case queue"
   },
-  key: 13
+  key: 16
 };
 const stc5 = {
   classMap: {
     "queue-list": true
   },
-  key: 18
+  key: 21
 };
 const stc6 = [];
 const stc7 = {
@@ -7277,7 +7278,7 @@ const stc7 = {
   attrs: {
     "aria-label": "Selected case"
   },
-  key: 24
+  key: 27
 };
 const stc8 = {
   classMap: {
@@ -7286,40 +7287,40 @@ const stc8 = {
   attrs: {
     "aria-label": "Case status path"
   },
-  key: 29
+  key: 32
 };
 const stc9 = {
-  key: 30
+  key: 33
 };
 const stc10 = {
   classMap: {
     "work-area": true
   },
-  key: 37
+  key: 40
 };
 const stc11 = {
   classMap: {
     "fields": true
   },
-  key: 40
+  key: 43
 };
 const stc12 = {
-  key: 41
+  key: 44
 };
 const stc13 = {
-  key: 45
+  key: 48
 };
 const stc14 = {
   classMap: {
     "fields": true
   },
-  key: 49
+  key: 52
 };
 const stc15 = {
-  key: 50
+  key: 53
 };
 const stc16 = {
-  key: 54
+  key: 57
 };
 const stc17 = {
   "date-input": true
@@ -7331,10 +7332,10 @@ const stc19 = {
   classMap: {
     "escalation": true
   },
-  key: 60
+  key: 63
 };
 const stc20 = {
-  key: 65
+  key: 68
 };
 const stc21 = {
   "type": "text",
@@ -7345,29 +7346,29 @@ const stc22 = {
   classMap: {
     "history": true
   },
-  key: 71
+  key: 74
 };
 const stc23 = {
   classMap: {
     "history": true
   },
-  key: 76
+  key: 79
 };
 const stc24 = {
   classMap: {
     "info": true,
     "new-form": true
   },
-  key: 85
+  key: 88
 };
 const stc25 = {
   classMap: {
     "new-fields": true
   },
-  key: 90
+  key: 93
 };
 const stc26 = {
-  key: 91
+  key: 94
 };
 const stc27 = {
   "name": "customer",
@@ -7375,7 +7376,7 @@ const stc27 = {
   "required": ""
 };
 const stc28 = {
-  key: 93
+  key: 96
 };
 const stc29 = {
   "name": "company"
@@ -7384,7 +7385,7 @@ const stc30 = {
   classMap: {
     "wide": true
   },
-  key: 97
+  key: 100
 };
 const stc31 = {
   "name": "subject",
@@ -7392,31 +7393,35 @@ const stc31 = {
   "required": ""
 };
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {b: api_bind, sp: api_static_part, st: api_static_fragment, ncls: api_normalize_class_name, k: api_key, d: api_dynamic_text, i: api_iterator, h: api_element, fr: api_fragment, f: api_flatten, t: api_text} = $api;
-  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7, _m8, _m9, _m10, _m11, _m12, _m13, _m14, _m15, _m16, _m17, _m18, _m19, _m20, _m21, _m22, _m23, _m24, _m25, _m26, _m27, _m28, _m29, _m30} = $ctx;
-  return [api_element("div", stc0, [api_static_fragment($fragment1, 2, [api_static_part(8, {
+  const {d: api_dynamic_text, b: api_bind, sp: api_static_part, st: api_static_fragment, fr: api_fragment, ncls: api_normalize_class_name, k: api_key, i: api_iterator, h: api_element, f: api_flatten, t: api_text} = $api;
+  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7, _m8, _m9, _m10, _m11, _m12, _m13, _m14, _m15, _m16, _m17, _m18, _m19, _m20, _m21, _m22, _m23, _m24, _m25, _m26, _m27, _m28, _m29, _m30, _m31} = $ctx;
+  return [$cmp.toastMessage ? api_fragment(0, [api_static_fragment($fragment1, 2, [api_static_part(4, null, api_dynamic_text($cmp.toastMessage)), api_static_part(5, {
     on: _m0 || ($ctx._m0 = {
-      "click": api_bind($cmp.navigate)
+      "click": api_bind($cmp.dismissToast)
     })
-  }, null), api_static_part(12, {
+  }, null)])], 0) : null, api_element("div", stc0, [api_static_fragment($fragment2, 5, [api_static_part(8, {
     on: _m1 || ($ctx._m1 = {
       "click": api_bind($cmp.navigate)
     })
-  }, null), api_static_part(16, {
+  }, null), api_static_part(12, {
     on: _m2 || ($ctx._m2 = {
       "click": api_bind($cmp.navigate)
     })
-  }, null)]), api_element("main", stc1, [api_static_fragment($fragment2, 5, [api_static_part(6, {
+  }, null), api_static_part(16, {
     on: _m3 || ($ctx._m3 = {
+      "click": api_bind($cmp.navigate)
+    })
+  }, null)]), api_element("main", stc1, [api_static_fragment($fragment3, 8, [api_static_part(6, {
+    on: _m4 || ($ctx._m4 = {
       "click": api_bind($cmp.reset)
     })
-  }, null)]), $cmp.isWorkspace ? api_fragment(6, [api_static_fragment($fragment3, 8, [api_static_part(8, {
-    on: _m4 || ($ctx._m4 = {
+  }, null)]), $cmp.isWorkspace ? api_fragment(9, [api_static_fragment($fragment4, 11, [api_static_part(8, {
+    on: _m5 || ($ctx._m5 = {
       "click": api_bind($cmp.openNew)
     })
   }, null)]), api_element("div", stc2, api_iterator($cmp.summaryTiles, function (tile) {
-    return api_static_fragment($fragment4, api_key(11, tile.value), [api_static_part(0, {
-      on: _m6 || ($ctx._m6 = {
+    return api_static_fragment($fragment5, api_key(14, tile.value), [api_static_part(0, {
+      on: _m7 || ($ctx._m7 = {
         "click": api_bind($cmp.summaryChanged)
       }),
       className: api_normalize_class_name(tile.cssClass),
@@ -7425,21 +7430,21 @@ function tmpl($api, $cmp, $slotset, $ctx) {
         "aria-pressed": tile.pressed
       }
     }, null), api_static_part(2, null, api_dynamic_text(tile.value)), api_static_part(4, null, api_dynamic_text(tile.count))]);
-  })), api_element("div", stc3, [api_element("section", stc4, [api_static_fragment($fragment5, 15, [api_static_part(5, null, api_dynamic_text($cmp.count) + " shown"), api_static_part(9, {
-    on: _m7 || ($ctx._m7 = {
+  })), api_element("div", stc3, [api_element("section", stc4, [api_static_fragment($fragment6, 18, [api_static_part(5, null, api_dynamic_text($cmp.count) + " shown"), api_static_part(9, {
+    on: _m8 || ($ctx._m8 = {
       "change": api_bind($cmp.filterChanged)
     })
-  }, null)]), api_static_fragment($fragment6, 17, [api_static_part(4, {
-    on: _m8 || ($ctx._m8 = {
+  }, null)]), api_static_fragment($fragment7, 20, [api_static_part(4, {
+    on: _m9 || ($ctx._m9 = {
       "input": api_bind($cmp.searchChanged)
     })
   }, null), api_static_part(8, {
-    on: _m9 || ($ctx._m9 = {
+    on: _m10 || ($ctx._m10 = {
       "change": api_bind($cmp.statusFilterChanged)
     })
   }, null)]), api_element("div", stc5, api_flatten([api_iterator($cmp.cases, function (item) {
-    return api_static_fragment($fragment7, api_key(20, item.id), [api_static_part(0, {
-      on: _m11 || ($ctx._m11 = {
+    return api_static_fragment($fragment8, api_key(23, item.id), [api_static_part(0, {
+      on: _m12 || ($ctx._m12 = {
         "click": api_bind($cmp.select)
       }),
       className: api_normalize_class_name(item.selected),
@@ -7449,44 +7454,44 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     }, null), api_static_part(3, null, "#" + api_dynamic_text(item.id)), api_static_part(4, {
       className: api_normalize_class_name(item.priorityClass)
     }, null), api_static_part(5, null, api_dynamic_text(item.priority)), api_static_part(7, null, api_dynamic_text(item.subject)), api_static_part(10, null, api_dynamic_text(item.customer)), api_static_part(12, null, api_dynamic_text(item.status))]);
-  }), $cmp.cases.length ? api_fragment(21, stc6, 0) : api_fragment(21, [api_static_fragment($fragment8, 23)], 0)]))]), api_element("section", stc7, [api_static_fragment($fragment9, 26, [api_static_part(3, null, "Case · #" + api_dynamic_text($cmp.selected.id)), api_static_part(5, null, api_dynamic_text($cmp.selected.subject)), api_static_part(7, null, "From " + api_dynamic_text($cmp.selected.customer) + " "), api_static_part(10, null, " " + api_dynamic_text($cmp.selected.company)), api_static_part(12, null, api_dynamic_text($cmp.selected.status))]), api_static_fragment($fragment10, 28, [api_static_part(4, null, api_dynamic_text($cmp.selected.owner)), api_static_part(6, null, api_dynamic_text($cmp.followUpText)), api_static_part(8, null, api_dynamic_text($cmp.escalationLabel))]), api_element("div", stc8, [api_element("ol", stc9, api_iterator($cmp.statusPath, function (step) {
-    return api_static_fragment($fragment11, api_key(32, step.value), [api_static_part(0, {
+  }), $cmp.cases.length ? api_fragment(24, stc6, 0) : api_fragment(24, [api_static_fragment($fragment9, 26)], 0)]))]), api_element("section", stc7, [api_static_fragment($fragment10, 29, [api_static_part(3, null, "Case · #" + api_dynamic_text($cmp.selected.id)), api_static_part(5, null, api_dynamic_text($cmp.selected.subject)), api_static_part(7, null, "From " + api_dynamic_text($cmp.selected.customer) + " "), api_static_part(10, null, " " + api_dynamic_text($cmp.selected.company)), api_static_part(12, null, api_dynamic_text($cmp.selected.status))]), api_static_fragment($fragment11, 31, [api_static_part(4, null, api_dynamic_text($cmp.selected.owner)), api_static_part(6, null, api_dynamic_text($cmp.followUpText)), api_static_part(8, null, api_dynamic_text($cmp.escalationLabel))]), api_element("div", stc8, [api_element("ol", stc9, api_iterator($cmp.statusPath, function (step) {
+    return api_static_fragment($fragment12, api_key(35, step.value), [api_static_part(0, {
       className: api_normalize_class_name(step.cssClass),
       attrs: {
         "aria-current": step.ariaCurrent
       }
     }, null), api_static_part(1, null, api_dynamic_text(step.value))]);
-  })), api_static_fragment($fragment12, 34)]), api_static_fragment($fragment13, 36, [api_static_part(5, null, api_dynamic_text($cmp.selected.channel)), api_static_part(8, null, api_dynamic_text($cmp.selected.customerInitial)), api_static_part(11, null, api_dynamic_text($cmp.selected.customer)), api_static_part(13, null, api_dynamic_text($cmp.selected.email)), api_static_part(15, null, api_dynamic_text($cmp.selected.description))]), api_element("div", stc10, [api_static_fragment($fragment14, 39), api_element("div", stc11, [api_element("label", stc12, [api_text("Status"), api_element("select", {
-    key: 42,
-    on: _m12 || ($ctx._m12 = {
+  })), api_static_fragment($fragment13, 37)]), api_static_fragment($fragment14, 39, [api_static_part(5, null, api_dynamic_text($cmp.selected.channel)), api_static_part(8, null, api_dynamic_text($cmp.selected.customerInitial)), api_static_part(11, null, api_dynamic_text($cmp.selected.customer)), api_static_part(13, null, api_dynamic_text($cmp.selected.email)), api_static_part(15, null, api_dynamic_text($cmp.selected.description))]), api_element("div", stc10, [api_static_fragment($fragment15, 42), api_element("div", stc11, [api_element("label", stc12, [api_text("Status"), api_element("select", {
+    key: 45,
+    on: _m13 || ($ctx._m13 = {
       "change": api_bind($cmp.statusChanged)
     })
   }, api_iterator($cmp.statusOptions, function (o) {
-    return api_static_fragment($fragment15, api_key(44, o.value), [api_static_part(0, {
+    return api_static_fragment($fragment16, api_key(47, o.value), [api_static_part(0, {
       attrs: {
         "value": o.value,
         "selected": o.selected ? "" : null
       }
     }, null), api_static_part(1, null, api_dynamic_text(o.value))]);
   }))]), api_element("label", stc13, [api_text("Priority"), api_element("select", {
-    key: 46,
-    on: _m13 || ($ctx._m13 = {
+    key: 49,
+    on: _m14 || ($ctx._m14 = {
       "change": api_bind($cmp.priorityChanged)
     })
   }, api_iterator($cmp.priorityOptions, function (o) {
-    return api_static_fragment($fragment16, api_key(48, o.value), [api_static_part(0, {
+    return api_static_fragment($fragment17, api_key(51, o.value), [api_static_part(0, {
       attrs: {
         "value": o.value,
         "selected": o.selected ? "" : null
       }
     }, null), api_static_part(1, null, api_dynamic_text(o.value))]);
   }))])]), api_element("div", stc14, [api_element("label", stc15, [api_text("Assigned to"), api_element("select", {
-    key: 51,
-    on: _m14 || ($ctx._m14 = {
+    key: 54,
+    on: _m15 || ($ctx._m15 = {
       "change": api_bind($cmp.ownerChanged)
     })
   }, api_iterator($cmp.ownerOptions, function (o) {
-    return api_static_fragment($fragment17, api_key(53, o.value), [api_static_part(0, {
+    return api_static_fragment($fragment18, api_key(56, o.value), [api_static_part(0, {
       attrs: {
         "value": o.value,
         "selected": o.selected ? "" : null
@@ -7498,51 +7503,51 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     props: {
       "value": $cmp.draftFollowUp
     },
-    key: 55,
-    on: _m15 || ($ctx._m15 = {
+    key: 58,
+    on: _m16 || ($ctx._m16 = {
       "change": api_bind($cmp.followUpChanged)
     })
-  })])]), api_static_fragment($fragment18, 57, [api_static_part(4, {
-    on: _m16 || ($ctx._m16 = {
+  })])]), api_static_fragment($fragment19, 60, [api_static_part(4, {
+    on: _m17 || ($ctx._m17 = {
       "input": api_bind($cmp.noteChanged)
     })
-  }, null)]), api_static_fragment($fragment19, 59, [api_static_part(2, null, api_dynamic_text($cmp.message)), api_static_part(4, null, api_dynamic_text($cmp.error)), api_static_part(5, {
-    on: _m17 || ($ctx._m17 = {
+  }, null)]), api_static_fragment($fragment20, 62, [api_static_part(2, null, api_dynamic_text($cmp.error)), api_static_part(3, {
+    on: _m18 || ($ctx._m18 = {
       "click": api_bind($cmp.save)
     })
-  }, null)])]), api_element("div", stc19, [api_static_fragment($fragment20, 62), api_static_fragment($fragment21, 64), api_element("label", stc20, [api_static_fragment($fragment22, 67), api_element("input", {
+  }, null)])]), api_element("div", stc19, [api_static_fragment($fragment21, 65), api_static_fragment($fragment22, 67), api_element("label", stc20, [api_static_fragment($fragment23, 70), api_element("input", {
     attrs: stc21,
     props: {
       "value": $cmp.escalationReason
     },
-    key: 68,
-    on: _m18 || ($ctx._m18 = {
+    key: 71,
+    on: _m19 || ($ctx._m19 = {
       "input": api_bind($cmp.escalationChanged)
     })
-  })]), api_static_fragment($fragment23, 70, [api_static_part(0, {
-    on: _m20 || ($ctx._m20 = {
+  })]), api_static_fragment($fragment24, 73, [api_static_part(0, {
+    on: _m21 || ($ctx._m21 = {
       "click": api_bind($cmp.escalate)
     })
-  }, null)])]), api_element("div", stc22, api_flatten([api_static_fragment($fragment24, 73), api_iterator($cmp.activity, function (event) {
-    return api_static_fragment($fragment25, api_key(75, event.id), [api_static_part(2, null, api_dynamic_text(event.date)), api_static_part(4, null, api_dynamic_text(event.text))]);
-  })])), api_element("div", stc23, api_flatten([api_static_fragment($fragment26, 78), api_iterator($cmp.notes, function (n) {
-    return api_static_fragment($fragment27, api_key(80, n.id), [api_static_part(1, null, api_dynamic_text(n.text))]);
-  }), $cmp.notes.length ? api_fragment(81, stc6, 0) : api_fragment(81, [api_static_fragment($fragment28, 83)], 0)]))])])], 0) : null, $cmp.isNew ? api_fragment(84, [api_element("section", stc24, [api_static_fragment($fragment29, 87), api_static_fragment($fragment30, 89), api_element("div", stc25, [api_element("label", stc26, [api_text("Customer name"), api_element("input", {
+  }, null)])]), api_element("div", stc22, api_flatten([api_static_fragment($fragment25, 76), api_iterator($cmp.activity, function (event) {
+    return api_static_fragment($fragment26, api_key(78, event.id), [api_static_part(2, null, api_dynamic_text(event.date)), api_static_part(4, null, api_dynamic_text(event.text))]);
+  })])), api_element("div", stc23, api_flatten([api_static_fragment($fragment27, 81), api_iterator($cmp.notes, function (n) {
+    return api_static_fragment($fragment28, api_key(83, n.id), [api_static_part(1, null, api_dynamic_text(n.text))]);
+  }), $cmp.notes.length ? api_fragment(84, stc6, 0) : api_fragment(84, [api_static_fragment($fragment29, 86)], 0)]))])])], 0) : null, $cmp.isNew ? api_fragment(87, [api_element("section", stc24, [api_static_fragment($fragment30, 90), api_static_fragment($fragment31, 92), api_element("div", stc25, [api_element("label", stc26, [api_text("Customer name"), api_element("input", {
     attrs: stc27,
     props: {
       "value": $cmp.newCase.customer
     },
-    key: 92,
-    on: _m21 || ($ctx._m21 = {
+    key: 95,
+    on: _m22 || ($ctx._m22 = {
       "input": api_bind($cmp.newField)
     })
-  })]), api_element("label", stc28, [api_text("Company "), api_static_fragment($fragment31, 95), api_element("input", {
+  })]), api_element("label", stc28, [api_text("Company "), api_static_fragment($fragment32, 98), api_element("input", {
     attrs: stc29,
     props: {
       "value": $cmp.newCase.company
     },
-    key: 96,
-    on: _m22 || ($ctx._m22 = {
+    key: 99,
+    on: _m23 || ($ctx._m23 = {
       "input": api_bind($cmp.newField)
     })
   })]), api_element("label", stc30, [api_text("Subject"), api_element("input", {
@@ -7550,39 +7555,39 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     props: {
       "value": $cmp.newCase.subject
     },
-    key: 98,
-    on: _m23 || ($ctx._m23 = {
-      "input": api_bind($cmp.newField)
-    })
-  })]), api_static_fragment($fragment32, 100, [api_static_part(2, {
+    key: 101,
     on: _m24 || ($ctx._m24 = {
       "input": api_bind($cmp.newField)
     })
-  }, null)]), api_static_fragment($fragment33, 102, [api_static_part(2, {
+  })]), api_static_fragment($fragment33, 103, [api_static_part(2, {
     on: _m25 || ($ctx._m25 = {
-      "change": api_bind($cmp.newField)
+      "input": api_bind($cmp.newField)
     })
-  }, null)]), api_static_fragment($fragment34, 104, [api_static_part(2, {
+  }, null)]), api_static_fragment($fragment34, 105, [api_static_part(2, {
     on: _m26 || ($ctx._m26 = {
       "change": api_bind($cmp.newField)
     })
-  }, null)]), api_static_fragment($fragment35, 106, [api_static_part(4, {
+  }, null)]), api_static_fragment($fragment35, 107, [api_static_part(2, {
     on: _m27 || ($ctx._m27 = {
       "change": api_bind($cmp.newField)
     })
-  }, null)])]), api_static_fragment($fragment36, 108, [api_static_part(1, null, api_dynamic_text($cmp.error))]), api_static_fragment($fragment37, 110, [api_static_part(1, {
+  }, null)]), api_static_fragment($fragment36, 109, [api_static_part(4, {
     on: _m28 || ($ctx._m28 = {
+      "change": api_bind($cmp.newField)
+    })
+  }, null)])]), api_static_fragment($fragment37, 111, [api_static_part(1, null, api_dynamic_text($cmp.error))]), api_static_fragment($fragment38, 113, [api_static_part(1, {
+    on: _m29 || ($ctx._m29 = {
       "click": api_bind($cmp.navigate)
     })
   }, null), api_static_part(3, {
-    on: _m29 || ($ctx._m29 = {
+    on: _m30 || ($ctx._m30 = {
       "click": api_bind($cmp.create)
     })
-  }, null)])])], 0) : null, $cmp.isGuide ? api_fragment(111, [api_static_fragment($fragment38, 113, [api_static_part(18, {
-    on: _m30 || ($ctx._m30 = {
+  }, null)])])], 0) : null, $cmp.isGuide ? api_fragment(114, [api_static_fragment($fragment39, 116, [api_static_part(18, {
+    on: _m31 || ($ctx._m31 = {
       "click": api_bind($cmp.navigate)
     })
-  }, null)])], 0) : null, $cmp.isSource ? api_fragment(114, [api_static_fragment($fragment39, 116)], 0) : null, api_static_fragment($fragment40, 118)])])];
+  }, null)])], 0) : null, $cmp.isSource ? api_fragment(117, [api_static_fragment($fragment40, 119)], 0) : null, api_static_fragment($fragment41, 121)])])];
   /*LWC compiler v9.5.3*/
 }
 var _tmpl = registerTemplate(tmpl);
@@ -7771,6 +7776,22 @@ class App extends LightningElement {
     this.message = '';
     this.error = '';
     this.tab = 'workspace';
+    this.toastMessage = '';
+    this.toastTimer = void 0;
+  }
+  showToast(text) {
+    clearTimeout(this.toastTimer);
+    this.toastMessage = text;
+    this.toastTimer = setTimeout(() => {
+      this.toastMessage = '';
+    }, 5000);
+  }
+  dismissToast() {
+    clearTimeout(this.toastTimer);
+    this.toastMessage = '';
+  }
+  disconnectedCallback() {
+    clearTimeout(this.toastTimer);
   }
   connectedCallback() {
     this.refresh();
@@ -7953,6 +7974,7 @@ class App extends LightningElement {
       this.search = '';
       this.tab = 'workspace';
       this.message = 'Case created.';
+      this.showToast('Case created.');
       this.error = '';
       this.refresh();
     } catch (e) {
@@ -7967,6 +7989,7 @@ class App extends LightningElement {
       });
       this.escalationReason = '';
       this.message = 'Case escalated.';
+      this.showToast('Case escalated.');
       this.error = '';
       this.refresh();
     } catch (e) {
@@ -7994,6 +8017,7 @@ class App extends LightningElement {
       });
       this.note = '';
       this.message = 'Case updated.';
+      this.showToast('Case updated.');
       this.error = '';
       this.refresh();
     } catch (e) {
@@ -8015,6 +8039,7 @@ class App extends LightningElement {
     this.escalationReason = '';
     this.note = '';
     this.message = 'Sample cases restored.';
+    this.showToast('Sample cases restored.');
     this.error = '';
     this.refresh();
   }
@@ -8024,7 +8049,7 @@ class App extends LightningElement {
   /*LWC compiler v9.5.3*/
 }
 registerDecorators(App, {
-  fields: ["cases", "selectedId", "filter", "statusFilter", "summaryFilter", "search", "draftStatus", "draftPriority", "note", "draftOwner", "draftFollowUp", "escalationReason", "newCase", "message", "error", "tab"]
+  fields: ["cases", "selectedId", "filter", "statusFilter", "summaryFilter", "search", "draftStatus", "draftPriority", "note", "draftOwner", "draftFollowUp", "escalationReason", "newCase", "message", "error", "tab", "toastMessage", "toastTimer"]
 });
 const __lwc_component_class_internal = registerComponent(App, {
   tmpl: _tmpl,

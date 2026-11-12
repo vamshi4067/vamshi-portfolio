@@ -7181,95 +7181,96 @@ seal(LightningElement.prototype);
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
-  return [((useActualHostSelector ? ":host{" : hostSelector + "{")), "display:block;color:#18313e;font-family:Studio,system-ui,sans-serif}*", shadowSelector, "{box-sizing:border-box}h1", shadowSelector, ",h2", shadowSelector, ",p", shadowSelector, "{margin:0}button", shadowSelector, ",input", shadowSelector, "{font:inherit}button", shadowSelector, "{cursor:pointer}button:focus-visible", shadowSelector, ",input:focus-visible", shadowSelector, ",a:focus-visible", shadowSelector, "{outline:3px solid #c6694b;outline-offset:3px}button:disabled", shadowSelector, "{opacity:.5;cursor:not-allowed}.page", shadowSelector, "{max-width:1600px;margin:auto;padding:0 68px}.header", shadowSelector, "{height:88px;border-bottom:1px solid #c8cfca;display:flex;align-items:center;gap:35px}.brand", shadowSelector, "{display:flex;gap:11px;align-items:center;text-decoration:none;color:#163440;font-weight:700;font-size:18px;letter-spacing:-.03em}.brand", shadowSelector, " span", shadowSelector, " span", shadowSelector, "{font-weight:400;color:#6c7e7e}.brand-mark", shadowSelector, "{display:grid;place-items:center;width:31px;height:31px;background:#1c4451;color:#fff;border-radius:50%;font:italic 25px Georgia,serif}.header", shadowSelector, " nav", shadowSelector, "{display:flex;gap:24px;margin-left:auto}.header", shadowSelector, " nav", shadowSelector, " button", shadowSelector, ",.reset", shadowSelector, ",.back", shadowSelector, "{border:0;background:transparent;color:#425b61;font-size:13px;padding:11px 0}.header", shadowSelector, " nav", shadowSelector, " button:hover", shadowSelector, ",.reset:hover", shadowSelector, ",.back:hover", shadowSelector, "{text-decoration:underline;text-underline-offset:5px}.reset", shadowSelector, "{border:1px solid #9aaea9;border-radius:3px;padding:10px 14px}.intro", shadowSelector, "{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end;padding:58px 0 50px}.breadcrumb", shadowSelector, ",.section-caption", shadowSelector, ",.customer-label", shadowSelector, "{color:#a24f39;font-size:11px;font-weight:700;letter-spacing:.1em}.intro", shadowSelector, " h1", shadowSelector, ",.about", shadowSelector, " h1", shadowSelector, "{font-size:clamp(39px,4.3vw,62px);font-weight:500;letter-spacing:-.04em;line-height:1.08;margin-top:19px}.intro", shadowSelector, " h1", shadowSelector, " em", shadowSelector, ",.about", shadowSelector, " h1", shadowSelector, " em", shadowSelector, "{font-family:Georgia,serif;font-weight:400;color:#bb6247}.intro-copy", shadowSelector, "{font-size:15px;line-height:1.7;color:#526b70;max-width:52ch;margin-top:18px}.customer-card", shadowSelector, "{background:#d9e2df;border-radius:4px;padding:24px;display:flex;gap:17px;max-width:410px;width:100%;justify-self:end}.customer-icon", shadowSelector, "{display:grid;place-items:center;width:49px;height:49px;background:#234c58;color:#fff;font-size:22px;border-radius:3px}.customer-label", shadowSelector, "{color:#4d6d6d}.customer-card", shadowSelector, " h2", shadowSelector, "{font-size:19px;margin:6px 0 9px}.customer-card", shadowSelector, " p", shadowSelector, "{color:#536e71;font-size:12px;line-height:1.7}.journey", shadowSelector, "{background:#183d49;color:#fff;padding:27px 32px 0;border-radius:4px}.section-head", shadowSelector, "{display:flex;justify-content:space-between;align-items:center;gap:18px}.section-head", shadowSelector, " h2", shadowSelector, "{font-size:20px;font-weight:600}.section-head", shadowSelector, " p", shadowSelector, "{color:#c7d6d3;font-size:13px;margin-top:5px}.progress-label", shadowSelector, "{display:flex;gap:9px;align-items:baseline}.progress-label", shadowSelector, " strong", shadowSelector, "{font-size:22px;font-weight:500}.progress-label", shadowSelector, " span", shadowSelector, "{font-size:12px;color:#c7d6d3}.progress-track", shadowSelector, "{height:3px;background:#4b6a70;margin-top:22px}.progress-track", shadowSelector, " span", shadowSelector, "{display:block;height:100%;background:#e5a87f;transition:width 180ms ease}.stages", shadowSelector, "{display:grid;grid-template-columns:repeat(4,1fr);gap:1px}.stage", shadowSelector, "{display:flex;align-items:center;gap:12px;min-width:0;padding:23px 12px 23px 0;color:#b8c9c8}.stage.current", shadowSelector, "{color:#fff}.stage-number", shadowSelector, "{border:1px solid #76918f;width:35px;height:35px;border-radius:50%;display:grid;place-items:center;font-size:11px;flex-shrink:0}.stage.current", shadowSelector, " .stage-number", shadowSelector, "{background:#f0be98;border-color:#f0be98;color:#183d49}.stage.complete", shadowSelector, " .stage-number", shadowSelector, "{background:#a6cab9;color:#183d49;border-color:#a6cab9}.stage", shadowSelector, " strong", shadowSelector, ",.stage", shadowSelector, " small", shadowSelector, "{display:block}.stage", shadowSelector, " strong", shadowSelector, "{font-size:14px;font-weight:600}.stage", shadowSelector, " small", shadowSelector, "{font-size:11px;margin-top:4px}.content-grid", shadowSelector, "{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:26px;margin-top:26px;align-items:start}.tasks", shadowSelector, "{background:#fff;border:1px solid #d9e0db;border-radius:4px}.task-head", shadowSelector, "{padding:28px 30px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid #e3e9e5}.task-head", shadowSelector, " h2", shadowSelector, "{font-size:27px;letter-spacing:-.03em;margin-top:5px}.task-head", shadowSelector, " p:not(.section-caption)", shadowSelector, "{font-size:13px;color:#617579;margin-top:6px}.add", shadowSelector, "{border:1px solid #b7c6bf;background:#fff;color:#244a51;border-radius:3px;padding:10px 12px;font-size:13px;white-space:nowrap}.task-list", shadowSelector, "{padding:0 30px}.task", shadowSelector, "{display:flex;align-items:center;gap:14px;padding:20px 0;border-bottom:1px solid #e8ede9}.task-indicator", shadowSelector, "{width:20px;height:20px;border:1px solid #9eaea9;border-radius:50%;flex-shrink:0}.task.done", shadowSelector, " .task-indicator", shadowSelector, "{background:#639278;border-color:#639278}.task-copy", shadowSelector, "{flex:1;min-width:0}.task-copy", shadowSelector, " strong", shadowSelector, ",.task-copy", shadowSelector, " span", shadowSelector, "{display:block}.task-copy", shadowSelector, " strong", shadowSelector, "{font-size:14px;font-weight:600}.task-copy", shadowSelector, " span", shadowSelector, "{font-size:12px;color:#657a7d;margin-top:5px}.task.overdue", shadowSelector, " .task-copy", shadowSelector, " span", shadowSelector, "{color:#ad523a}.required", shadowSelector, "{font-size:11px;color:#637778;background:#edf2ee;padding:5px 8px;border-radius:3px}.task", shadowSelector, " button", shadowSelector, "{background:transparent;border:1px solid #bdcbc5;color:#315a58;padding:8px 11px;border-radius:3px;font-size:12px;white-space:nowrap}.done-label", shadowSelector, "{color:#41785b;font-size:12px}.task-foot", shadowSelector, "{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 30px}.task-foot", shadowSelector, " p", shadowSelector, "{font-size:12px;color:#41785b}.task-foot", shadowSelector, " .error", shadowSelector, "{color:#a53629}.primary", shadowSelector, ",.download", shadowSelector, "{background:#c36449;color:#fff;border:0;border-radius:3px;padding:13px 17px;font-size:13px;font-weight:600;text-decoration:none}.primary:hover", shadowSelector, ",.download:hover", shadowSelector, "{background:#a94f38}.primary", shadowSelector, " span", shadowSelector, "{padding-left:10px}.follow-form", shadowSelector, "{display:grid;grid-template-columns:1fr 170px auto;gap:10px;align-items:end;padding:20px 30px;background:#f3f6f3}.follow-form", shadowSelector, " label", shadowSelector, "{color:#425c5c;font-size:12px;font-weight:600}.follow-form", shadowSelector, " input", shadowSelector, "{display:block;width:100%;padding:10px;margin-top:6px;border:1px solid #b8c8bf;background:#fff;border-radius:3px;color:#18313e}.sidebar", shadowSelector, "{background:#e5e9df;border-radius:4px}.sidebar-top", shadowSelector, "{padding:27px}.aside-number", shadowSelector, "{font-size:27px;color:#bf6a4e}.sidebar", shadowSelector, " h2", shadowSelector, "{font-size:19px;letter-spacing:-.02em;margin-top:16px}.sidebar", shadowSelector, " p", shadowSelector, "{font-size:13px;line-height:1.7;color:#526a67;margin-top:12px}.sidebar-bottom", shadowSelector, "{padding:25px 27px;border-top:1px solid #c5d0c4}.sidebar-bottom", shadowSelector, ">span", shadowSelector, "{font-size:10px;font-weight:700;letter-spacing:.1em;color:#6c7e71}.sidebar-bottom", shadowSelector, " button", shadowSelector, "{padding:0;margin-top:15px;border:0;background:transparent;color:#9a4d38;font-size:13px;font-weight:600;text-align:left}.about", shadowSelector, "{padding:55px 0;max-width:1050px}.about", shadowSelector, " h1", shadowSelector, "{margin-top:28px}.about", shadowSelector, ">p", shadowSelector, "{line-height:1.7;color:#526b70;max-width:65ch;margin-top:20px}.about-grid", shadowSelector, "{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin:45px 0}.about-grid", shadowSelector, " article", shadowSelector, "{border-top:2px solid #b7654a;padding-top:22px}.about-grid", shadowSelector, " article", shadowSelector, " span", shadowSelector, "{color:#a24f39;font-size:12px}.about-grid", shadowSelector, " h2", shadowSelector, "{font-size:21px;margin:12px 0}.about-grid", shadowSelector, " p", shadowSelector, "{color:#526b70;font-size:14px;line-height:1.7}.about", shadowSelector, " .note", shadowSelector, "{background:#dfe9e3;padding:18px;margin-bottom:25px;font-size:13px}.download", shadowSelector, "{display:inline-block}footer", shadowSelector, "{border-top:1px solid #c8cfca;display:flex;justify-content:space-between;gap:20px;margin-top:55px;padding:22px 0 32px;color:#657c79;font-size:11px;letter-spacing:.05em}footer", shadowSelector, " span", shadowSelector, "+span", shadowSelector, "{letter-spacing:0}@media(max-width:900px){.page", shadowSelector, "{padding:0 28px}.intro", shadowSelector, "{grid-template-columns:1fr 1fr}.content-grid", shadowSelector, "{grid-template-columns:1fr 250px}.follow-form", shadowSelector, "{grid-template-columns:1fr 1fr}.follow-form", shadowSelector, " button", shadowSelector, "{grid-column:1/-1}}@media(max-width:650px){.page", shadowSelector, "{padding:0 18px}.header", shadowSelector, "{height:auto;min-height:75px;flex-wrap:wrap;gap:9px;padding:16px 0}.header", shadowSelector, " nav", shadowSelector, "{order:3;width:100%;margin:0;gap:20px}.reset", shadowSelector, "{margin-left:auto}.intro", shadowSelector, "{grid-template-columns:1fr;padding:35px 0;gap:25px}.intro", shadowSelector, " h1", shadowSelector, ",.about", shadowSelector, " h1", shadowSelector, "{font-size:40px}.customer-card", shadowSelector, "{justify-self:start;max-width:none}.journey", shadowSelector, "{padding:23px 20px 0}.section-head", shadowSelector, "{align-items:flex-start}.progress-label", shadowSelector, "{display:block;text-align:right}.progress-label", shadowSelector, " span", shadowSelector, "{display:block}.stages", shadowSelector, "{grid-template-columns:1fr 1fr}.stage", shadowSelector, "{padding:15px 4px}.content-grid", shadowSelector, "{grid-template-columns:1fr;gap:15px}.task-head", shadowSelector, "{padding:22px 18px;align-items:flex-start}.task-list", shadowSelector, "{padding:0 18px}.task", shadowSelector, "{flex-wrap:wrap}.task-copy", shadowSelector, "{min-width:60%}.task-foot", shadowSelector, "{padding:18px;flex-wrap:wrap}.follow-form", shadowSelector, "{grid-template-columns:1fr;padding:18px}.follow-form", shadowSelector, " button", shadowSelector, "{grid-column:auto}.about-grid", shadowSelector, "{grid-template-columns:1fr;gap:18px}footer", shadowSelector, "{display:block;line-height:2}}@media(prefers-reduced-motion:reduce){.progress-track", shadowSelector, " span", shadowSelector, "{transition:none}}", ((useActualHostSelector ? ":host{" : hostSelector + "{")), "color:#282d48}.header", shadowSelector, "{border-color:#d3cfdb}.brand", shadowSelector, ",.brand", shadowSelector, " span", shadowSelector, " span", shadowSelector, "{color:#303651}.brand-mark", shadowSelector, "{background:#574d83;color:white;font:600 17px Studio,system-ui,sans-serif}.header", shadowSelector, " nav", shadowSelector, " button", shadowSelector, ",.reset", shadowSelector, ",.back", shadowSelector, "{color:#515776}.reset", shadowSelector, "{border-color:#bcb8ce}.intro", shadowSelector, " h1", shadowSelector, " em", shadowSelector, ",.about", shadowSelector, " h1", shadowSelector, " em", shadowSelector, "{color:#b45e4c}.breadcrumb", shadowSelector, ",.section-caption", shadowSelector, "{color:#a34d3d}.intro-copy", shadowSelector, ",.about", shadowSelector, ">p", shadowSelector, "{color:#5f6378}.customer-card", shadowSelector, "{background:#e1ddea}.customer-icon", shadowSelector, "{background:#695b91}.customer-label", shadowSelector, "{color:#625b7d}.customer-card", shadowSelector, " p", shadowSelector, "{color:#62607a}.journey", shadowSelector, "{background:#403b65}.section-head", shadowSelector, " p", shadowSelector, ",.progress-label", shadowSelector, " span", shadowSelector, "{color:#dbd7e9}.progress-track", shadowSelector, "{background:#777198}.progress-track", shadowSelector, " span", shadowSelector, "{background:#efad89}.stage", shadowSelector, "{color:#d1cce0}.stage.current", shadowSelector, " .stage-number", shadowSelector, "{background:#f2be9f;border-color:#f2be9f;color:#403b65}.stage.complete", shadowSelector, " .stage-number", shadowSelector, "{background:#c9d5bd;border-color:#c9d5bd;color:#403b65}.content-grid", shadowSelector, " .tasks", shadowSelector, "{border-color:#ded9e4}.task-head", shadowSelector, "{border-color:#ebe7ed}.task-head", shadowSelector, " p:not(.section-caption)", shadowSelector, ",.task-copy", shadowSelector, " span", shadowSelector, "{color:#686b80}.add", shadowSelector, ",.task", shadowSelector, " button", shadowSelector, "{border-color:#c5bdcf;color:#5b507d}.task", shadowSelector, "{border-color:#eeeaf0}.required", shadowSelector, "{background:#eeeaf4;color:#635d79}.primary", shadowSelector, ",.download", shadowSelector, "{background:#b9624e}.primary:hover", shadowSelector, ",.download:hover", shadowSelector, "{background:#994b3b}.follow-form", shadowSelector, "{background:#f4f1f7}.follow-form", shadowSelector, " label", shadowSelector, "{color:#5a5872}.follow-form", shadowSelector, " input", shadowSelector, "{border-color:#c9c0d1;color:#282d48}.sidebar", shadowSelector, "{background:#e9e0d8}.sidebar", shadowSelector, " h2", shadowSelector, "{margin-top:0}.sidebar", shadowSelector, " p", shadowSelector, "{color:#6d605d}.sidebar-bottom", shadowSelector, "{border-color:#d2c4ba}.sidebar-bottom", shadowSelector, ">span", shadowSelector, "{color:#786761}.sidebar-bottom", shadowSelector, " button", shadowSelector, "{color:#9a4d3c}footer", shadowSelector, "{border-color:#d3cfdb;color:#6c6d80}.about-grid", shadowSelector, " article", shadowSelector, "{border-color:#b9624e}.about-grid", shadowSelector, " p", shadowSelector, "{color:#5f6378}.about", shadowSelector, " .note", shadowSelector, "{background:#e6e0ec}.stage", shadowSelector, "{border:0;border-radius:4px;background:transparent;text-align:left;font:inherit;cursor:pointer;transition:background-color 150ms ease}.stage:hover", shadowSelector, "{background:rgba(255,255,255,.08)}.stage.selected", shadowSelector, "{background:rgba(255,255,255,.12)}.stage:focus-visible", shadowSelector, "{outline:3px solid #f0be98;outline-offset:-3px}.stage-text", shadowSelector, "{min-width:0}.preview-label", shadowSelector, "{font-size:12px;color:#687882}@media(prefers-reduced-motion:reduce){.stage", shadowSelector, "{transition:none}}.intro", shadowSelector, "{display:block}.intro", shadowSelector, ">div", shadowSelector, "{max-width:850px}.stages", shadowSelector, "{grid-template-columns:repeat(6,minmax(0,1fr))}.stage", shadowSelector, "{padding-left:8px;gap:9px}.stage", shadowSelector, " strong", shadowSelector, "{font-size:13px}@media(max-width:1000px){.stages", shadowSelector, "{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:650px){.stages", shadowSelector, "{grid-template-columns:repeat(2,minmax(0,1fr))}}.aside-action", shadowSelector, ",.sidebar-bottom", shadowSelector, " .aside-action", shadowSelector, "{padding:0;margin-top:14px;border:0;background:transparent;color:#934735;font-size:13px;font-weight:600;text-align:left}.detail-form", shadowSelector, "{display:grid;gap:10px;margin-top:16px}.detail-form", shadowSelector, " label", shadowSelector, ",.blocker-input", shadowSelector, "{display:block;color:#564d61;font-size:12px;font-weight:600}.detail-form", shadowSelector, " input", shadowSelector, ",.detail-form", shadowSelector, " textarea", shadowSelector, ",.blocker-input", shadowSelector, " input", shadowSelector, "{display:block;width:100%;margin-top:5px;padding:9px;border:1px solid #bdb6c7;background:#fff;border-radius:3px;color:#282d48;font:inherit;font-size:13px}.detail-form", shadowSelector, " textarea", shadowSelector, "{min-height:70px;resize:vertical}.detail-form", shadowSelector, " .primary", shadowSelector, "{justify-self:start}.customer-note", shadowSelector, ",.activity-item", shadowSelector, "{padding-top:10px;border-top:1px solid #d2c4ba}.activity-item", shadowSelector, " small", shadowSelector, "{color:#6b6267}.blocker", shadowSelector, "{display:flex;justify-content:space-between;align-items:start;gap:10px;margin-top:13px;color:#443e4c;font-size:13px;line-height:1.5}.blocker", shadowSelector, " button", shadowSelector, "{margin:0;color:#934735}.blocker", shadowSelector, " small", shadowSelector, "{color:#476c52}.blocker-input", shadowSelector, "{margin-top:16px}.edit-task", shadowSelector, "{margin-left:2px}", ((useActualHostSelector ? ":host{" : hostSelector + "{")), "font-family:Arial,Helvetica,sans-serif;color:#181818}.page", shadowSelector, "{max-width:none;background:#f3f3f3;padding:0 24px}.header", shadowSelector, "{height:58px;background:#fff;border-bottom:1px solid #d8dde6;margin:0 -24px;padding:0 24px}.brand", shadowSelector, ",.brand", shadowSelector, " span", shadowSelector, " span", shadowSelector, "{color:#032d60}.brand", shadowSelector, "{font-size:16px;letter-spacing:0}.brand-mark", shadowSelector, "{background:#0176d3;border-radius:4px;color:#fff;font:700 16px Arial,sans-serif}.header", shadowSelector, " nav", shadowSelector, " button", shadowSelector, ",.reset", shadowSelector, ",.back", shadowSelector, "{color:#0176d3}.header", shadowSelector, " nav", shadowSelector, " button:hover", shadowSelector, "{color:#014486}.reset", shadowSelector, ",.add", shadowSelector, ",.task", shadowSelector, " button", shadowSelector, "{background:#fff;border:1px solid #c9c9c9;border-radius:4px;color:#0176d3}.reset:hover", shadowSelector, ",.add:hover", shadowSelector, ",.task", shadowSelector, " button:hover", shadowSelector, "{background:#eef4ff}.intro", shadowSelector, "{padding:25px 0 20px}.intro", shadowSelector, " h1", shadowSelector, ",.about", shadowSelector, " h1", shadowSelector, "{font-family:Arial,Helvetica,sans-serif;font-size:28px;line-height:1.2;letter-spacing:0;color:#181818;font-weight:700}.intro", shadowSelector, " h1", shadowSelector, " br", shadowSelector, "{display:none}.intro", shadowSelector, " h1", shadowSelector, " em", shadowSelector, ",.about", shadowSelector, " h1", shadowSelector, " em", shadowSelector, "{font-style:normal;color:#181818}.breadcrumb", shadowSelector, ",.section-caption", shadowSelector, "{color:#0176d3;letter-spacing:.04em}.intro-copy", shadowSelector, ",.about", shadowSelector, ">p", shadowSelector, "{color:#586779;line-height:1.5}.intro-copy", shadowSelector, "{margin-top:8px}.journey", shadowSelector, "{background:#fff;color:#181818;border:1px solid #dddbda;border-radius:5px;padding:20px 20px 0;box-shadow:0 2px 3px #0000000d}.section-head", shadowSelector, " h2", shadowSelector, "{color:#181818;font-size:18px}.section-head", shadowSelector, " p", shadowSelector, ",.progress-label", shadowSelector, " span", shadowSelector, "{color:#586779}.progress-label", shadowSelector, " strong", shadowSelector, "{color:#0176d3}.progress-track", shadowSelector, "{background:#e5e5e5;height:6px}.progress-track", shadowSelector, " span", shadowSelector, "{background:#2e844a}.stage", shadowSelector, "{color:#444;border-radius:0}.stage:hover", shadowSelector, "{background:#f3f8ff}.stage.selected", shadowSelector, "{background:#eef4ff}.stage-number", shadowSelector, "{border-color:#9aa4ad;color:#586779}.stage.current", shadowSelector, " .stage-number", shadowSelector, "{background:#0176d3;border-color:#0176d3;color:#fff}.stage.complete", shadowSelector, " .stage-number", shadowSelector, "{background:#2e844a;border-color:#2e844a;color:#fff}.stage:focus-visible", shadowSelector, "{outline-color:#0176d3}.stage", shadowSelector, " small", shadowSelector, "{color:#586779}.content-grid", shadowSelector, " .tasks", shadowSelector, ",.sidebar", shadowSelector, "{background:#fff;border:1px solid #dddbda;border-radius:5px}.task-head", shadowSelector, ",.task", shadowSelector, ",.sidebar-bottom", shadowSelector, "{border-color:#e5e5e5}.task-head", shadowSelector, " h2", shadowSelector, ",.sidebar", shadowSelector, " h2", shadowSelector, "{color:#181818}.task-head", shadowSelector, " p:not(.section-caption)", shadowSelector, ",.task-copy", shadowSelector, " span", shadowSelector, ",.sidebar", shadowSelector, " p", shadowSelector, "{color:#586779}.required", shadowSelector, "{background:#eef4ff;color:#014486}.primary", shadowSelector, ",.download", shadowSelector, "{background:#0176d3;color:#fff;border:1px solid #0176d3;border-radius:4px}.primary:hover", shadowSelector, ",.download:hover", shadowSelector, "{background:#014486}.follow-form", shadowSelector, "{background:#f3f3f3}.follow-form", shadowSelector, " input", shadowSelector, ",.detail-form", shadowSelector, " input", shadowSelector, ",.detail-form", shadowSelector, " textarea", shadowSelector, ",.blocker-input", shadowSelector, " input", shadowSelector, "{border-color:#c9c9c9;color:#181818;background:#fff;border-radius:4px}.sidebar-bottom", shadowSelector, " button", shadowSelector, ",.aside-action", shadowSelector, ",.sidebar-bottom", shadowSelector, " .aside-action", shadowSelector, ",.blocker", shadowSelector, " button", shadowSelector, "{color:#0176d3}.customer-note", shadowSelector, ",.activity-item", shadowSelector, "{border-color:#e5e5e5}.about-grid", shadowSelector, " article", shadowSelector, "{border-color:#0176d3}.about", shadowSelector, " .note", shadowSelector, "{background:#eef4ff;color:#032d60}footer", shadowSelector, "{border-color:#dddbda;color:#586779}@media(max-width:650px){.page", shadowSelector, "{padding:0 12px}.header", shadowSelector, "{height:auto;margin:0 -12px;padding:12px}.intro", shadowSelector, "{padding:24px 0 18px}.intro", shadowSelector, " h1", shadowSelector, ",.about", shadowSelector, " h1", shadowSelector, "{font-size:24px}.journey", shadowSelector, "{padding:18px 14px 0}.content-grid", shadowSelector, "{grid-template-columns:1fr}}.workspace-overview", shadowSelector, "{margin:24px 0 12px;padding:18px;background:#fff;border:1px solid #dddbda;border-radius:5px;box-shadow:0 2px 3px #0000000d}.overview-header", shadowSelector, "{display:flex;align-items:center;gap:12px;padding-bottom:16px}.overview-icon", shadowSelector, "{display:grid;place-items:center;flex:0 0 38px;width:38px;height:38px;border-radius:4px;background:#f4c94b;color:#fff}.overview-icon", shadowSelector, " svg", shadowSelector, "{width:22px;height:22px;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.overview-label", shadowSelector, "{display:block;color:#586779;font-size:12px}.overview-header", shadowSelector, " h1", shadowSelector, "{font:700 19px/1.2 Arial,Helvetica,sans-serif;color:#181818;margin:0;letter-spacing:0}.overview-header", shadowSelector, " p", shadowSelector, "{font-size:12px;color:#586779;margin:4px 0 0}.sample-badge", shadowSelector, "{margin-left:auto;border:1px solid #c9c9c9;border-radius:16px;background:#f3f3f3;padding:3px 10px;font-size:12px;color:#444;white-space:nowrap}.overview-stats", shadowSelector, "{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.overview-stats", shadowSelector, ">div", shadowSelector, "{min-width:0;background:#f8f8f8;border:1px solid #e5e5e5;border-radius:4px;padding:12px 14px}.overview-stats", shadowSelector, ">div:first-child", shadowSelector, "{background:#eef4ff;border:2px solid #0176d3;padding:11px 13px}.overview-stats", shadowSelector, " span", shadowSelector, "{display:block;color:#586779;font-size:11px;text-transform:uppercase}.overview-stats", shadowSelector, " strong", shadowSelector, "{display:block;color:#181818;font-size:21px;line-height:1.25;margin-top:5px;overflow-wrap:anywhere}.overview-stats", shadowSelector, " .stage-value", shadowSelector, "{font-size:14px;line-height:1.5}.journey", shadowSelector, "{margin-top:0}.section-head", shadowSelector, "{padding-bottom:12px}.content-grid", shadowSelector, "{gap:12px}.task-head", shadowSelector, "{padding:20px 24px}.task-head", shadowSelector, " h2", shadowSelector, "{font-size:19px}.task-list", shadowSelector, "{padding:0 24px}.sidebar", shadowSelector, " h2", shadowSelector, "{font-size:15px}.task-foot", shadowSelector, "{padding:18px 24px}@media(max-width:900px){.overview-stats", shadowSelector, "{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:650px){.workspace-overview", shadowSelector, "{margin-top:16px;padding:14px}.overview-header", shadowSelector, "{align-items:flex-start}.sample-badge", shadowSelector, "{display:none}.overview-stats", shadowSelector, "{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.overview-stats", shadowSelector, ">div", shadowSelector, "{padding:9px}.overview-stats", shadowSelector, ">div:first-child", shadowSelector, "{padding:8px}.overview-stats", shadowSelector, " strong", shadowSelector, "{font-size:18px}.task-head", shadowSelector, "{padding:18px}.task-list", shadowSelector, "{padding:0 18px}}.page", shadowSelector, "{background:#edf4f3}.brand", shadowSelector, ",.brand", shadowSelector, " span", shadowSelector, " span", shadowSelector, "{color:#164b52}.brand-mark", shadowSelector, "{background:#087e8b}.header", shadowSelector, " nav", shadowSelector, " button", shadowSelector, ",.reset", shadowSelector, ",.back", shadowSelector, ",.aside-action", shadowSelector, ",.sidebar-bottom", shadowSelector, " .aside-action", shadowSelector, ",.sidebar-bottom", shadowSelector, " button", shadowSelector, ",.blocker", shadowSelector, " button", shadowSelector, "{color:#076b75}.reset:hover", shadowSelector, ",.add:hover", shadowSelector, ",.task", shadowSelector, " button:hover", shadowSelector, ",.stage:hover", shadowSelector, "{background:#e6f4f3}.breadcrumb", shadowSelector, ",.section-caption", shadowSelector, "{color:#076b75}.overview-icon", shadowSelector, "{background:#087e8b}.overview-stats", shadowSelector, ">div:first-child", shadowSelector, "{background:#e8f5f4;border-color:#087e8b}.progress-label", shadowSelector, " strong", shadowSelector, "{color:#087e8b}.stage.selected", shadowSelector, "{background:#e5f4f2}.stage.current", shadowSelector, " .stage-number", shadowSelector, "{background:#087e8b;border-color:#087e8b}.primary", shadowSelector, ",.download", shadowSelector, "{background:#087e8b;border-color:#087e8b}.primary:hover", shadowSelector, ",.download:hover", shadowSelector, "{background:#075e68}.add", shadowSelector, ",.task", shadowSelector, " button", shadowSelector, "{color:#076b75}.required", shadowSelector, "{background:#e5f4f2;color:#075e68}.stage:focus-visible", shadowSelector, "{outline-color:#087e8b}.about-grid", shadowSelector, " article", shadowSelector, "{border-color:#087e8b}.about", shadowSelector, " .note", shadowSelector, "{background:#e5f4f2;color:#164b52}.header", shadowSelector, "{min-height:58px;box-shadow:0 2px 4px #0000000d}.header", shadowSelector, " nav", shadowSelector, "{height:100%;display:flex;align-items:stretch;gap:0}.header", shadowSelector, " nav", shadowSelector, " button", shadowSelector, "{padding:0 17px;border-bottom:3px solid transparent;font-size:13px;font-weight:600}.header", shadowSelector, " nav", shadowSelector, " button:hover", shadowSelector, "{background:#e5f4f2;border-bottom-color:#087e8b}.workspace-overview", shadowSelector, "{padding:18px 20px}.overview-stats", shadowSelector, ">div", shadowSelector, "{min-height:70px}.journey", shadowSelector, "{padding:18px 20px 20px}.journey", shadowSelector, " .section-head", shadowSelector, "{border-bottom:1px solid #e5e5e5;padding-bottom:12px}.journey", shadowSelector, " .progress-track", shadowSelector, "{margin-top:14px}.stages", shadowSelector, "{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:3px;margin-top:14px}.stage", shadowSelector, "{min-width:0;min-height:48px;display:flex;justify-content:center;align-items:center;text-align:center;background:#e5e5e5;color:#444;padding:8px 15px 8px 22px;border-radius:0;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 50%,calc(100% - 12px) 100%,0 100%,12px 50%)}.stage:first-child", shadowSelector, "{border-radius:24px 0 0 24px;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 50%,calc(100% - 12px) 100%,0 100%)}.stage:last-child", shadowSelector, "{border-radius:0 24px 24px 0;clip-path:polygon(0 0,100% 0,100% 100%,0 100%,12px 50%)}.stage-number", shadowSelector, "{display:none}.stage-text", shadowSelector, "{display:block}.stage", shadowSelector, " strong", shadowSelector, "{display:block;font-size:12px;line-height:1.25;color:inherit}.stage", shadowSelector, " small", shadowSelector, "{display:block;color:inherit;opacity:.84;font-size:10px;line-height:1.25;margin-top:2px}.stage.complete", shadowSelector, "{background:#2e844a;color:#fff}.stage.current", shadowSelector, "{background:#087e8b;color:#fff}.stage.selected:not(.current):not(.complete)", shadowSelector, "{background:#d1eae8;color:#164b52}.stage.selected.complete", shadowSelector, "{background:#226a3d;color:#fff}.stage:hover:not(.current):not(.complete)", shadowSelector, "{background:#d6eeee}.stage:focus-visible", shadowSelector, "{outline:3px solid #0176d3;outline-offset:-4px}.content-grid", shadowSelector, "{align-items:start;margin-top:12px}.tasks", shadowSelector, ",.sidebar", shadowSelector, "{box-shadow:0 2px 3px #0000000d}.task-head", shadowSelector, "{background:#fafafa}.task-head", shadowSelector, " h2", shadowSelector, "{font-size:18px}.task", shadowSelector, "{padding-top:14px;padding-bottom:14px}.task", shadowSelector, " button", shadowSelector, ",.add", shadowSelector, "{font-size:12px}.sidebar-top", shadowSelector, ",.sidebar-bottom", shadowSelector, "{padding:20px}.sidebar", shadowSelector, " h2", shadowSelector, "{font-size:15px}.activity-item", shadowSelector, "{border-top:1px solid #eee;padding:12px 0}.activity-item", shadowSelector, " small", shadowSelector, "{color:#586779}@media(max-width:1000px){.stages", shadowSelector, "{grid-template-columns:repeat(3,minmax(0,1fr))}.stage:nth-child(4)", shadowSelector, "{border-radius:24px 0 0 24px;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 50%,calc(100% - 12px) 100%,0 100%)}}@media(max-width:650px){.header", shadowSelector, " nav", shadowSelector, "{height:auto}.header", shadowSelector, " nav", shadowSelector, " button", shadowSelector, "{padding:10px 12px}.workspace-overview", shadowSelector, "{padding:14px}.journey", shadowSelector, "{padding:16px 14px}.stages", shadowSelector, "{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}.stage", shadowSelector, ",.stage:nth-child(4)", shadowSelector, "{border-radius:4px;clip-path:none;padding:9px 5px;min-height:44px}.stage:first-child", shadowSelector, ",.stage:last-child", shadowSelector, "{border-radius:4px;clip-path:none}.sidebar-top", shadowSelector, ",.sidebar-bottom", shadowSelector, "{padding:16px}}"].join('');
+  return [((useActualHostSelector ? ":host{" : hostSelector + "{")), "display:block;color:#18313e;font-family:Studio,system-ui,sans-serif}*", shadowSelector, "{box-sizing:border-box}h1", shadowSelector, ",h2", shadowSelector, ",p", shadowSelector, "{margin:0}button", shadowSelector, ",input", shadowSelector, "{font:inherit}button", shadowSelector, "{cursor:pointer}button:focus-visible", shadowSelector, ",input:focus-visible", shadowSelector, ",a:focus-visible", shadowSelector, "{outline:3px solid #c6694b;outline-offset:3px}button:disabled", shadowSelector, "{opacity:.5;cursor:not-allowed}.page", shadowSelector, "{max-width:1600px;margin:auto;padding:0 68px}.header", shadowSelector, "{height:88px;border-bottom:1px solid #c8cfca;display:flex;align-items:center;gap:35px}.brand", shadowSelector, "{display:flex;gap:11px;align-items:center;text-decoration:none;color:#163440;font-weight:700;font-size:18px;letter-spacing:-.03em}.brand", shadowSelector, " span", shadowSelector, " span", shadowSelector, "{font-weight:400;color:#6c7e7e}.brand-mark", shadowSelector, "{display:grid;place-items:center;width:31px;height:31px;background:#1c4451;color:#fff;border-radius:50%;font:italic 25px Georgia,serif}.header", shadowSelector, " nav", shadowSelector, "{display:flex;gap:24px;margin-left:auto}.header", shadowSelector, " nav", shadowSelector, " button", shadowSelector, ",.reset", shadowSelector, ",.back", shadowSelector, "{border:0;background:transparent;color:#425b61;font-size:13px;padding:11px 0}.header", shadowSelector, " nav", shadowSelector, " button:hover", shadowSelector, ",.reset:hover", shadowSelector, ",.back:hover", shadowSelector, "{text-decoration:underline;text-underline-offset:5px}.reset", shadowSelector, "{border:1px solid #9aaea9;border-radius:3px;padding:10px 14px}.intro", shadowSelector, "{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end;padding:58px 0 50px}.breadcrumb", shadowSelector, ",.section-caption", shadowSelector, ",.customer-label", shadowSelector, "{color:#a24f39;font-size:11px;font-weight:700;letter-spacing:.1em}.intro", shadowSelector, " h1", shadowSelector, ",.about", shadowSelector, " h1", shadowSelector, "{font-size:clamp(39px,4.3vw,62px);font-weight:500;letter-spacing:-.04em;line-height:1.08;margin-top:19px}.intro", shadowSelector, " h1", shadowSelector, " em", shadowSelector, ",.about", shadowSelector, " h1", shadowSelector, " em", shadowSelector, "{font-family:Georgia,serif;font-weight:400;color:#bb6247}.intro-copy", shadowSelector, "{font-size:15px;line-height:1.7;color:#526b70;max-width:52ch;margin-top:18px}.customer-card", shadowSelector, "{background:#d9e2df;border-radius:4px;padding:24px;display:flex;gap:17px;max-width:410px;width:100%;justify-self:end}.customer-icon", shadowSelector, "{display:grid;place-items:center;width:49px;height:49px;background:#234c58;color:#fff;font-size:22px;border-radius:3px}.customer-label", shadowSelector, "{color:#4d6d6d}.customer-card", shadowSelector, " h2", shadowSelector, "{font-size:19px;margin:6px 0 9px}.customer-card", shadowSelector, " p", shadowSelector, "{color:#536e71;font-size:12px;line-height:1.7}.journey", shadowSelector, "{background:#183d49;color:#fff;padding:27px 32px 0;border-radius:4px}.section-head", shadowSelector, "{display:flex;justify-content:space-between;align-items:center;gap:18px}.section-head", shadowSelector, " h2", shadowSelector, "{font-size:20px;font-weight:600}.section-head", shadowSelector, " p", shadowSelector, "{color:#c7d6d3;font-size:13px;margin-top:5px}.progress-label", shadowSelector, "{display:flex;gap:9px;align-items:baseline}.progress-label", shadowSelector, " strong", shadowSelector, "{font-size:22px;font-weight:500}.progress-label", shadowSelector, " span", shadowSelector, "{font-size:12px;color:#c7d6d3}.progress-track", shadowSelector, "{height:3px;background:#4b6a70;margin-top:22px}.progress-track", shadowSelector, " span", shadowSelector, "{display:block;height:100%;background:#e5a87f;transition:width 180ms ease}.stages", shadowSelector, "{display:grid;grid-template-columns:repeat(4,1fr);gap:1px}.stage", shadowSelector, "{display:flex;align-items:center;gap:12px;min-width:0;padding:23px 12px 23px 0;color:#b8c9c8}.stage.current", shadowSelector, "{color:#fff}.stage-number", shadowSelector, "{border:1px solid #76918f;width:35px;height:35px;border-radius:50%;display:grid;place-items:center;font-size:11px;flex-shrink:0}.stage.current", shadowSelector, " .stage-number", shadowSelector, "{background:#f0be98;border-color:#f0be98;color:#183d49}.stage.complete", shadowSelector, " .stage-number", shadowSelector, "{background:#a6cab9;color:#183d49;border-color:#a6cab9}.stage", shadowSelector, " strong", shadowSelector, ",.stage", shadowSelector, " small", shadowSelector, "{display:block}.stage", shadowSelector, " strong", shadowSelector, "{font-size:14px;font-weight:600}.stage", shadowSelector, " small", shadowSelector, "{font-size:11px;margin-top:4px}.content-grid", shadowSelector, "{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:26px;margin-top:26px;align-items:start}.tasks", shadowSelector, "{background:#fff;border:1px solid #d9e0db;border-radius:4px}.task-head", shadowSelector, "{padding:28px 30px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid #e3e9e5}.task-head", shadowSelector, " h2", shadowSelector, "{font-size:27px;letter-spacing:-.03em;margin-top:5px}.task-head", shadowSelector, " p:not(.section-caption)", shadowSelector, "{font-size:13px;color:#617579;margin-top:6px}.add", shadowSelector, "{border:1px solid #b7c6bf;background:#fff;color:#244a51;border-radius:3px;padding:10px 12px;font-size:13px;white-space:nowrap}.task-list", shadowSelector, "{padding:0 30px}.task", shadowSelector, "{display:flex;align-items:center;gap:14px;padding:20px 0;border-bottom:1px solid #e8ede9}.task-indicator", shadowSelector, "{width:20px;height:20px;border:1px solid #9eaea9;border-radius:50%;flex-shrink:0}.task.done", shadowSelector, " .task-indicator", shadowSelector, "{background:#639278;border-color:#639278}.task-copy", shadowSelector, "{flex:1;min-width:0}.task-copy", shadowSelector, " strong", shadowSelector, ",.task-copy", shadowSelector, " span", shadowSelector, "{display:block}.task-copy", shadowSelector, " strong", shadowSelector, "{font-size:14px;font-weight:600}.task-copy", shadowSelector, " span", shadowSelector, "{font-size:12px;color:#657a7d;margin-top:5px}.task.overdue", shadowSelector, " .task-copy", shadowSelector, " span", shadowSelector, "{color:#ad523a}.required", shadowSelector, "{font-size:11px;color:#637778;background:#edf2ee;padding:5px 8px;border-radius:3px}.task", shadowSelector, " button", shadowSelector, "{background:transparent;border:1px solid #bdcbc5;color:#315a58;padding:8px 11px;border-radius:3px;font-size:12px;white-space:nowrap}.done-label", shadowSelector, "{color:#41785b;font-size:12px}.task-foot", shadowSelector, "{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 30px}.task-foot", shadowSelector, " p", shadowSelector, "{font-size:12px;color:#41785b}.task-foot", shadowSelector, " .error", shadowSelector, "{color:#a53629}.primary", shadowSelector, ",.download", shadowSelector, "{background:#c36449;color:#fff;border:0;border-radius:3px;padding:13px 17px;font-size:13px;font-weight:600;text-decoration:none}.primary:hover", shadowSelector, ",.download:hover", shadowSelector, "{background:#a94f38}.primary", shadowSelector, " span", shadowSelector, "{padding-left:10px}.follow-form", shadowSelector, "{display:grid;grid-template-columns:1fr 170px auto;gap:10px;align-items:end;padding:20px 30px;background:#f3f6f3}.follow-form", shadowSelector, " label", shadowSelector, "{color:#425c5c;font-size:12px;font-weight:600}.follow-form", shadowSelector, " input", shadowSelector, "{display:block;width:100%;padding:10px;margin-top:6px;border:1px solid #b8c8bf;background:#fff;border-radius:3px;color:#18313e}.sidebar", shadowSelector, "{background:#e5e9df;border-radius:4px}.sidebar-top", shadowSelector, "{padding:27px}.aside-number", shadowSelector, "{font-size:27px;color:#bf6a4e}.sidebar", shadowSelector, " h2", shadowSelector, "{font-size:19px;letter-spacing:-.02em;margin-top:16px}.sidebar", shadowSelector, " p", shadowSelector, "{font-size:13px;line-height:1.7;color:#526a67;margin-top:12px}.sidebar-bottom", shadowSelector, "{padding:25px 27px;border-top:1px solid #c5d0c4}.sidebar-bottom", shadowSelector, ">span", shadowSelector, "{font-size:10px;font-weight:700;letter-spacing:.1em;color:#6c7e71}.sidebar-bottom", shadowSelector, " button", shadowSelector, "{padding:0;margin-top:15px;border:0;background:transparent;color:#9a4d38;font-size:13px;font-weight:600;text-align:left}.about", shadowSelector, "{padding:55px 0;max-width:1050px}.about", shadowSelector, " h1", shadowSelector, "{margin-top:28px}.about", shadowSelector, ">p", shadowSelector, "{line-height:1.7;color:#526b70;max-width:65ch;margin-top:20px}.about-grid", shadowSelector, "{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin:45px 0}.about-grid", shadowSelector, " article", shadowSelector, "{border-top:2px solid #b7654a;padding-top:22px}.about-grid", shadowSelector, " article", shadowSelector, " span", shadowSelector, "{color:#a24f39;font-size:12px}.about-grid", shadowSelector, " h2", shadowSelector, "{font-size:21px;margin:12px 0}.about-grid", shadowSelector, " p", shadowSelector, "{color:#526b70;font-size:14px;line-height:1.7}.about", shadowSelector, " .note", shadowSelector, "{background:#dfe9e3;padding:18px;margin-bottom:25px;font-size:13px}.download", shadowSelector, "{display:inline-block}footer", shadowSelector, "{border-top:1px solid #c8cfca;display:flex;justify-content:space-between;gap:20px;margin-top:55px;padding:22px 0 32px;color:#657c79;font-size:11px;letter-spacing:.05em}footer", shadowSelector, " span", shadowSelector, "+span", shadowSelector, "{letter-spacing:0}@media(max-width:900px){.page", shadowSelector, "{padding:0 28px}.intro", shadowSelector, "{grid-template-columns:1fr 1fr}.content-grid", shadowSelector, "{grid-template-columns:1fr 250px}.follow-form", shadowSelector, "{grid-template-columns:1fr 1fr}.follow-form", shadowSelector, " button", shadowSelector, "{grid-column:1/-1}}@media(max-width:650px){.page", shadowSelector, "{padding:0 18px}.header", shadowSelector, "{height:auto;min-height:75px;flex-wrap:wrap;gap:9px;padding:16px 0}.header", shadowSelector, " nav", shadowSelector, "{order:3;width:100%;margin:0;gap:20px}.reset", shadowSelector, "{margin-left:auto}.intro", shadowSelector, "{grid-template-columns:1fr;padding:35px 0;gap:25px}.intro", shadowSelector, " h1", shadowSelector, ",.about", shadowSelector, " h1", shadowSelector, "{font-size:40px}.customer-card", shadowSelector, "{justify-self:start;max-width:none}.journey", shadowSelector, "{padding:23px 20px 0}.section-head", shadowSelector, "{align-items:flex-start}.progress-label", shadowSelector, "{display:block;text-align:right}.progress-label", shadowSelector, " span", shadowSelector, "{display:block}.stages", shadowSelector, "{grid-template-columns:1fr 1fr}.stage", shadowSelector, "{padding:15px 4px}.content-grid", shadowSelector, "{grid-template-columns:1fr;gap:15px}.task-head", shadowSelector, "{padding:22px 18px;align-items:flex-start}.task-list", shadowSelector, "{padding:0 18px}.task", shadowSelector, "{flex-wrap:wrap}.task-copy", shadowSelector, "{min-width:60%}.task-foot", shadowSelector, "{padding:18px;flex-wrap:wrap}.follow-form", shadowSelector, "{grid-template-columns:1fr;padding:18px}.follow-form", shadowSelector, " button", shadowSelector, "{grid-column:auto}.about-grid", shadowSelector, "{grid-template-columns:1fr;gap:18px}footer", shadowSelector, "{display:block;line-height:2}}@media(prefers-reduced-motion:reduce){.progress-track", shadowSelector, " span", shadowSelector, "{transition:none}}", ((useActualHostSelector ? ":host{" : hostSelector + "{")), "color:#282d48}.header", shadowSelector, "{border-color:#d3cfdb}.brand", shadowSelector, ",.brand", shadowSelector, " span", shadowSelector, " span", shadowSelector, "{color:#303651}.brand-mark", shadowSelector, "{background:#574d83;color:white;font:600 17px Studio,system-ui,sans-serif}.header", shadowSelector, " nav", shadowSelector, " button", shadowSelector, ",.reset", shadowSelector, ",.back", shadowSelector, "{color:#515776}.reset", shadowSelector, "{border-color:#bcb8ce}.intro", shadowSelector, " h1", shadowSelector, " em", shadowSelector, ",.about", shadowSelector, " h1", shadowSelector, " em", shadowSelector, "{color:#b45e4c}.breadcrumb", shadowSelector, ",.section-caption", shadowSelector, "{color:#a34d3d}.intro-copy", shadowSelector, ",.about", shadowSelector, ">p", shadowSelector, "{color:#5f6378}.customer-card", shadowSelector, "{background:#e1ddea}.customer-icon", shadowSelector, "{background:#695b91}.customer-label", shadowSelector, "{color:#625b7d}.customer-card", shadowSelector, " p", shadowSelector, "{color:#62607a}.journey", shadowSelector, "{background:#403b65}.section-head", shadowSelector, " p", shadowSelector, ",.progress-label", shadowSelector, " span", shadowSelector, "{color:#dbd7e9}.progress-track", shadowSelector, "{background:#777198}.progress-track", shadowSelector, " span", shadowSelector, "{background:#efad89}.stage", shadowSelector, "{color:#d1cce0}.stage.current", shadowSelector, " .stage-number", shadowSelector, "{background:#f2be9f;border-color:#f2be9f;color:#403b65}.stage.complete", shadowSelector, " .stage-number", shadowSelector, "{background:#c9d5bd;border-color:#c9d5bd;color:#403b65}.content-grid", shadowSelector, " .tasks", shadowSelector, "{border-color:#ded9e4}.task-head", shadowSelector, "{border-color:#ebe7ed}.task-head", shadowSelector, " p:not(.section-caption)", shadowSelector, ",.task-copy", shadowSelector, " span", shadowSelector, "{color:#686b80}.add", shadowSelector, ",.task", shadowSelector, " button", shadowSelector, "{border-color:#c5bdcf;color:#5b507d}.task", shadowSelector, "{border-color:#eeeaf0}.required", shadowSelector, "{background:#eeeaf4;color:#635d79}.primary", shadowSelector, ",.download", shadowSelector, "{background:#b9624e}.primary:hover", shadowSelector, ",.download:hover", shadowSelector, "{background:#994b3b}.follow-form", shadowSelector, "{background:#f4f1f7}.follow-form", shadowSelector, " label", shadowSelector, "{color:#5a5872}.follow-form", shadowSelector, " input", shadowSelector, "{border-color:#c9c0d1;color:#282d48}.sidebar", shadowSelector, "{background:#e9e0d8}.sidebar", shadowSelector, " h2", shadowSelector, "{margin-top:0}.sidebar", shadowSelector, " p", shadowSelector, "{color:#6d605d}.sidebar-bottom", shadowSelector, "{border-color:#d2c4ba}.sidebar-bottom", shadowSelector, ">span", shadowSelector, "{color:#786761}.sidebar-bottom", shadowSelector, " button", shadowSelector, "{color:#9a4d3c}footer", shadowSelector, "{border-color:#d3cfdb;color:#6c6d80}.about-grid", shadowSelector, " article", shadowSelector, "{border-color:#b9624e}.about-grid", shadowSelector, " p", shadowSelector, "{color:#5f6378}.about", shadowSelector, " .note", shadowSelector, "{background:#e6e0ec}.stage", shadowSelector, "{border:0;border-radius:4px;background:transparent;text-align:left;font:inherit;cursor:pointer;transition:background-color 150ms ease}.stage:hover", shadowSelector, "{background:rgba(255,255,255,.08)}.stage.selected", shadowSelector, "{background:rgba(255,255,255,.12)}.stage:focus-visible", shadowSelector, "{outline:3px solid #f0be98;outline-offset:-3px}.stage-text", shadowSelector, "{min-width:0}.preview-label", shadowSelector, "{font-size:12px;color:#687882}@media(prefers-reduced-motion:reduce){.stage", shadowSelector, "{transition:none}}.intro", shadowSelector, "{display:block}.intro", shadowSelector, ">div", shadowSelector, "{max-width:850px}.stages", shadowSelector, "{grid-template-columns:repeat(6,minmax(0,1fr))}.stage", shadowSelector, "{padding-left:8px;gap:9px}.stage", shadowSelector, " strong", shadowSelector, "{font-size:13px}@media(max-width:1000px){.stages", shadowSelector, "{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:650px){.stages", shadowSelector, "{grid-template-columns:repeat(2,minmax(0,1fr))}}.aside-action", shadowSelector, ",.sidebar-bottom", shadowSelector, " .aside-action", shadowSelector, "{padding:0;margin-top:14px;border:0;background:transparent;color:#934735;font-size:13px;font-weight:600;text-align:left}.detail-form", shadowSelector, "{display:grid;gap:10px;margin-top:16px}.detail-form", shadowSelector, " label", shadowSelector, ",.blocker-input", shadowSelector, "{display:block;color:#564d61;font-size:12px;font-weight:600}.detail-form", shadowSelector, " input", shadowSelector, ",.detail-form", shadowSelector, " textarea", shadowSelector, ",.blocker-input", shadowSelector, " input", shadowSelector, "{display:block;width:100%;margin-top:5px;padding:9px;border:1px solid #bdb6c7;background:#fff;border-radius:3px;color:#282d48;font:inherit;font-size:13px}.detail-form", shadowSelector, " textarea", shadowSelector, "{min-height:70px;resize:vertical}.detail-form", shadowSelector, " .primary", shadowSelector, "{justify-self:start}.customer-note", shadowSelector, ",.activity-item", shadowSelector, "{padding-top:10px;border-top:1px solid #d2c4ba}.activity-item", shadowSelector, " small", shadowSelector, "{color:#6b6267}.blocker", shadowSelector, "{display:flex;justify-content:space-between;align-items:start;gap:10px;margin-top:13px;color:#443e4c;font-size:13px;line-height:1.5}.blocker", shadowSelector, " button", shadowSelector, "{margin:0;color:#934735}.blocker", shadowSelector, " small", shadowSelector, "{color:#476c52}.blocker-input", shadowSelector, "{margin-top:16px}.edit-task", shadowSelector, "{margin-left:2px}", ((useActualHostSelector ? ":host{" : hostSelector + "{")), "font-family:Arial,Helvetica,sans-serif;color:#181818}.page", shadowSelector, "{max-width:none;background:#f3f3f3;padding:0 24px}.header", shadowSelector, "{height:58px;background:#fff;border-bottom:1px solid #d8dde6;margin:0 -24px;padding:0 24px}.brand", shadowSelector, ",.brand", shadowSelector, " span", shadowSelector, " span", shadowSelector, "{color:#032d60}.brand", shadowSelector, "{font-size:16px;letter-spacing:0}.brand-mark", shadowSelector, "{background:#0176d3;border-radius:4px;color:#fff;font:700 16px Arial,sans-serif}.header", shadowSelector, " nav", shadowSelector, " button", shadowSelector, ",.reset", shadowSelector, ",.back", shadowSelector, "{color:#0176d3}.header", shadowSelector, " nav", shadowSelector, " button:hover", shadowSelector, "{color:#014486}.reset", shadowSelector, ",.add", shadowSelector, ",.task", shadowSelector, " button", shadowSelector, "{background:#fff;border:1px solid #c9c9c9;border-radius:4px;color:#0176d3}.reset:hover", shadowSelector, ",.add:hover", shadowSelector, ",.task", shadowSelector, " button:hover", shadowSelector, "{background:#eef4ff}.intro", shadowSelector, "{padding:25px 0 20px}.intro", shadowSelector, " h1", shadowSelector, ",.about", shadowSelector, " h1", shadowSelector, "{font-family:Arial,Helvetica,sans-serif;font-size:28px;line-height:1.2;letter-spacing:0;color:#181818;font-weight:700}.intro", shadowSelector, " h1", shadowSelector, " br", shadowSelector, "{display:none}.intro", shadowSelector, " h1", shadowSelector, " em", shadowSelector, ",.about", shadowSelector, " h1", shadowSelector, " em", shadowSelector, "{font-style:normal;color:#181818}.breadcrumb", shadowSelector, ",.section-caption", shadowSelector, "{color:#0176d3;letter-spacing:.04em}.intro-copy", shadowSelector, ",.about", shadowSelector, ">p", shadowSelector, "{color:#586779;line-height:1.5}.intro-copy", shadowSelector, "{margin-top:8px}.journey", shadowSelector, "{background:#fff;color:#181818;border:1px solid #dddbda;border-radius:5px;padding:20px 20px 0;box-shadow:0 2px 3px #0000000d}.section-head", shadowSelector, " h2", shadowSelector, "{color:#181818;font-size:18px}.section-head", shadowSelector, " p", shadowSelector, ",.progress-label", shadowSelector, " span", shadowSelector, "{color:#586779}.progress-label", shadowSelector, " strong", shadowSelector, "{color:#0176d3}.progress-track", shadowSelector, "{background:#e5e5e5;height:6px}.progress-track", shadowSelector, " span", shadowSelector, "{background:#2e844a}.stage", shadowSelector, "{color:#444;border-radius:0}.stage:hover", shadowSelector, "{background:#f3f8ff}.stage.selected", shadowSelector, "{background:#eef4ff}.stage-number", shadowSelector, "{border-color:#9aa4ad;color:#586779}.stage.current", shadowSelector, " .stage-number", shadowSelector, "{background:#0176d3;border-color:#0176d3;color:#fff}.stage.complete", shadowSelector, " .stage-number", shadowSelector, "{background:#2e844a;border-color:#2e844a;color:#fff}.stage:focus-visible", shadowSelector, "{outline-color:#0176d3}.stage", shadowSelector, " small", shadowSelector, "{color:#586779}.content-grid", shadowSelector, " .tasks", shadowSelector, ",.sidebar", shadowSelector, "{background:#fff;border:1px solid #dddbda;border-radius:5px}.task-head", shadowSelector, ",.task", shadowSelector, ",.sidebar-bottom", shadowSelector, "{border-color:#e5e5e5}.task-head", shadowSelector, " h2", shadowSelector, ",.sidebar", shadowSelector, " h2", shadowSelector, "{color:#181818}.task-head", shadowSelector, " p:not(.section-caption)", shadowSelector, ",.task-copy", shadowSelector, " span", shadowSelector, ",.sidebar", shadowSelector, " p", shadowSelector, "{color:#586779}.required", shadowSelector, "{background:#eef4ff;color:#014486}.primary", shadowSelector, ",.download", shadowSelector, "{background:#0176d3;color:#fff;border:1px solid #0176d3;border-radius:4px}.primary:hover", shadowSelector, ",.download:hover", shadowSelector, "{background:#014486}.follow-form", shadowSelector, "{background:#f3f3f3}.follow-form", shadowSelector, " input", shadowSelector, ",.detail-form", shadowSelector, " input", shadowSelector, ",.detail-form", shadowSelector, " textarea", shadowSelector, ",.blocker-input", shadowSelector, " input", shadowSelector, "{border-color:#c9c9c9;color:#181818;background:#fff;border-radius:4px}.sidebar-bottom", shadowSelector, " button", shadowSelector, ",.aside-action", shadowSelector, ",.sidebar-bottom", shadowSelector, " .aside-action", shadowSelector, ",.blocker", shadowSelector, " button", shadowSelector, "{color:#0176d3}.customer-note", shadowSelector, ",.activity-item", shadowSelector, "{border-color:#e5e5e5}.about-grid", shadowSelector, " article", shadowSelector, "{border-color:#0176d3}.about", shadowSelector, " .note", shadowSelector, "{background:#eef4ff;color:#032d60}footer", shadowSelector, "{border-color:#dddbda;color:#586779}@media(max-width:650px){.page", shadowSelector, "{padding:0 12px}.header", shadowSelector, "{height:auto;margin:0 -12px;padding:12px}.intro", shadowSelector, "{padding:24px 0 18px}.intro", shadowSelector, " h1", shadowSelector, ",.about", shadowSelector, " h1", shadowSelector, "{font-size:24px}.journey", shadowSelector, "{padding:18px 14px 0}.content-grid", shadowSelector, "{grid-template-columns:1fr}}.workspace-overview", shadowSelector, "{margin:24px 0 12px;padding:18px;background:#fff;border:1px solid #dddbda;border-radius:5px;box-shadow:0 2px 3px #0000000d}.overview-header", shadowSelector, "{display:flex;align-items:center;gap:12px;padding-bottom:16px}.overview-icon", shadowSelector, "{display:grid;place-items:center;flex:0 0 38px;width:38px;height:38px;border-radius:4px;background:#f4c94b;color:#fff}.overview-icon", shadowSelector, " svg", shadowSelector, "{width:22px;height:22px;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.overview-label", shadowSelector, "{display:block;color:#586779;font-size:12px}.overview-header", shadowSelector, " h1", shadowSelector, "{font:700 19px/1.2 Arial,Helvetica,sans-serif;color:#181818;margin:0;letter-spacing:0}.overview-header", shadowSelector, " p", shadowSelector, "{font-size:12px;color:#586779;margin:4px 0 0}.sample-badge", shadowSelector, "{margin-left:auto;border:1px solid #c9c9c9;border-radius:16px;background:#f3f3f3;padding:3px 10px;font-size:12px;color:#444;white-space:nowrap}.overview-stats", shadowSelector, "{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.overview-stats", shadowSelector, ">div", shadowSelector, "{min-width:0;background:#f8f8f8;border:1px solid #e5e5e5;border-radius:4px;padding:12px 14px}.overview-stats", shadowSelector, ">div:first-child", shadowSelector, "{background:#eef4ff;border:2px solid #0176d3;padding:11px 13px}.overview-stats", shadowSelector, " span", shadowSelector, "{display:block;color:#586779;font-size:11px;text-transform:uppercase}.overview-stats", shadowSelector, " strong", shadowSelector, "{display:block;color:#181818;font-size:21px;line-height:1.25;margin-top:5px;overflow-wrap:anywhere}.overview-stats", shadowSelector, " .stage-value", shadowSelector, "{font-size:14px;line-height:1.5}.journey", shadowSelector, "{margin-top:0}.section-head", shadowSelector, "{padding-bottom:12px}.content-grid", shadowSelector, "{gap:12px}.task-head", shadowSelector, "{padding:20px 24px}.task-head", shadowSelector, " h2", shadowSelector, "{font-size:19px}.task-list", shadowSelector, "{padding:0 24px}.sidebar", shadowSelector, " h2", shadowSelector, "{font-size:15px}.task-foot", shadowSelector, "{padding:18px 24px}@media(max-width:900px){.overview-stats", shadowSelector, "{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:650px){.workspace-overview", shadowSelector, "{margin-top:16px;padding:14px}.overview-header", shadowSelector, "{align-items:flex-start}.sample-badge", shadowSelector, "{display:none}.overview-stats", shadowSelector, "{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.overview-stats", shadowSelector, ">div", shadowSelector, "{padding:9px}.overview-stats", shadowSelector, ">div:first-child", shadowSelector, "{padding:8px}.overview-stats", shadowSelector, " strong", shadowSelector, "{font-size:18px}.task-head", shadowSelector, "{padding:18px}.task-list", shadowSelector, "{padding:0 18px}}.page", shadowSelector, "{background:#edf4f3}.brand", shadowSelector, ",.brand", shadowSelector, " span", shadowSelector, " span", shadowSelector, "{color:#164b52}.brand-mark", shadowSelector, "{background:#087e8b}.header", shadowSelector, " nav", shadowSelector, " button", shadowSelector, ",.reset", shadowSelector, ",.back", shadowSelector, ",.aside-action", shadowSelector, ",.sidebar-bottom", shadowSelector, " .aside-action", shadowSelector, ",.sidebar-bottom", shadowSelector, " button", shadowSelector, ",.blocker", shadowSelector, " button", shadowSelector, "{color:#076b75}.reset:hover", shadowSelector, ",.add:hover", shadowSelector, ",.task", shadowSelector, " button:hover", shadowSelector, ",.stage:hover", shadowSelector, "{background:#e6f4f3}.breadcrumb", shadowSelector, ",.section-caption", shadowSelector, "{color:#076b75}.overview-icon", shadowSelector, "{background:#087e8b}.overview-stats", shadowSelector, ">div:first-child", shadowSelector, "{background:#e8f5f4;border-color:#087e8b}.progress-label", shadowSelector, " strong", shadowSelector, "{color:#087e8b}.stage.selected", shadowSelector, "{background:#e5f4f2}.stage.current", shadowSelector, " .stage-number", shadowSelector, "{background:#087e8b;border-color:#087e8b}.primary", shadowSelector, ",.download", shadowSelector, "{background:#087e8b;border-color:#087e8b}.primary:hover", shadowSelector, ",.download:hover", shadowSelector, "{background:#075e68}.add", shadowSelector, ",.task", shadowSelector, " button", shadowSelector, "{color:#076b75}.required", shadowSelector, "{background:#e5f4f2;color:#075e68}.stage:focus-visible", shadowSelector, "{outline-color:#087e8b}.about-grid", shadowSelector, " article", shadowSelector, "{border-color:#087e8b}.about", shadowSelector, " .note", shadowSelector, "{background:#e5f4f2;color:#164b52}.header", shadowSelector, "{min-height:58px;box-shadow:0 2px 4px #0000000d}.header", shadowSelector, " nav", shadowSelector, "{height:100%;display:flex;align-items:stretch;gap:0}.header", shadowSelector, " nav", shadowSelector, " button", shadowSelector, "{padding:0 17px;border-bottom:3px solid transparent;font-size:13px;font-weight:600}.header", shadowSelector, " nav", shadowSelector, " button:hover", shadowSelector, "{background:#e5f4f2;border-bottom-color:#087e8b}.workspace-overview", shadowSelector, "{padding:18px 20px}.overview-stats", shadowSelector, ">div", shadowSelector, "{min-height:70px}.journey", shadowSelector, "{padding:18px 20px 20px}.journey", shadowSelector, " .section-head", shadowSelector, "{border-bottom:1px solid #e5e5e5;padding-bottom:12px}.journey", shadowSelector, " .progress-track", shadowSelector, "{margin-top:14px}.stages", shadowSelector, "{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:3px;margin-top:14px}.stage", shadowSelector, "{min-width:0;min-height:48px;display:flex;justify-content:center;align-items:center;text-align:center;background:#e5e5e5;color:#444;padding:8px 15px 8px 22px;border-radius:0;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 50%,calc(100% - 12px) 100%,0 100%,12px 50%)}.stage:first-child", shadowSelector, "{border-radius:24px 0 0 24px;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 50%,calc(100% - 12px) 100%,0 100%)}.stage:last-child", shadowSelector, "{border-radius:0 24px 24px 0;clip-path:polygon(0 0,100% 0,100% 100%,0 100%,12px 50%)}.stage-number", shadowSelector, "{display:none}.stage-text", shadowSelector, "{display:block}.stage", shadowSelector, " strong", shadowSelector, "{display:block;font-size:12px;line-height:1.25;color:inherit}.stage", shadowSelector, " small", shadowSelector, "{display:block;color:inherit;opacity:.84;font-size:10px;line-height:1.25;margin-top:2px}.stage.complete", shadowSelector, "{background:#2e844a;color:#fff}.stage.current", shadowSelector, "{background:#087e8b;color:#fff}.stage.selected:not(.current):not(.complete)", shadowSelector, "{background:#d1eae8;color:#164b52}.stage.selected.complete", shadowSelector, "{background:#226a3d;color:#fff}.stage:hover:not(.current):not(.complete)", shadowSelector, "{background:#d6eeee}.stage:focus-visible", shadowSelector, "{outline:3px solid #0176d3;outline-offset:-4px}.content-grid", shadowSelector, "{align-items:start;margin-top:12px}.tasks", shadowSelector, ",.sidebar", shadowSelector, "{box-shadow:0 2px 3px #0000000d}.task-head", shadowSelector, "{background:#fafafa}.task-head", shadowSelector, " h2", shadowSelector, "{font-size:18px}.task", shadowSelector, "{padding-top:14px;padding-bottom:14px}.task", shadowSelector, " button", shadowSelector, ",.add", shadowSelector, "{font-size:12px}.sidebar-top", shadowSelector, ",.sidebar-bottom", shadowSelector, "{padding:20px}.sidebar", shadowSelector, " h2", shadowSelector, "{font-size:15px}.activity-item", shadowSelector, "{border-top:1px solid #eee;padding:12px 0}.activity-item", shadowSelector, " small", shadowSelector, "{color:#586779}@media(max-width:1000px){.stages", shadowSelector, "{grid-template-columns:repeat(3,minmax(0,1fr))}.stage:nth-child(4)", shadowSelector, "{border-radius:24px 0 0 24px;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 50%,calc(100% - 12px) 100%,0 100%)}}@media(max-width:650px){.header", shadowSelector, " nav", shadowSelector, "{height:auto}.header", shadowSelector, " nav", shadowSelector, " button", shadowSelector, "{padding:10px 12px}.workspace-overview", shadowSelector, "{padding:14px}.journey", shadowSelector, "{padding:16px 14px}.stages", shadowSelector, "{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}.stage", shadowSelector, ",.stage:nth-child(4)", shadowSelector, "{border-radius:4px;clip-path:none;padding:9px 5px;min-height:44px}.stage:first-child", shadowSelector, ",.stage:last-child", shadowSelector, "{border-radius:4px;clip-path:none}.sidebar-top", shadowSelector, ",.sidebar-bottom", shadowSelector, "{padding:16px}}.success-toast", shadowSelector, "{position:fixed;z-index:1000;top:16px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:12px;width:max-content;max-width:calc(100vw - 32px);padding:12px 14px;background:#2e844a;color:#fff;border-radius:4px;box-shadow:0 4px 14px #0003;font:600 14px/1.4 Arial,Helvetica,sans-serif}.toast-icon", shadowSelector, "{display:grid;place-items:center;flex:0 0 22px;width:22px;height:22px;border:2px solid #fff;border-radius:50%;font-size:14px}.toast-close", shadowSelector, "{margin-left:auto;padding:2px 6px;background:transparent;border:0;color:#fff;font-size:22px;line-height:1;cursor:pointer}.toast-close:focus-visible", shadowSelector, "{outline:2px solid #fff;outline-offset:2px}@media(max-width:600px){.success-toast", shadowSelector, "{top:10px;width:calc(100vw - 24px)}}"].join('');
   /*LWC compiler v9.5.3*/
 }
 var _implicitStylesheets = [stylesheet];
 
-const $fragment1 = parseFragment`<header class="header${0}"${2}><a class="brand${0}" href="/"${2}><span class="brand-mark${0}"${2}>O</span><span${3}>Onboarding <span${3}>Tracker</span></span></a><nav aria-label="Site navigation"${3}><button data-tab="journey"${3}>Customer journey</button><button data-tab="about"${3}>How it’s built</button></nav><button class="reset${0}"${2}>Reset demo</button></header>`;
-const $fragment2 = parseFragment`<section class="workspace-overview${0}" aria-label="Onboarding workspace overview"${2}><div class="overview-header${0}"${2}><span class="overview-icon${0}" aria-hidden="true"${2}><svg viewBox="0 0 24 24" fill="none"${3}><rect x="5" y="4" width="14" height="16" rx="2"${3}/><path d="M8 9h8M8 12h8M8 15h5"${3}/></svg></span><div${3}><span class="overview-label${0}"${2}>Customer onboarding</span><h1${3}>Onboarding workspace</h1><p${3}>Track the work from signed agreement to launch.</p></div><span class="sample-badge${0}"${2}>Sample data</span></div><div class="overview-stats${0}"${2}><div${3}><span${3}>Current stage</span><strong class="stage-value${0}"${2}>${"t20"}</strong></div><div${3}><span${3}>Progress</span><strong${3}>${"t25"}</strong></div><div${3}><span${3}>Required complete</span><strong${3}>${"t30"}</strong></div><div${3}><span${3}>Overdue tasks</span><strong${3}>${"t35"}</strong></div><div${3}><span${3}>Open blockers</span><strong${3}>${"t40"}</strong></div></div></section>`;
-const $fragment3 = parseFragment`<div class="section-head${0}"${2}><div${3}><h2${3}>The journey</h2><p${3}>Select a stage to explore its tasks.</p></div><div class="progress-label${0}"${2}><strong${3}>${"t8"}</strong><span${3}>required work complete</span></div></div>`;
-const $fragment4 = parseFragment`<div class="progress-track${0}" role="progressbar" aria-label="Required tasks complete"${"a0:aria-valuetext"}${2}><span${"s1"}${3}></span></div>`;
-const $fragment5 = parseFragment`<button type="button"${"c0"}${"a0:data-stage"}${"a0:aria-pressed"}${2}><span class="stage-number${0}"${2}>${"t2"}</span><span class="stage-text${0}"${2}><strong${3}>${"t5"}</strong><small${3}>${"t7"}</small></span></button>`;
-const $fragment6 = parseFragment`<div${3}><p class="section-caption${0}"${2}>${"t2"}</p><h2${3}>${"t4"}</h2><p${3}>${"t6"}</p></div>`;
-const $fragment7 = parseFragment`<button class="add${0}"${2}>+ Add follow-up</button>`;
-const $fragment8 = parseFragment`<button class="add${0}"${2}>Back to current stage</button>`;
-const $fragment9 = parseFragment`<button class="primary${0}"${2}>Add task</button>`;
-const $fragment10 = parseFragment`<span class="task-indicator${0}"${2}></span>`;
-const $fragment11 = parseFragment`<div class="task-copy${0}"${2}><strong${3}>${"t2"}</strong><span${3}>${"t4"}</span></div>`;
-const $fragment12 = parseFragment`<span class="required${0}"${2}>Required</span>`;
-const $fragment13 = parseFragment`<button class="edit-task${0}"${"a0:data-id"}${2}>Edit</button>`;
-const $fragment14 = parseFragment`<span class="done-label${0}"${2}>Done ✓</span>`;
-const $fragment15 = parseFragment`<button${"a0:data-id"}${"a0:aria-label"}${3}>Mark done</button>`;
-const $fragment16 = parseFragment`<span class="preview-label${0}"${2}>Preview</span>`;
-const $fragment17 = parseFragment`<div${3}><button class="primary${0}"${2}>Save task</button><button class="add${0}"${2}>Cancel</button></div>`;
-const $fragment18 = parseFragment`<div${3}><p role="status"${3}>${"t2"}</p><p class="error${0}" role="alert"${2}>${"t4"}</p></div>`;
-const $fragment19 = parseFragment`<button class="primary${0}"${"a0:disabled"}${2}>${"t1"}<span${3}>→</span></button>`;
-const $fragment20 = parseFragment`<h2${3}>Customer details</h2>`;
-const $fragment21 = parseFragment`<p${3}>${"t1"}<br${3}>${"t3"}<br${3}>${"t5"}</p>`;
-const $fragment22 = parseFragment`<button class="aside-action${0}"${2}>Edit details &amp; add note</button>`;
-const $fragment23 = parseFragment`<label${3}>Note <span${3}>optional</span><textarea data-field="customerNote" maxlength="500"${3}></textarea></label>`;
-const $fragment24 = parseFragment`<button class="primary${0}"${2}>Save details</button>`;
-const $fragment25 = parseFragment`<p class="customer-note${0}"${2}>${"t1"}</p>`;
-const $fragment26 = parseFragment`<h2${3}>Stage blockers</h2>`;
-const $fragment27 = parseFragment`<p${3}>Open blockers prevent this stage from advancing.</p>`;
-const $fragment28 = parseFragment`<span${3}>${"t1"}</span>`;
-const $fragment29 = parseFragment`<small${3}>Resolved</small>`;
-const $fragment30 = parseFragment`<button${"a0:data-id"}${3}>Resolve</button>`;
-const $fragment31 = parseFragment`<p${3}>No blockers in this stage.</p>`;
-const $fragment32 = parseFragment`<button class="aside-action${0}"${2}>Add blocker</button>`;
-const $fragment33 = parseFragment`<h2${3}>Activity</h2>`;
-const $fragment34 = parseFragment`<p class="activity-item${0}"${2}><small${3}>${"t2"}</small><br${3}>${"t4"}</p>`;
-const $fragment35 = parseFragment`<p${3}>Changes will appear here.</p>`;
-const $fragment36 = parseFragment`<section class="about${0}"${2}><button class="back${0}" data-tab="journey"${2}>← Back to journey</button><h1${3}>From first steps<br${3}><em${3}>to a confident launch.</em></h1><p${3}>This onboarding example helps an account manager follow required work across documents, discovery, configuration, training, review and launch.</p><div class="about-grid${0}"${2}><article${3}><span${3}>01</span><h2${3}>Lightning Web Components</h2><p${3}>The component renders the journey, task state and progress. It responds to task completion and lets an account manager add a follow-up.</p></article><article${3}><span${3}>02</span><h2${3}>Apex and Salesforce</h2><p${3}>The Salesforce component calls Apex to load Account and Task records. Apex checks required tasks before advancing the onboarding stage and creates follow-up Tasks.</p></article></div><p class="note${0}"${2}>The public demo uses fictional in-memory data and does not execute Apex. Customer details, task editing, blockers and activity are browser-only features; the included Salesforce package does not yet implement them. Salesforce deployment and tests require an authenticated sandbox.</p><a class="download${0}" href="onboarding-source.zip" download${2}>Download project source ↗</a></section>`;
-const $fragment37 = parseFragment`<footer${3}><span${3}>ONBOARDING TRACKER</span><span${3}>Interactive Salesforce LWC &amp; Apex showcase</span></footer>`;
+const $fragment1 = parseFragment`<div class="success-toast${0}" role="status" aria-live="polite"${2}><span class="toast-icon${0}" aria-hidden="true"${2}>✓</span><span${3}>${"t4"}</span><button type="button" class="toast-close${0}" aria-label="Dismiss notification"${2}>×</button></div>`;
+const $fragment2 = parseFragment`<header class="header${0}"${2}><a class="brand${0}" href="/"${2}><span class="brand-mark${0}"${2}>O</span><span${3}>Onboarding <span${3}>Tracker</span></span></a><nav aria-label="Site navigation"${3}><button data-tab="journey"${3}>Customer journey</button><button data-tab="about"${3}>How it’s built</button></nav><button class="reset${0}"${2}>Reset demo</button></header>`;
+const $fragment3 = parseFragment`<section class="workspace-overview${0}" aria-label="Onboarding workspace overview"${2}><div class="overview-header${0}"${2}><span class="overview-icon${0}" aria-hidden="true"${2}><svg viewBox="0 0 24 24" fill="none"${3}><rect x="5" y="4" width="14" height="16" rx="2"${3}/><path d="M8 9h8M8 12h8M8 15h5"${3}/></svg></span><div${3}><span class="overview-label${0}"${2}>Customer onboarding</span><h1${3}>Onboarding workspace</h1><p${3}>Track the work from signed agreement to launch.</p></div><span class="sample-badge${0}"${2}>Sample data</span></div><div class="overview-stats${0}"${2}><div${3}><span${3}>Current stage</span><strong class="stage-value${0}"${2}>${"t20"}</strong></div><div${3}><span${3}>Progress</span><strong${3}>${"t25"}</strong></div><div${3}><span${3}>Required complete</span><strong${3}>${"t30"}</strong></div><div${3}><span${3}>Overdue tasks</span><strong${3}>${"t35"}</strong></div><div${3}><span${3}>Open blockers</span><strong${3}>${"t40"}</strong></div></div></section>`;
+const $fragment4 = parseFragment`<div class="section-head${0}"${2}><div${3}><h2${3}>The journey</h2><p${3}>Select a stage to explore its tasks.</p></div><div class="progress-label${0}"${2}><strong${3}>${"t8"}</strong><span${3}>required work complete</span></div></div>`;
+const $fragment5 = parseFragment`<div class="progress-track${0}" role="progressbar" aria-label="Required tasks complete"${"a0:aria-valuetext"}${2}><span${"s1"}${3}></span></div>`;
+const $fragment6 = parseFragment`<button type="button"${"c0"}${"a0:data-stage"}${"a0:aria-pressed"}${2}><span class="stage-number${0}"${2}>${"t2"}</span><span class="stage-text${0}"${2}><strong${3}>${"t5"}</strong><small${3}>${"t7"}</small></span></button>`;
+const $fragment7 = parseFragment`<div${3}><p class="section-caption${0}"${2}>${"t2"}</p><h2${3}>${"t4"}</h2><p${3}>${"t6"}</p></div>`;
+const $fragment8 = parseFragment`<button class="add${0}"${2}>+ Add follow-up</button>`;
+const $fragment9 = parseFragment`<button class="add${0}"${2}>Back to current stage</button>`;
+const $fragment10 = parseFragment`<button class="primary${0}"${2}>Add task</button>`;
+const $fragment11 = parseFragment`<span class="task-indicator${0}"${2}></span>`;
+const $fragment12 = parseFragment`<div class="task-copy${0}"${2}><strong${3}>${"t2"}</strong><span${3}>${"t4"}</span></div>`;
+const $fragment13 = parseFragment`<span class="required${0}"${2}>Required</span>`;
+const $fragment14 = parseFragment`<button class="edit-task${0}"${"a0:data-id"}${2}>Edit</button>`;
+const $fragment15 = parseFragment`<span class="done-label${0}"${2}>Done ✓</span>`;
+const $fragment16 = parseFragment`<button${"a0:data-id"}${"a0:aria-label"}${3}>Mark done</button>`;
+const $fragment17 = parseFragment`<span class="preview-label${0}"${2}>Preview</span>`;
+const $fragment18 = parseFragment`<div${3}><button class="primary${0}"${2}>Save task</button><button class="add${0}"${2}>Cancel</button></div>`;
+const $fragment19 = parseFragment`<div${3}><p class="error${0}" role="alert"${2}>${"t2"}</p></div>`;
+const $fragment20 = parseFragment`<button class="primary${0}"${"a0:disabled"}${2}>${"t1"}<span${3}>→</span></button>`;
+const $fragment21 = parseFragment`<h2${3}>Customer details</h2>`;
+const $fragment22 = parseFragment`<p${3}>${"t1"}<br${3}>${"t3"}<br${3}>${"t5"}</p>`;
+const $fragment23 = parseFragment`<button class="aside-action${0}"${2}>Edit details &amp; add note</button>`;
+const $fragment24 = parseFragment`<label${3}>Note <span${3}>optional</span><textarea data-field="customerNote" maxlength="500"${3}></textarea></label>`;
+const $fragment25 = parseFragment`<button class="primary${0}"${2}>Save details</button>`;
+const $fragment26 = parseFragment`<p class="customer-note${0}"${2}>${"t1"}</p>`;
+const $fragment27 = parseFragment`<h2${3}>Stage blockers</h2>`;
+const $fragment28 = parseFragment`<p${3}>Open blockers prevent this stage from advancing.</p>`;
+const $fragment29 = parseFragment`<span${3}>${"t1"}</span>`;
+const $fragment30 = parseFragment`<small${3}>Resolved</small>`;
+const $fragment31 = parseFragment`<button${"a0:data-id"}${3}>Resolve</button>`;
+const $fragment32 = parseFragment`<p${3}>No blockers in this stage.</p>`;
+const $fragment33 = parseFragment`<button class="aside-action${0}"${2}>Add blocker</button>`;
+const $fragment34 = parseFragment`<h2${3}>Activity</h2>`;
+const $fragment35 = parseFragment`<p class="activity-item${0}"${2}><small${3}>${"t2"}</small><br${3}>${"t4"}</p>`;
+const $fragment36 = parseFragment`<p${3}>Changes will appear here.</p>`;
+const $fragment37 = parseFragment`<section class="about${0}"${2}><button class="back${0}" data-tab="journey"${2}>← Back to journey</button><h1${3}>From first steps<br${3}><em${3}>to a confident launch.</em></h1><p${3}>This onboarding example helps an account manager follow required work across documents, discovery, configuration, training, review and launch.</p><div class="about-grid${0}"${2}><article${3}><span${3}>01</span><h2${3}>Lightning Web Components</h2><p${3}>The component renders the journey, task state and progress. It responds to task completion and lets an account manager add a follow-up.</p></article><article${3}><span${3}>02</span><h2${3}>Apex and Salesforce</h2><p${3}>The Salesforce component calls Apex to load Account and Task records. Apex checks required tasks before advancing the onboarding stage and creates follow-up Tasks.</p></article></div><p class="note${0}"${2}>The public demo uses fictional in-memory data and does not execute Apex. Customer details, task editing, blockers and activity are browser-only features; the included Salesforce package does not yet implement them. Salesforce deployment and tests require an authenticated sandbox.</p><a class="download${0}" href="onboarding-source.zip" download${2}>Download project source ↗</a></section>`;
+const $fragment38 = parseFragment`<footer${3}><span${3}>ONBOARDING TRACKER</span><span${3}>Interactive Salesforce LWC &amp; Apex showcase</span></footer>`;
 const stc0 = {
   classMap: {
     "page": true
   },
-  key: 0
+  key: 3
 };
 const stc1 = {
-  key: 3
+  key: 6
 };
 const stc2 = {
   classMap: {
     "journey": true
   },
-  key: 7
+  key: 10
 };
 const stc3 = {
   classMap: {
     "stages": true
   },
-  key: 12
+  key: 15
 };
 const stc4 = {
   classMap: {
     "content-grid": true
   },
-  key: 15
+  key: 18
 };
 const stc5 = {
   classMap: {
     "tasks": true
   },
-  key: 16
+  key: 19
 };
 const stc6 = {
   classMap: {
     "task-head": true
   },
-  key: 17
+  key: 20
 };
 const stc7 = {
   classMap: {
     "follow-form": true
   },
-  key: 26
+  key: 29
 };
 const stc8 = {
-  key: 27
+  key: 30
 };
 const stc9 = {
   "type": "text",
@@ -7277,7 +7278,7 @@ const stc9 = {
   "placeholder": "e.g. Call the customer"
 };
 const stc10 = {
-  key: 29
+  key: 32
 };
 const stc11 = {
   "type": "date"
@@ -7286,64 +7287,64 @@ const stc12 = {
   classMap: {
     "task-list": true
   },
-  key: 33
+  key: 36
 };
 const stc13 = {
   classMap: {
     "follow-form": true
   },
-  key: 54
+  key: 57
 };
 const stc14 = {
-  key: 55
+  key: 58
 };
 const stc15 = {
   "type": "text",
   "maxlength": "100"
 };
 const stc16 = {
-  key: 57
+  key: 60
 };
 const stc17 = {
   classMap: {
     "task-foot": true
   },
-  key: 61
+  key: 64
 };
 const stc18 = {
   classMap: {
     "sidebar": true
   },
-  key: 67
+  key: 70
 };
 const stc19 = {
   classMap: {
     "sidebar-top": true
   },
-  key: 68
+  key: 71
 };
 const stc20 = {
   classMap: {
     "detail-form": true
   },
-  key: 76
+  key: 79
 };
 const stc21 = {
-  key: 77
+  key: 80
 };
 const stc22 = {
   "data-field": "customerName",
   "maxlength": "100"
 };
 const stc23 = {
-  key: 79
+  key: 82
 };
 const stc24 = {
   "data-field": "customerContact",
   "maxlength": "100"
 };
 const stc25 = {
-  key: 81
+  key: 84
 };
 const stc26 = {
   "data-field": "customerOwner",
@@ -7353,7 +7354,7 @@ const stc27 = {
   classMap: {
     "sidebar-bottom": true
   },
-  key: 89
+  key: 92
 };
 const stc28 = {
   "blocker": true
@@ -7362,7 +7363,7 @@ const stc29 = {
   classMap: {
     "blocker-input": true
   },
-  key: 106
+  key: 109
 };
 const stc30 = {
   "type": "text",
@@ -7373,32 +7374,36 @@ const stc31 = {
   classMap: {
     "sidebar-bottom": true
   },
-  key: 110
+  key: 113
 };
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {b: api_bind, sp: api_static_part, st: api_static_fragment, d: api_dynamic_text, ncls: api_normalize_class_name, k: api_key, i: api_iterator, h: api_element, fr: api_fragment, t: api_text, f: api_flatten} = $api;
-  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7, _m8, _m9, _m10, _m11, _m12, _m13, _m14, _m15, _m16, _m17, _m18, _m19, _m20, _m21, _m22, _m23, _m24, _m25, _m26, _m27, _m28, _m29, _m30, _m31, _m32, _m33, _m34, _m35, _m36} = $ctx;
-  return [api_element("div", stc0, [api_static_fragment($fragment1, 2, [api_static_part(9, {
+  const {d: api_dynamic_text, b: api_bind, sp: api_static_part, st: api_static_fragment, fr: api_fragment, ncls: api_normalize_class_name, k: api_key, i: api_iterator, h: api_element, t: api_text, f: api_flatten} = $api;
+  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7, _m8, _m9, _m10, _m11, _m12, _m13, _m14, _m15, _m16, _m17, _m18, _m19, _m20, _m21, _m22, _m23, _m24, _m25, _m26, _m27, _m28, _m29, _m30, _m31, _m32, _m33, _m34, _m35, _m36, _m37} = $ctx;
+  return [$cmp.toastMessage ? api_fragment(0, [api_static_fragment($fragment1, 2, [api_static_part(4, null, api_dynamic_text($cmp.toastMessage)), api_static_part(5, {
     on: _m0 || ($ctx._m0 = {
-      "click": api_bind($cmp.navigate)
+      "click": api_bind($cmp.dismissToast)
     })
-  }, null), api_static_part(11, {
+  }, null)])], 0) : null, api_element("div", stc0, [api_static_fragment($fragment2, 5, [api_static_part(9, {
     on: _m1 || ($ctx._m1 = {
       "click": api_bind($cmp.navigate)
     })
-  }, null), api_static_part(13, {
+  }, null), api_static_part(11, {
     on: _m2 || ($ctx._m2 = {
+      "click": api_bind($cmp.navigate)
+    })
+  }, null), api_static_part(13, {
+    on: _m3 || ($ctx._m3 = {
       "click": api_bind($cmp.reset)
     })
-  }, null)]), api_element("main", stc1, [$cmp.isJourney ? api_fragment(4, [api_static_fragment($fragment2, 6, [api_static_part(20, null, api_dynamic_text($cmp.plan.stage)), api_static_part(25, null, api_dynamic_text($cmp.progress)), api_static_part(30, null, api_dynamic_text($cmp.completeCount) + " / " + api_dynamic_text($cmp.totalCount)), api_static_part(35, null, api_dynamic_text($cmp.overdueCount)), api_static_part(40, null, api_dynamic_text($cmp.openBlockerCount))]), api_element("section", stc2, [api_static_fragment($fragment3, 9, [api_static_part(8, null, api_dynamic_text($cmp.progress))]), api_static_fragment($fragment4, 11, [api_static_part(0, {
+  }, null)]), api_element("main", stc1, [$cmp.isJourney ? api_fragment(7, [api_static_fragment($fragment3, 9, [api_static_part(20, null, api_dynamic_text($cmp.plan.stage)), api_static_part(25, null, api_dynamic_text($cmp.progress)), api_static_part(30, null, api_dynamic_text($cmp.completeCount) + " / " + api_dynamic_text($cmp.totalCount)), api_static_part(35, null, api_dynamic_text($cmp.overdueCount)), api_static_part(40, null, api_dynamic_text($cmp.openBlockerCount))]), api_element("section", stc2, [api_static_fragment($fragment4, 12, [api_static_part(8, null, api_dynamic_text($cmp.progress))]), api_static_fragment($fragment5, 14, [api_static_part(0, {
     attrs: {
       "aria-valuetext": $cmp.progress
     }
   }, null), api_static_part(1, {
     style: $cmp.progressStyle
   }, null)]), api_element("div", stc3, api_iterator($cmp.stageRows, function (stage) {
-    return api_static_fragment($fragment5, api_key(14, stage.name), [api_static_part(0, {
-      on: _m4 || ($ctx._m4 = {
+    return api_static_fragment($fragment6, api_key(17, stage.name), [api_static_part(0, {
+      on: _m5 || ($ctx._m5 = {
         "click": api_bind($cmp.viewStageChanged)
       }),
       className: api_normalize_class_name(stage.css),
@@ -7407,21 +7412,21 @@ function tmpl($api, $cmp, $slotset, $ctx) {
         "aria-pressed": stage.pressed
       }
     }, null), api_static_part(2, null, api_dynamic_text(stage.number)), api_static_part(5, null, api_dynamic_text(stage.name)), api_static_part(7, null, api_dynamic_text(stage.state))]);
-  }))]), api_element("div", stc4, [api_element("section", stc5, [api_element("div", stc6, [api_static_fragment($fragment6, 19, [api_static_part(2, null, api_dynamic_text($cmp.stageCaption)), api_static_part(4, null, api_dynamic_text($cmp.viewStage)), api_static_part(6, null, api_dynamic_text($cmp.readyMessage))]), $cmp.canEdit ? api_fragment(20, [api_static_fragment($fragment7, 22, [api_static_part(0, {
-    on: _m6 || ($ctx._m6 = {
+  }))]), api_element("div", stc4, [api_element("section", stc5, [api_element("div", stc6, [api_static_fragment($fragment7, 22, [api_static_part(2, null, api_dynamic_text($cmp.stageCaption)), api_static_part(4, null, api_dynamic_text($cmp.viewStage)), api_static_part(6, null, api_dynamic_text($cmp.readyMessage))]), $cmp.canEdit ? api_fragment(23, [api_static_fragment($fragment8, 25, [api_static_part(0, {
+    on: _m7 || ($ctx._m7 = {
       "click": api_bind($cmp.toggleForm)
     })
-  }, null)])], 0) : api_fragment(20, [api_static_fragment($fragment8, 24, [api_static_part(0, {
-    on: _m8 || ($ctx._m8 = {
+  }, null)])], 0) : api_fragment(23, [api_static_fragment($fragment9, 27, [api_static_part(0, {
+    on: _m9 || ($ctx._m9 = {
       "click": api_bind($cmp.returnToCurrent)
     })
-  }, null)])], 0)]), $cmp.showForm ? api_fragment(25, [api_element("div", stc7, [api_element("label", stc8, [api_text("Follow-up task"), api_element("input", {
+  }, null)])], 0)]), $cmp.showForm ? api_fragment(28, [api_element("div", stc7, [api_element("label", stc8, [api_text("Follow-up task"), api_element("input", {
     attrs: stc9,
     props: {
       "value": $cmp.subject
     },
-    key: 28,
-    on: _m9 || ($ctx._m9 = {
+    key: 31,
+    on: _m10 || ($ctx._m10 = {
       "input": api_bind($cmp.subjectChanged)
     })
   })]), api_element("label", stc10, [api_text("Due date"), api_element("input", {
@@ -7429,41 +7434,41 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     props: {
       "value": $cmp.due
     },
-    key: 30,
-    on: _m10 || ($ctx._m10 = {
+    key: 33,
+    on: _m11 || ($ctx._m11 = {
       "change": api_bind($cmp.dueChanged)
     })
-  })]), api_static_fragment($fragment9, 32, [api_static_part(0, {
-    on: _m12 || ($ctx._m12 = {
+  })]), api_static_fragment($fragment10, 35, [api_static_part(0, {
+    on: _m13 || ($ctx._m13 = {
       "click": api_bind($cmp.addTask)
     })
   }, null)])])], 0) : null, api_element("div", stc12, api_iterator($cmp.currentTasks, function (task) {
     return api_element("article", {
       className: api_normalize_class_name(task.css),
-      key: api_key(34, task.id)
-    }, [api_static_fragment($fragment10, 36), api_static_fragment($fragment11, 38, [api_static_part(2, null, api_dynamic_text(task.subject)), api_static_part(4, null, api_dynamic_text(task.dateLabel) + " · " + api_dynamic_text(task.ownerLabel))]), task.required ? api_fragment(39, [api_static_fragment($fragment12, 41)], 0) : null, $cmp.canEdit ? api_fragment(42, [api_static_fragment($fragment13, 44, [api_static_part(0, {
-      on: _m14 || ($ctx._m14 = {
+      key: api_key(37, task.id)
+    }, [api_static_fragment($fragment11, 39), api_static_fragment($fragment12, 41, [api_static_part(2, null, api_dynamic_text(task.subject)), api_static_part(4, null, api_dynamic_text(task.dateLabel) + " · " + api_dynamic_text(task.ownerLabel))]), task.required ? api_fragment(42, [api_static_fragment($fragment13, 44)], 0) : null, $cmp.canEdit ? api_fragment(45, [api_static_fragment($fragment14, 47, [api_static_part(0, {
+      on: _m15 || ($ctx._m15 = {
         "click": api_bind($cmp.editTask)
       }),
       attrs: {
         "data-id": task.id
       }
-    }, null)])], 0) : null, task.complete ? api_fragment(45, [api_static_fragment($fragment14, 47)], 0) : api_fragment(45, [$cmp.canEdit ? api_fragment(48, [api_static_fragment($fragment15, 50, [api_static_part(0, {
-      on: _m16 || ($ctx._m16 = {
+    }, null)])], 0) : null, task.complete ? api_fragment(48, [api_static_fragment($fragment15, 50)], 0) : api_fragment(48, [$cmp.canEdit ? api_fragment(51, [api_static_fragment($fragment16, 53, [api_static_part(0, {
+      on: _m17 || ($ctx._m17 = {
         "click": api_bind($cmp.finish)
       }),
       attrs: {
         "data-id": task.id,
         "aria-label": task.buttonLabel
       }
-    }, null)])], 0) : api_fragment(48, [api_static_fragment($fragment16, 52)], 0)], 0)]);
-  })), $cmp.taskEditing ? api_fragment(53, [api_element("div", stc13, [api_element("label", stc14, [api_text("Task owner"), api_element("input", {
+    }, null)])], 0) : api_fragment(51, [api_static_fragment($fragment17, 55)], 0)], 0)]);
+  })), $cmp.taskEditing ? api_fragment(56, [api_element("div", stc13, [api_element("label", stc14, [api_text("Task owner"), api_element("input", {
     attrs: stc15,
     props: {
       "value": $cmp.taskOwner
     },
-    key: 56,
-    on: _m17 || ($ctx._m17 = {
+    key: 59,
+    on: _m18 || ($ctx._m18 = {
       "input": api_bind($cmp.editOwner)
     })
   })]), api_element("label", stc16, [api_text("Due date"), api_element("input", {
@@ -7471,36 +7476,36 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     props: {
       "value": $cmp.taskDue
     },
-    key: 58,
-    on: _m18 || ($ctx._m18 = {
+    key: 61,
+    on: _m19 || ($ctx._m19 = {
       "change": api_bind($cmp.editDue)
     })
-  })]), api_static_fragment($fragment17, 60, [api_static_part(1, {
-    on: _m19 || ($ctx._m19 = {
+  })]), api_static_fragment($fragment18, 63, [api_static_part(1, {
+    on: _m20 || ($ctx._m20 = {
       "click": api_bind($cmp.saveTask)
     })
   }, null), api_static_part(3, {
-    on: _m20 || ($ctx._m20 = {
+    on: _m21 || ($ctx._m21 = {
       "click": api_bind($cmp.cancelTask)
     })
-  }, null)])])], 0) : null, api_element("div", stc17, [api_static_fragment($fragment18, 63, [api_static_part(2, null, api_dynamic_text($cmp.message)), api_static_part(4, null, api_dynamic_text($cmp.error))]), $cmp.canEdit ? api_fragment(64, [api_static_fragment($fragment19, 66, [api_static_part(0, {
-    on: _m22 || ($ctx._m22 = {
+  }, null)])])], 0) : null, api_element("div", stc17, [api_static_fragment($fragment19, 66, [api_static_part(2, null, api_dynamic_text($cmp.error))]), $cmp.canEdit ? api_fragment(67, [api_static_fragment($fragment20, 69, [api_static_part(0, {
+    on: _m23 || ($ctx._m23 = {
       "click": api_bind($cmp.advance)
     }),
     attrs: {
       "disabled": $cmp.isFinal ? "" : null
     }
-  }, null), api_static_part(1, null, api_dynamic_text($cmp.nextLabel) + " ")])], 0) : null])]), api_element("aside", stc18, [api_element("div", stc19, api_flatten([api_static_fragment($fragment20, 70), api_static_fragment($fragment21, 72, [api_static_part(1, null, api_dynamic_text($cmp.plan.customer)), api_static_part(3, null, "Contact · " + api_dynamic_text($cmp.plan.contact)), api_static_part(5, null, "Manager · " + api_dynamic_text($cmp.plan.owner))]), api_static_fragment($fragment22, 74, [api_static_part(0, {
-    on: _m24 || ($ctx._m24 = {
+  }, null), api_static_part(1, null, api_dynamic_text($cmp.nextLabel) + " ")])], 0) : null])]), api_element("aside", stc18, [api_element("div", stc19, api_flatten([api_static_fragment($fragment21, 73), api_static_fragment($fragment22, 75, [api_static_part(1, null, api_dynamic_text($cmp.plan.customer)), api_static_part(3, null, "Contact · " + api_dynamic_text($cmp.plan.contact)), api_static_part(5, null, "Manager · " + api_dynamic_text($cmp.plan.owner))]), api_static_fragment($fragment23, 77, [api_static_part(0, {
+    on: _m25 || ($ctx._m25 = {
       "click": api_bind($cmp.openCustomer)
     })
-  }, null)]), $cmp.showCustomer ? api_fragment(75, [api_element("div", stc20, [api_element("label", stc21, [api_text("Customer"), api_element("input", {
+  }, null)]), $cmp.showCustomer ? api_fragment(78, [api_element("div", stc20, [api_element("label", stc21, [api_text("Customer"), api_element("input", {
     attrs: stc22,
     props: {
       "value": $cmp.customerName
     },
-    key: 78,
-    on: _m25 || ($ctx._m25 = {
+    key: 81,
+    on: _m26 || ($ctx._m26 = {
       "input": api_bind($cmp.customerField)
     })
   })]), api_element("label", stc23, [api_text("Contact"), api_element("input", {
@@ -7508,8 +7513,8 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     props: {
       "value": $cmp.customerContact
     },
-    key: 80,
-    on: _m26 || ($ctx._m26 = {
+    key: 83,
+    on: _m27 || ($ctx._m27 = {
       "input": api_bind($cmp.customerField)
     })
   })]), api_element("label", stc25, [api_text("Account manager"), api_element("input", {
@@ -7517,52 +7522,52 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     props: {
       "value": $cmp.customerOwner
     },
-    key: 82,
-    on: _m27 || ($ctx._m27 = {
-      "input": api_bind($cmp.customerField)
-    })
-  })]), api_static_fragment($fragment23, 84, [api_static_part(4, {
+    key: 85,
     on: _m28 || ($ctx._m28 = {
       "input": api_bind($cmp.customerField)
     })
-  }, null)]), api_static_fragment($fragment24, 86, [api_static_part(0, {
-    on: _m30 || ($ctx._m30 = {
+  })]), api_static_fragment($fragment24, 87, [api_static_part(4, {
+    on: _m29 || ($ctx._m29 = {
+      "input": api_bind($cmp.customerField)
+    })
+  }, null)]), api_static_fragment($fragment25, 89, [api_static_part(0, {
+    on: _m31 || ($ctx._m31 = {
       "click": api_bind($cmp.saveCustomer)
     })
   }, null)])])], 0) : null, api_iterator($cmp.notes, function (note) {
-    return api_static_fragment($fragment25, api_key(88, note.id), [api_static_part(1, null, api_dynamic_text(note.text))]);
-  })])), api_element("div", stc27, [api_static_fragment($fragment26, 91), api_static_fragment($fragment27, 93), $cmp.hasBlockers ? api_fragment(94, api_iterator($cmp.blockers, function (blocker) {
+    return api_static_fragment($fragment26, api_key(91, note.id), [api_static_part(1, null, api_dynamic_text(note.text))]);
+  })])), api_element("div", stc27, [api_static_fragment($fragment27, 94), api_static_fragment($fragment28, 96), $cmp.hasBlockers ? api_fragment(97, api_iterator($cmp.blockers, function (blocker) {
     return api_element("div", {
       classMap: stc28,
-      key: api_key(95, blocker.id)
-    }, [api_static_fragment($fragment28, 97, [api_static_part(1, null, api_dynamic_text(blocker.text))]), blocker.resolved ? api_fragment(98, [api_static_fragment($fragment29, 100)], 0) : blocker.canResolve ? api_fragment(98, [api_static_fragment($fragment30, 102, [api_static_part(0, {
-      on: _m32 || ($ctx._m32 = {
+      key: api_key(98, blocker.id)
+    }, [api_static_fragment($fragment29, 100, [api_static_part(1, null, api_dynamic_text(blocker.text))]), blocker.resolved ? api_fragment(101, [api_static_fragment($fragment30, 103)], 0) : blocker.canResolve ? api_fragment(101, [api_static_fragment($fragment31, 105, [api_static_part(0, {
+      on: _m33 || ($ctx._m33 = {
         "click": api_bind($cmp.resolveBlockerAction)
       }),
       attrs: {
         "data-id": blocker.id
       }
     }, null)])], 0) : null]);
-  }), 0) : api_fragment(94, [api_static_fragment($fragment31, 104)], 0), $cmp.canEdit ? api_fragment(105, [api_element("label", stc29, [api_text("Add a blocker"), api_element("input", {
+  }), 0) : api_fragment(97, [api_static_fragment($fragment32, 107)], 0), $cmp.canEdit ? api_fragment(108, [api_element("label", stc29, [api_text("Add a blocker"), api_element("input", {
     attrs: stc30,
     props: {
       "value": $cmp.blockerText
     },
-    key: 107,
-    on: _m33 || ($ctx._m33 = {
+    key: 110,
+    on: _m34 || ($ctx._m34 = {
       "input": api_bind($cmp.blockerChanged)
     })
-  })]), api_static_fragment($fragment32, 109, [api_static_part(0, {
-    on: _m35 || ($ctx._m35 = {
+  })]), api_static_fragment($fragment33, 112, [api_static_part(0, {
+    on: _m36 || ($ctx._m36 = {
       "click": api_bind($cmp.addBlockerAction)
     })
-  }, null)])], 0) : null]), api_element("div", stc31, [api_static_fragment($fragment33, 112), $cmp.hasActivity ? api_fragment(113, api_iterator($cmp.activity, function (item) {
-    return api_static_fragment($fragment34, api_key(115, item.id), [api_static_part(2, null, api_dynamic_text(item.date)), api_static_part(4, null, api_dynamic_text(item.text))]);
-  }), 0) : api_fragment(113, [api_static_fragment($fragment35, 117)], 0)])])])], 0) : null, $cmp.isAbout ? api_fragment(118, [api_static_fragment($fragment36, 120, [api_static_part(1, {
-    on: _m36 || ($ctx._m36 = {
+  }, null)])], 0) : null]), api_element("div", stc31, [api_static_fragment($fragment34, 115), $cmp.hasActivity ? api_fragment(116, api_iterator($cmp.activity, function (item) {
+    return api_static_fragment($fragment35, api_key(118, item.id), [api_static_part(2, null, api_dynamic_text(item.date)), api_static_part(4, null, api_dynamic_text(item.text))]);
+  }), 0) : api_fragment(116, [api_static_fragment($fragment36, 120)], 0)])])])], 0) : null, $cmp.isAbout ? api_fragment(121, [api_static_fragment($fragment37, 123, [api_static_part(1, {
+    on: _m37 || ($ctx._m37 = {
       "click": api_bind($cmp.navigate)
     })
-  }, null)])], 0) : null]), api_static_fragment($fragment37, 122)])];
+  }, null)])], 0) : null]), api_static_fragment($fragment38, 125)])];
   /*LWC compiler v9.5.3*/
 }
 var _tmpl = registerTemplate(tmpl);
@@ -7783,6 +7788,22 @@ class App extends LightningElement {
     this.showCustomer = false;
     this.error = '';
     this.message = '';
+    this.toastMessage = '';
+    this.toastTimer = void 0;
+  }
+  showToast(text) {
+    clearTimeout(this.toastTimer);
+    this.toastMessage = text;
+    this.toastTimer = setTimeout(() => {
+      this.toastMessage = '';
+    }, 5000);
+  }
+  dismissToast() {
+    clearTimeout(this.toastTimer);
+    this.toastMessage = '';
+  }
+  disconnectedCallback() {
+    clearTimeout(this.toastTimer);
   }
   connectedCallback() {
     this.refresh();
@@ -7920,6 +7941,7 @@ class App extends LightningElement {
       this.showCustomer = false;
       this.error = '';
       this.message = 'Customer details saved.';
+      this.showToast('Customer details saved.');
       this.refresh();
     } catch (e) {
       this.error = e.message;
@@ -7944,6 +7966,7 @@ class App extends LightningElement {
       this.editTaskId = '';
       this.error = '';
       this.message = 'Task updated.';
+      this.showToast('Task updated.');
       this.refresh();
     } catch (e) {
       this.error = e.message;
@@ -7961,6 +7984,7 @@ class App extends LightningElement {
       this.blockerText = '';
       this.error = '';
       this.message = 'Blocker added.';
+      this.showToast('Blocker added.');
       this.refresh();
     } catch (e) {
       this.error = e.message;
@@ -7971,6 +7995,7 @@ class App extends LightningElement {
       resolveBlocker(e.currentTarget.dataset.id);
       this.error = '';
       this.message = 'Blocker resolved.';
+      this.showToast('Blocker resolved.');
       this.refresh();
     } catch (e) {
       this.error = e.message;
@@ -7993,6 +8018,7 @@ class App extends LightningElement {
       this.due = '';
       this.showForm = false;
       this.message = 'Follow-up added.';
+      this.showToast('Follow-up added.');
       this.error = '';
       this.refresh();
     } catch (e) {
@@ -8004,6 +8030,7 @@ class App extends LightningElement {
     try {
       completeTask(e.currentTarget.dataset.id);
       this.message = 'Task completed.';
+      this.showToast('Task completed.');
       this.error = '';
       this.refresh();
     } catch (e) {
@@ -8015,6 +8042,7 @@ class App extends LightningElement {
       advanceStage();
       this.viewStage = getPlan().stage;
       this.message = 'Moved to ' + getPlan().stage + '.';
+      this.showToast(this.message);
       this.error = '';
       this.refresh();
     } catch (e) {
@@ -8033,12 +8061,13 @@ class App extends LightningElement {
     this.due = '';
     this.error = '';
     this.message = 'Sample journey restored.';
+    this.showToast('Sample journey restored.');
     this.refresh();
   }
   /*LWC compiler v9.5.3*/
 }
 registerDecorators(App, {
-  fields: ["plan", "viewStage", "tab", "showForm", "subject", "due", "editTaskId", "taskOwner", "taskDue", "blockerText", "customerName", "customerContact", "customerOwner", "customerNote", "showCustomer", "error", "message"]
+  fields: ["plan", "viewStage", "tab", "showForm", "subject", "due", "editTaskId", "taskOwner", "taskDue", "blockerText", "customerName", "customerContact", "customerOwner", "customerNote", "showCustomer", "error", "message", "toastMessage", "toastTimer"]
 });
 const __lwc_component_class_internal = registerComponent(App, {
   tmpl: _tmpl,
