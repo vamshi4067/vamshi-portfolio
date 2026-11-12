@@ -7509,7 +7509,7 @@ function getAvailability(service, date) {
     date,
     time: time.label,
     hour: time.hour
-  }))).filter(slot => !(slot.technicianId === "jordan" && slot.hour === 11)).filter(slot => !bookings.some(b => b.slotId === slot.id && b.status === "Confirmed")).map(copy);
+  }))) .filter(slot => { const day = Math.floor(Date.parse(`${date}T00:00:00Z`) / 86400000); const technicianIndex = technicians.findIndex(t => t.id === slot.technicianId); const timeIndex = [9, 11, 14].indexOf(slot.hour); return (day + technicianIndex + timeIndex) % 4 !== 0; }).filter(slot => !bookings.some(b => b.slotId === slot.id && b.status === "Confirmed")).map(copy);
 }
 function getBookings() {
   return copy(bookings);
