@@ -127,3 +127,5 @@ h1,h2,h3,.wordmark{font-family:Outfit,Inter,Studio,sans-serif}.wrap{width:min(10
 .assistant-widget{bottom:90px}
 .assistant-panel{height:min(610px,calc(100dvh - 180px))}
 @media(max-width:600px){.assistant-widget{bottom:82px}.assistant-panel{height:min(560px,calc(100dvh - 160px))}}
+
+.project-card-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px 24px}
