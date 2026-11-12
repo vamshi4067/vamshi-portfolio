@@ -245,6 +245,7 @@ const projectDetails = {
   'Sensor Data with Python': { how: 'This draft repository contains a Python project for working with sensor data.' },
   'Car Prediction': { how: 'Explore the repository for the files associated with the car prediction demo.' },
   'H20.ai': { how: 'Explore the repository for the included H2O.ai-related files.' },
+  'Visa Slot Watch': { how: 'A Chrome extension observes a manually authenticated visa calendar and reports available dates. It offers desktop alerts and optional email or WhatsApp reports; booking remains manual. Available-date detection and automatic location switching require further live verification.', source: 'https://github.com/vamshi4067/visa-slot-watch' },
   'CleanYourTV': { how: 'A customized derivative of CleanYourTV with a cricket-inspired theme, favourites, media browsing, and remote-control navigation for Android TV.' },
   'JARVIS Personal Assistant': { how: 'A customized local-first assistant based on OpenJarvis, with voice interaction, reusable routines, and optional integrations. The public repository is a sanitized snapshot and notes that some original source is unavailable.', demo: 'projects/jarvis-demo/' },
   'OpenCV': { how: 'The repository contains OpenCV-related source and files.' },
